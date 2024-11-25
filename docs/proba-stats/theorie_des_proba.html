@@ -214,8 +214,6 @@ window.Quarto = {
     
 <!-- main -->
 <div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About</h1>
@@ -223,6 +221,15 @@ window.Quarto = {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
+<p>Donnons la définition d’une probabilité</p>
+<p>Soit <span class="math inline">\((\Omega, \mathcal{F})\)</span> un espace mesurable.</p>
+<p>Une mesure est une fonction <span class="math inline">\(\mu : \mathcal{F} \to [0, \infty]\)</span> telle que :</p>
+<p><span class="math display">\[
+\begin{aligned}
+1. &amp;\quad \mu(\varnothing) = 0, \\
+2. &amp;\quad \text{Pour toute famille dénombrable } (A_n)_{n \in \mathbb{N}} \text{ d'éléments de } \mathcal{F} \text{ deux à deux disjoints, on a :} \\
+   &amp;\quad \mu\left(\bigcup_{n=0}^{\infty} A_n\right) = \sum_{n=0}^{\infty} \mu(A_n).
+\end{aligned} \]</span></p>
 
 
 
