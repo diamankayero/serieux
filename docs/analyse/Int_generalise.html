@@ -226,8 +226,10 @@ window.Quarto = {
 <p>Nous présentons deux exemples fondamentaux auxquels on se ramène très souvent pour étudier la convergence d’une intégrale généralisée.</p>
 <section id="intégrales-de-riemann" class="level4">
 <h4 data-anchor-id="intégrales-de-riemann">Intégrales de Riemann</h4>
-<div class="exercise-box">
-<p><strong>Théorème 1</strong></p>
+</section>
+</section>
+<section id="théorème-1" class="level3 exercise-box">
+<h3 data-anchor-id="théorème-1">Théorème 1</h3>
 <ol type="1">
 <li>La fonction <span class="math inline">\(t \mapsto \frac{1}{t^\alpha}\)</span> a une intégrale convergente sur <span class="math inline">\([1, +\infty[\)</span> si et seulement si <span class="math inline">\(\alpha &gt; 1\)</span>.</li>
 <li>La fonction <span class="math inline">\(t \mapsto \frac{1}{t^\alpha}\)</span> a une intégrale convergente sur <span class="math inline">\(]0, 1]\)</span> si et seulement si <span class="math inline">\(\alpha &lt; 1\)</span>.</li>
@@ -250,13 +252,13 @@ window.Quarto = {
 <p>Cette intégrale admet une limite finie en 0 si et seulement si <span class="math inline">\(\alpha &lt; 1\)</span>.</p>
 <p>Ce résultat implique directement le suivant. Soit <span class="math inline">\(a &lt; b\)</span> deux réels. Alors on a : <span class="math display">\[ \int_{a}^{b} \frac{dt}{(b - t)^\alpha} &lt; +\infty \iff \alpha &lt; 1. \]</span></p>
 </details>
-</div>
-<!-- Fermeture de la div à la ligne 47 -->
 </section>
+<!-- Fermeture de la div à la ligne 47 -->
 <section id="intégrales-de-bertrand" class="level4">
 <h4 data-anchor-id="intégrales-de-bertrand">Intégrales de Bertrand</h4>
-<div class="exercise-box">
-<p><strong>Théorème 2</strong></p>
+</section>
+<section id="théorème-2" class="level3 exercise-box">
+<h3 data-anchor-id="théorème-2">Théorème 2</h3>
 <ol type="1">
 <li>La fonction <span class="math inline">\(t \mapsto \frac{1}{t^\alpha \ln(t)^\beta}\)</span> a une intégrale convergente sur <span class="math inline">\([e, +\infty[\)</span> si et seulement si <span class="math inline">\(\alpha &gt; 1\)</span> ou <span class="math inline">\(\alpha = 1\)</span> et <span class="math inline">\(\beta &gt; 1\)</span>.</li>
 <li>La fonction <span class="math inline">\(t \mapsto \frac{1}{t^\alpha |\ln(t)|^\beta}\)</span> a une intégrale convergente sur <span class="math inline">\(]0, \frac{1}{e}]\)</span> si et seulement si <span class="math inline">\(\alpha &lt; 1\)</span> ou <span class="math inline">\(\alpha = 1\)</span> et <span class="math inline">\(\beta &gt; 1\)</span>.</li>
@@ -275,14 +277,13 @@ window.Quarto = {
 <p>Montrons (ii). Supposons <span class="math inline">\(\alpha &lt; 1\)</span>. Alors pour <span class="math inline">\(\gamma\)</span> tel que <span class="math inline">\(\alpha &lt; \gamma &lt; 1\)</span>, on a : <span class="math display">\[ \frac{1}{t^\alpha |\ln t|^\beta} = o \left( \frac{1}{t^\gamma} \right), \]</span> d’où le résultat étant donné que l’intégrale sur <span class="math inline">\([0, 1]\)</span> de la fonction <span class="math inline">\(t \mapsto \frac{1}{t^\gamma}\)</span> est convergente.</p>
 <p>De même que pour le cas (i), on trouve : <span class="math display">\[ \int_{e}^{1} \frac{dt}{t |\ln t|^\beta} = \int_{-\ln x}^{1} \frac{du}{| u |^\beta}, \]</span> d’où le résultat.</p>
 </details>
-</div>
+</section>
 <!-- Fermeture de la div à la ligne 81 -->
-</section>
-</section>
 <section id="exercices" class="level3">
 <h3 data-anchor-id="exercices">Exercices</h3>
-<div class="exercise-box">
-<p><strong>Exercice 1</strong></p>
+</section>
+<section id="exercice-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1">Exercice 1</h3>
 <p>Étudier la convergence de l’intégrale <span class="math display">\[\int_{0}^{1} \frac{dx}{x^u (1-x)^{1-u}}\]</span> en fonction du paramètre <span class="math inline">\(u\)</span>.</p>
 <details>
 <summary>
@@ -291,10 +292,10 @@ window.Quarto = {
 <!-- Corrigé de l'exercice ici -->
 <p>Indication</p>
 </details>
-</div>
+</section>
 <!-- Fermeture de la div à la ligne 97 -->
-<div class="exercise-box">
-<p><strong>Exercice 2</strong></p>
+<section id="exercice-2" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2">Exercice 2</h3>
 <ol type="1">
 <li><p>Soient <span class="math inline">\(\alpha \in \mathbb{R}\)</span> et <span class="math inline">\(\beta \in \mathbb{R}\)</span>. Déterminer l’ensemble des couples <span class="math inline">\((\alpha, \beta)\)</span> pour lesquels l’intégrale généralisée <span class="math display">\[\int_{0}^{+\infty} \frac{t^{\alpha}}{1+t^{\beta}}dt\]</span> est convergente.</p></li>
 <li><p>Soit <span class="math inline">\(f\)</span> une fonction intégrable sur tout intervalle borné de <span class="math inline">\(\mathbb{R}\)</span> telle que : <span class="math display">\[ \lim_{t \to +\infty} f(t)=l \quad \text{et} \quad \lim_{t \to -\infty}=l'\]</span> Calculer <span class="math display">\[\int_{-\infty}^{+\infty}(f(t+1)-f(t)) dt\]</span></p></li>
@@ -306,12 +307,198 @@ window.Quarto = {
 <!-- Corrigé de l'exercice ici -->
 <p>Indication</p>
 </details>
-</div>
-<!-- Fermeture de la div à la ligne 183 -->
-
-
-
 </section>
+<!-- Fermeture de la div à la ligne 183 -->
+<section id="exercice-1-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1-1">Exercice 1</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{1}{(1+t^2)^{3/2}} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour cette intégrale, nous remarquons que l’intégrande est borné et continu sur l’intervalle ([0, 1]). Par conséquent, cette intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-2-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2-1">Exercice 2</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 t |\cos t|^3 \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande est borné et continu sur ([0, 1]). Ainsi, l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{\sin(t)}{t^\alpha} \, dt, \quad \alpha \in \mathbb{R}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>La convergence dépend de la valeur de (). Si (&lt; 1), l’intégrale converge sinon elle diverge. Pour (= 1), on utilise l’intégration par parties pour déterminer la convergence.</p>
+</details>
+</section>
+<section id="exercice-4" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^\infty \frac{\cos t}{t^{5/2}} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrale converge car l’intégrande décroit rapidement et est intégrable à l’infini.</p>
+</details>
+</section>
+<section id="exercice-5" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{dt}{\sqrt{1-t^3}}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande a une singularité en (t = 1). Nous examinons la convergence en (t ) et trouvons que l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{\ln t}{t^2-1} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Cette intégrale présente une singularité en (t = 1). En analysant le comportement de l’intégrande, nous déterminons que l’intégrale diverge.</p>
+</details>
+</section>
+<section id="exercice-7" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-7">Exercice 7</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{t}{e^t-1} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande est bien comporté sur ([0, 1]), donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-8" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-8">Exercice 8</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_a^b \frac{dt}{\sqrt{(t-a)(b-t)}}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Cette intégrale est une forme classique qui converge car elle représente une intégrale de la fonction racine carrée inversée sur un intervalle borné.</p>
+</details>
+</section>
+<section id="exercice-9" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-9">Exercice 9</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_1^{\sqrt{2}} \frac{dx}{x\sqrt{x^4 + 3x^2 - 2}}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande est bien définie et continue sur l’intervalle donné, donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-10" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-10">Exercice 10</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{\arcsin(\sqrt{x})}{(1-x)^{3/2}} \, dx\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande présente une singularité en (x = 1), mais en examinant cette singularité, nous trouvons que l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-11" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-11">Exercice 11</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \frac{x - \arctan(x)}{x(1+x^2)\arctan(x)} \, dx\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>En examinant l’intégrande, nous constatons qu’elle est bien définie et intégrable sur ([0, 1]), donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-12" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-12">Exercice 12</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^\infty \frac{\sin t}{\sqrt{t + \cos t}} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande décroit rapidement et est intégrable à l’infini, donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-13" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-13">Exercice 13</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 \ln(t) \sin\left(\frac{1}{t}\right) \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>En analysant l’intégrande, nous trouvons qu’elle est intégrable sur ([0, 1]), donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-14" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-14">Exercice 14</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_1^\infty \frac{(\ln t) \cos t}{t^{3/2}} \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande décroit rapidement et est intégrable à l’infini, donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-15" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-15">Exercice 15</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^1 (\sin(x)) \sin\left(\frac{1}{x^2}\right) \, dx\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>En examinant l’intégrande, nous constatons qu’elle est intégrable sur ([0, 1]), donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-16" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-16">Exercice 16</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^\infty \sqrt{t} \cos(t^2) \frac{dt}{e^t-1}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande est bien définie et intégrable sur ([0, ]), donc l’intégrale converge.</p>
+</details>
+</section>
+<section id="exercice-17" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-17">Exercice 17</h3>
+<p>Étudier la convergence de l’intégrale suivante :</p>
+<p><span class="math display">\[\int_0^\infty \frac{1}{t^2} \sin\left(\frac{1}{t^2}\right) \, dt\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>L’intégrande est bien définie et intégrable sur ([0, ]), donc l’intégrale converge.</p>
+</details>
+</section>
+
+
+
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> 
   <hr class="about-sep">
    <div class="about-links">
