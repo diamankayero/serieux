@@ -230,64 +230,64 @@ window.Quarto = {
 <p>Considérons la suite définie par :</p>
 <p><span class="math display">\[U_0 = 1 \text{ et } \forall n \in \mathbb{N}, \ U_{n+1} = \frac{3 + 2U_n}{2 + U_n}.\]</span></p>
 <ol type="1">
-<li>Posons ( V_{n+1} = ). Montrons que la suite ((V_n)) est géométrique.</li>
-<li>Exprimons ( V_n ) puis ( U_n ) en fonction de ( n ).</li>
+<li>Posons <span class="math inline">\(V_{n+1} = \frac{U_n - \sqrt{3}}{U_n + \sqrt{3}}\)</span>. Montrons que la suite <span class="math inline">\((V_n)\)</span> est géométrique.</li>
+<li>Exprimons <span class="math inline">\(V_n\)</span> puis <span class="math inline">\(U_n\)</span> en fonction de <span class="math inline">\(n\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour montrer que ((V_n)) est géométrique, nous allons prouver que la relation de récurrence définit une suite géométrique. Ensuite, nous trouverons l’expression de ( V_n ) et en déduirons celle de ( U_n ).</p>
+<p>Pour montrer que <span class="math inline">\((V_n)\)</span> est géométrique, nous allons prouver que la relation de récurrence définit une suite géométrique. Ensuite, nous trouverons l’expression de <span class="math inline">\(V_n\)</span> et en déduirons celle de <span class="math inline">\(U_n\)</span>.</p>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-2">Exercice 2</h3>
-<p>Soit ( u_n ) et ( v_n ) deux suites numériques définies par :</p>
+<p>Soit <span class="math inline">\(u_n\)</span> et <span class="math inline">\(v_n\)</span> deux suites numériques définies par :</p>
 <p><span class="math display">\[u_n = \sum_{k=1}^{2n} \frac{(-1)^k}{k^2} \text{ et } v_n = \sum_{k=1}^{2n+1} \frac{(-1)^k}{k^2}.\]</span></p>
 <ol type="1">
-<li>Montrons que ( (u_n) ) et ( (v_n) ) sont strictement monotones.</li>
+<li>Montrons que <span class="math inline">\((u_n)\)</span> et <span class="math inline">\((v_n)\)</span> sont strictement monotones.</li>
 <li>Montrons que ces deux suites convergent vers la même limite.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour montrer que ((u_n)) et ((v_n)) sont strictement monotones, nous analyserons le signe des termes de leurs différences successives. Ensuite, nous utiliserons des propriétés de convergence pour montrer qu’elles tendent vers la même limite.</p>
+<p>Pour montrer que <span class="math inline">\((u_n)\)</span> et <span class="math inline">\((v_n)\)</span> sont strictement monotones, nous analyserons le signe des termes de leurs différences successives. Ensuite, nous utiliserons des propriétés de convergence pour montrer qu’elles tendent vers la même limite.</p>
 </details>
 </section>
 <section id="exercice-3" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-3">Exercice 3</h3>
-<p>Soit ( ) et ( ) deux réels vérifiant ( 0 ). On définit par récurrence deux suites ( (a_n)<em>{n</em> } ) et ( (b_n){n } ) en posant :</p>
+<p>Soit <span class="math inline">\(\alpha\)</span> et <span class="math inline">\(\beta\)</span> deux réels vérifiant <span class="math inline">\(0 \leq \beta \leq \alpha \leq \infty\)</span>. On définit par récurrence deux suites <span class="math inline">\((a_n)_{n \in \mathbb{N}}\)</span> et <span class="math inline">\((b_n)_{n \in \mathbb{N}}\)</span> en posant :</p>
 <p><span class="math display">\[a_n = \frac{1}{2}(a_{n-1} + b_{n-1}) \text{ et } b_n = \sqrt{a_{n-1}b_{n-1}} \text{ si } n \geq 1, \ a_0 = \alpha, \ b_0 = \beta.\]</span></p>
 <ol type="1">
-<li>Montrons par récurrence que pour tout ( n ), on a : ( a_n ) et ( b_n ).</li>
-<li>Déduisons-en que ( 0 a_n - b_n (a_{n-1} - b_{n-1}) ).</li>
-<li>Montrons que pour tout ( n ), on a : ( a_{n+1} a_n ) et ( b_n b_{n+1} ).</li>
-<li>Déduisons-en que les suites ( (a_n)<em>{n</em> } ) et ( (b_n){n } ) convergent vers une limite ( l ).</li>
+<li>Montrons par récurrence que pour tout <span class="math inline">\(n \in \mathbb{N}\)</span>, on a : <span class="math inline">\(a_n \geq 0\)</span> et <span class="math inline">\(b_n \geq 0\)</span>.</li>
+<li>Déduisons-en que <span class="math inline">\(0 \leq a_n - b_n \leq \frac{1}{2}(a_{n-1} - b_{n-1})\)</span>.</li>
+<li>Montrons que pour tout <span class="math inline">\(n \in \mathbb{N}\)</span>, on a : <span class="math inline">\(a_{n+1} \leq a_n\)</span> et <span class="math inline">\(b_n \leq b_{n+1}\)</span>.</li>
+<li>Déduisons-en que les suites <span class="math inline">\((a_n)_{n \in \mathbb{N}}\)</span> et <span class="math inline">\((b_n)_{n \in \mathbb{N}}\)</span> convergent vers une limite <span class="math inline">\(l \in \mathbb{R}\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour chaque question, nous allons utiliser des méthodes de récurrence, d’inégalités et de limites pour démontrer les propriétés des suites ( (a_n) ) et ( (b_n) ).</p>
+<p>Pour chaque question, nous allons utiliser des méthodes de récurrence, d’inégalités et de limites pour démontrer les propriétés des suites <span class="math inline">\(a_n\)</span> et <span class="math inline">\(b_n\)</span>.</p>
 </details>
 </section>
 <section id="exercice-4" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-4">Exercice 4</h3>
-<p>On considère ( (u_n)_{n } ) une suite numérique dont aucun terme n’est nul. Supposons que</p>
+<p>On considère <span class="math inline">\((u_n)_{n \in \mathbb{N}}\)</span> une suite numérique dont aucun terme n’est nul. Supposons que</p>
 <p><span class="math display">\[\lim_{n \to +\infty} \left|\frac{u_{n+1}}{u_n}\right| = l \text{ avec } l \in [0, 1].\]</span></p>
 <ol type="1">
-<li>Soit ( &gt; 0 ), montrons qu’il existe ( N ) tel que</li>
+<li>Soit <span class="math inline">\(\epsilon &gt; 0\)</span>, montrons qu’il existe <span class="math inline">\(N \in \mathbb{N}\)</span> tel que</li>
 </ol>
-<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq N \impliest \left|\frac{u_{n+1}}{u_n}\right| \leq l + \epsilon.\]</span></p>
+<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq N \implies \left|\frac{u_{n+1}}{u_n}\right| \leq l + \epsilon.\]</span></p>
 <ol start="2" type="1">
-<li>Montrons qu’il existe ( [0, 1[ ) et ( n_0 ) tels que :</li>
+<li>Montrons qu’il existe <span class="math inline">\(\alpha \in [0, 1[\)</span> et <span class="math inline">\(n_0 \in \mathbb{N}\)</span> tels que :</li>
 </ol>
-<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq n_0 \impliest |u_{n+1}| \leq \alpha |u_n|.\]</span></p>
+<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq n_0 \implies |u_{n+1}| \leq \alpha |u_n|.\]</span></p>
 <ol start="3" type="1">
 <li>Déduisons-en que</li>
 </ol>
-<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq n_0 \impliest |u_{n+1}| \leq \alpha^{n-n_0} |u_{n_0}|.\]</span></p>
+<p><span class="math display">\[\forall n \in \mathbb{N}, n \geq n_0 \implies |u_{n+1}| \leq \alpha^{n-n_0} |u_{n_0}|.\]</span></p>
 <ol start="4" type="1">
 <li>Montrons que</li>
 </ol>
@@ -301,11 +301,11 @@ window.Quarto = {
 </section>
 <section id="exercice-5" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-5">Exercice 5</h3>
-<p>On considère la suite ( (u_n) ) définie par ( u_n = ).</p>
+<p>On considère la suite <span class="math inline">\((u_n)\)</span> définie par <span class="math inline">\(u_n = \frac{n!}{n^n}\)</span>.</p>
 <ol type="1">
-<li>Montrons que ( (u_n) ) est décroissante et que pour tout ( n ^* ), on a : ( 0 &lt; u_n ).</li>
-<li>Montrons que pour tout ( k ^* ), on a ( n k &lt; u_n ).</li>
-<li>Pour quelles valeurs de ( p ) a-t-on :</li>
+<li>Montrons que <span class="math inline">\((u_n)\)</span> est décroissante et que pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, on a : <span class="math inline">\(0 &lt; u_n \leq \frac{1}{n}\)</span>.</li>
+<li>Montrons que pour tout <span class="math inline">\(k \in \mathbb{N}^*\)</span>, on a <span class="math inline">\(n \geq k \implies 0 &lt; u_n \leq \frac{k!}{n^k}\)</span>.</li>
+<li>Pour quelles valeurs de <span class="math inline">\(p \in \mathbb{N}\)</span> a-t-on :</li>
 </ol>
 <p><span class="math display">\[\lim_{n \to \infty} n^p u_n = 0 ?\]</span></p>
 <details>
@@ -317,10 +317,10 @@ window.Quarto = {
 </section>
 <section id="exercice-6" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-6">Exercice 6</h3>
-<p>Soit ( (u_n) ) une suite croissante de limite ( l ). On pose :</p>
+<p>Soit <span class="math inline">\((u_n)\)</span> une suite croissante de limite <span class="math inline">\(l\)</span>. On pose :</p>
 <p><span class="math display">\[v_n = \frac{u_1 + u_2 + \cdots + u_n}{n} = \frac{1}{n} \sum_{k=1}^{n} u_k.\]</span></p>
 <ol type="1">
-<li>Montrer que ( (v_n)_{n } ) est croissante.</li>
+<li>Montrer que <span class="math inline">\((v_n)_{n \in \mathbb{N}}\)</span> est croissante.</li>
 <li>En déduire que</li>
 </ol>
 <p><span class="math display">\[\lim_{n \to \infty} v_n = l.\]</span></p>
@@ -328,7 +328,7 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour montrer que ( (v_n) ) est croissante, nous utiliserons des propriétés des moyennes arithmétiques. Ensuite, nous déduirons la limite en utilisant la définition de la convergence des suites.</p>
+<p>Pour montrer que <span class="math inline">\((v_n)\)</span> est croissante, nous utiliserons des propriétés des moyennes arithmétiques. Ensuite, nous déduirons la limite en utilisant la définition de la convergence des suites.</p>
 </details>
 </section>
 
