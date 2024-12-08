@@ -16,9 +16,9 @@
   {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "title": "Post With Code: Numpy",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
+    "text": "This is a post with executable code.\nEt si je t’expliquais la bibliothèque numpy. Juste parlons la, sur la science des données.\nTu as probablement vu l’algèbre linéaire : les matrices et tous ce qui va avec, est ce que tu sais pas numpy te permet de créer une liste de nombre aléatoire. C’est très amusant, moi je trouve.\nFaire des calculs élémentaires avec python, c’est possible, je dirais t’as pas besoin de grandes choses. Ce pendant, quand on se plonge dans les maths, il est nécessaire de définir les objets qu’on manipule.\nPar exemple :\n\n      1+9\n\n[1] 10\n\n\nOn remarque facilement après éxecution, on obtient \\(10\\) sans faire d’effort.\nEt si nous prenions cet exemple ci-dessous :\n\n\nmatplotlib.py\n\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",

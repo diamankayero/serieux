@@ -9,7 +9,7 @@
 <meta name="author" content="Yero Diamanka">
 <meta name="dcterms.date" content="2024-11-21">
 
-<title>Post With Code – Yéro</title>
+<title>Post With Code: Numpy – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -235,6 +235,11 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/"> <i class="bi bi-instagram" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -256,7 +261,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Post With Code: Numpy</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
                 <div class="quarto-category">code</div>
@@ -298,11 +303,25 @@ window.Quarto = {
 
 
 <p>This is a post with executable code.</p>
+<p>Et si je t’expliquais la bibliothèque numpy. Juste parlons la, sur la science des données.</p>
+<p>Tu as probablement vu l’algèbre linéaire : les matrices et tous ce qui va avec, est ce que tu sais pas numpy te permet de créer une liste de nombre aléatoire. C’est très amusant, moi je trouve.</p>
+<p>Faire des calculs élémentaires avec python, c’est possible, je dirais t’as pas besoin de grandes choses. Ce pendant, quand on se plonge dans les maths, il est nécessaire de définir les objets qu’on manipule.</p>
+<p>Par exemple :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>      <span class="dv">1</span><span class="sc">+</span><span class="dv">9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>[1] 10</code></pre>
 </div>
+</div>
+<p>On remarque facilement après éxecution, on obtient <span class="math inline">\(10\)</span> sans faire d’effort.</p>
+<p>Et si nous prenions cet exemple ci-dessous :</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>matplotlib.py</strong></pre>
+</div>
+<div class="sourceCode" id="cb3" data-filename="matplotlib.py"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">1</span>,<span class="dv">23</span>,<span class="dv">2</span>,<span class="dv">4</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
