@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Yéro</title>
+<title>Ensembles de fonctions – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -129,7 +97,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -139,7 +107,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Yéro</span>
     </a>
   </div>
@@ -150,7 +118,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">À propos</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -159,23 +127,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analyse">    
         <li>
-    <a class="dropdown-item" href="./analyse/exo-nombre_reel.html">
+    <a class="dropdown-item" href="../analyse/exo-nombre_reel.html">
  <span class="dropdown-text">Nombres réels</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./analyse/exo-suite_numerique.html">
+    <a class="dropdown-item" href="../analyse/exo-suite_numerique.html">
  <span class="dropdown-text">Suites numériques</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./analyse/Int_generalise.html">
+    <a class="dropdown-item" href="../analyse/Int_generalise.html">
  <span class="dropdown-text">Integrales généralisées</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./analyse/equation-diff2.html">
+    <a class="dropdown-item" href="../analyse/equation-diff2.html">
  <span class="dropdown-text">Equations différentielles</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./analyse/exo-espace_LP.html">
+    <a class="dropdown-item" href="../analyse/exo-espace_LP.html">
  <span class="dropdown-text">Espace L_P</span></a>
   </li>  
     </ul>
@@ -186,15 +154,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-algèbre">    
         <li>
-    <a class="dropdown-item" href="./algebre/introduction.html">
+    <a class="dropdown-item" href="../algebre/introduction.html">
  <span class="dropdown-text">Introduction</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./algebre/theorie_des_groupes.html">
+    <a class="dropdown-item" href="../algebre/theorie_des_groupes.html">
  <span class="dropdown-text">Théorie des groupes</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./algebre/theorie_des_anneaux.html">
+    <a class="dropdown-item" href="../algebre/theorie_des_anneaux.html">
  <span class="dropdown-text">Théorie des anneaux</span></a>
   </li>  
     </ul>
@@ -205,21 +173,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-proba-stats">    
         <li>
-    <a class="dropdown-item" href="./proba-stats/introduction.html">
+    <a class="dropdown-item" href="../proba-stats/introduction.html">
  <span class="dropdown-text">Introduction</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./proba-stats/theorie_des_proba.html">
+    <a class="dropdown-item" href="../proba-stats/theorie_des_proba.html">
  <span class="dropdown-text">Théorie des probabilitées</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./proba-stats/stats.html">
+    <a class="dropdown-item" href="../proba-stats/stats.html">
  <span class="dropdown-text">Statistique</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./other.html"> 
+    <a class="nav-link" href="../other.html"> 
 <span class="menu-text">Other</span></a>
   </li>  
 </ul>
@@ -258,119 +226,185 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Yéro</h1>
+<h1 class="title">Ensembles de fonctions</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
+</header><main class="content" id="quarto-document-content">
+<section id="exercice-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1">Exercice 1</h3>
+<p>Les fonctions suivantes sont-elles en escalier sur <span class="math inline">\(I\)</span> ?</p>
+<ol type="1">
+<li><p><span class="math inline">\(I = [0; 1]\)</span> et <span class="math inline">\(f(x) = x^2\)</span>.</p></li>
+<li><p><span class="math inline">\(I = [-1; 1]\)</span> et <span class="math inline">\(f(x) = 0\)</span> pour <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 1\)</span>.</p></li>
+<li><p><span class="math inline">\(I = [1; 5]\)</span> et <span class="math inline">\(f(x) = \lfloor \sqrt{x} \rfloor\)</span>.</p></li>
+<li><p><span class="math inline">\(I = \left[\frac{1}{5}; 1\right]\)</span> et <span class="math inline">\(f(x) = \lfloor \frac{1}{x} \rfloor\)</span>.</p></li>
+<li><p><span class="math inline">\(I = [0; 1]\)</span> et <span class="math inline">\(f(x) = \lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 0\)</span>.</p></li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour répondre à ces questions, nous vérifierons si les fonctions ont un nombre fini de discontinuités sur les intervalles donnés.</p>
+</details>
+</section>
+<section id="exercice-2" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2">Exercice 2</h3>
+<p>Soit <span class="math inline">\(f : [0, 3] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = (x-1)(x-2)\)</span>. Trouver une fonction en escalier sur <span class="math inline">\([0, 3]\)</span> qui vérifie <span class="math inline">\(|\Phi(x) - f(x)| \leq \frac{1}{2}\)</span> pour tout <span class="math inline">\(x \in [0, 3]\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour ce faire, nous devons construire une fonction en escalier <span class="math inline">\(\Phi\)</span> qui approche <span class="math inline">\(f\)</span> avec une erreur maximale de <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<p>Soit <span class="math inline">\(a &lt; b\)</span>. Démontrer que si <span class="math inline">\(f\)</span> est en escalier sur <span class="math inline">\([a; b]\)</span> et ne s’annule pas, alors <span class="math inline">\(\frac{1}{f}\)</span> est en escalier sur <span class="math inline">\([a; b]\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous montrerons que les discontinuités de <span class="math inline">\(f\)</span> et <span class="math inline">\(\frac{1}{f}\)</span> sont alignées et qu’elles sont en nombre fini sur <span class="math inline">\([a; b]\)</span>.</p>
+</details>
+</section>
+<section id="exercice-4" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<p>Tout nombre <span class="math inline">\(x \in [0, 1[\)</span> admet une écriture décimale propre unique <span class="math inline">\(0, a_1a_2a_3\ldots\)</span>. On note <span class="math inline">\(u_x\)</span> la première décimale <span class="math inline">\((a_1)\)</span> après la virgule dans l’écriture de <span class="math inline">\(x\)</span>. Soit <span class="math inline">\(\Phi : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(\Phi(x) = u_x\)</span> pour <span class="math inline">\(x \in [0, 1[\)</span> et <span class="math inline">\(\Phi(1) = 0\)</span>. Montrer que <span class="math inline">\(\Phi\)</span> est une fonction en escalier.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous vérifierons que <span class="math inline">\(\Phi\)</span> a un nombre fini de discontinuités sur <span class="math inline">\([0, 1]\)</span>, ce qui est une caractéristique des fonctions en escalier.</p>
+</details>
+</section>
+<section id="exercice-5" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<p>La fonction <span class="math inline">\(t \mapsto \sin\left(\frac{1}{t}\right)\)</span> si <span class="math inline">\(t &gt; 0\)</span> et <span class="math inline">\(0\)</span> si <span class="math inline">\(t = 0\)</span> est-elle continue par morceaux sur <span class="math inline">\([0, 1]\)</span> ?</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous examinerons la continuité de la fonction sur les intervalles <span class="math inline">\([0, 1]\)</span> en excluant <span class="math inline">\(t = 0\)</span> et en incluant <span class="math inline">\(t = 0\)</span> séparément.</p>
+</details>
+</section>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<p>La composée de deux fonctions continues par morceaux est-elle forcément continue par morceaux ?</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous analyserons les propriétés de continuité des fonctions composées et vérifierons si la continuité par morceaux est préservée.</p>
+</details>
+</section>
+<section id="exercice-7" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-7">Exercice 7</h3>
+<p>Soit <span class="math inline">\(f\)</span> la fonction définie sur <span class="math inline">\([0; 1]\)</span> par <span class="math inline">\(f(x) = x^2\lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x &gt; 0\)</span> et <span class="math inline">\(f(0) = 0\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(f\)</span> est continue par morceaux sur <span class="math inline">\(]0; 1]\)</span>.</li>
+<li>Montrer que <span class="math inline">\(f\)</span> n’est pas continue par morceaux sur <span class="math inline">\([0; 1]\)</span>.</li>
+<li>Montrer que <span class="math inline">\(f\)</span> est continue en 0.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour chaque question, nous vérifierons les points de continuité et de discontinuité de la fonction sur les intervalles donnés.</p>
+</details>
+</section>
+<section id="exercice-8" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-8">Exercice 8</h3>
+<p>On considère la fonction <span class="math inline">\(f\)</span> définie sur <span class="math inline">\([-1; 1]\)</span> par :</p>
+<p><span class="math display">\[
+f(x) = \begin{cases}
+-2x - 1 &amp; \text{si } x \in ]-1; 0[ \\
+x^2 &amp; \text{si } x \in ]0; 1[ \\
+0 &amp; \text{si } x \in \{-1; 1\} \\
+1 &amp; \text{si } x = 0
+\end{cases}
+\]</span></p>
+<p>Déterminer une fonction continue <span class="math inline">\(g\)</span> et une fonction en escalier <span class="math inline">\(\phi\)</span> sur <span class="math inline">\([-1; 1]\)</span> telles que <span class="math inline">\(f = g + \phi\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous construirons <span class="math inline">\(g\)</span> et <span class="math inline">\(\phi\)</span> en utilisant les propriétés de continuité et les discontinuités spécifiques de <span class="math inline">\(f\)</span>.</p>
+</details>
+</section>
+<section id="exercice-9" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-9">Exercice 9</h3>
+<p>Soit <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = x\)</span>. Soit <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Trouver deux fonctions en escalier <span class="math inline">\(\Phi\)</span> et <span class="math inline">\(\Psi\)</span> sur <span class="math inline">\([0, 1]\)</span> telles que <span class="math inline">\(\Phi \leq f \leq \Psi\)</span> et <span class="math inline">\(f(x) - \Phi(x) \leq \frac{1}{n}\)</span> et <span class="math inline">\(\Psi(x) - f(x) \leq \frac{1}{n}\)</span> pour tout <span class="math inline">\(x \in [0, 1]\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous déterminerons <span class="math inline">\(\Phi\)</span> et <span class="math inline">\(\Psi\)</span> en utilisant des approximations par morceaux de <span class="math inline">\(f\)</span> avec une précision de <span class="math inline">\(\frac{1}{n}\)</span>.</p>
+</details>
+</section>
+<section id="exercice-10" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-10">Exercice 10</h3>
+<ol type="1">
+<li>Montrer que les fonctions réglées sur un segment sont forcément bornées.</li>
+<li>La fonction définie sur <span class="math inline">\([0; 1]\)</span> par <span class="math inline">\(f(0) = 0\)</span> et <span class="math inline">\(f(x) = \frac{1}{x}\)</span> pour <span class="math inline">\(x \neq 0\)</span> est-elle réglée ?</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour montrer cela, nous utiliserons les propriétés des fonctions réglées et leur comportement sur des segments bornés.</p>
+</details>
+</section>
+<section id="exercice-11" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-11">Exercice 11</h3>
+<p>Soit <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(0) = 1\)</span> et <span class="math inline">\(f(x) = x\lfloor \frac{1}{x} \rfloor\)</span> pour tout <span class="math inline">\(x \in ]0, 1]\)</span>.</p>
+<ol type="1">
+<li>Donner la formule de <span class="math inline">\(f\)</span> sur chaque intervalle <span class="math inline">\(] \frac{1}{n+1} , \frac{1}{n}]\)</span>, <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Quelle est l’image de cet intervalle par <span class="math inline">\(f\)</span> ?</li>
+<li>Soit <span class="math inline">\(\epsilon &gt; 0\)</span>. Trouver <span class="math inline">\(N\)</span> tel que <span class="math inline">\(|1 - f| &lt; \epsilon\)</span> sur <span class="math inline">\([0, \frac{1}{N}]\)</span>.</li>
+<li>Avec les notations de (2), montrer qu’il existe une fonction <span class="math inline">\(\Phi\)</span> en escalier sur <span class="math inline">\([\frac{1}{N}, 1]\)</span> telle que <span class="math inline">\(|\Phi - f| &lt; \epsilon\)</span> sur cet intervalle.</li>
+<li>En déduire que <span class="math inline">\(f\)</span> est réglée.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous aborderons chaque question en utilisant des propriétés des fonctions réglées et des approximations par morceaux.</p>
+</details>
+</section>
+<section id="exercice-12" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-12">Exercice 12</h3>
+<p>Montrer que <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = \frac{1}{x} - \lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 1\)</span> n’est pas réglée.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons que <span class="math inline">\(f\)</span> n’est pas réglée en examinant ses discontinuités et leur comportement sur <span class="math inline">\([0, 1]\)</span>.</p>
+</details>
+</section>
 
 
-</header>
 
-
-<p>categories: true sort-ui: false filter-ui: false page-layout: full title-block-banner: true —</p>
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://twitter.com" class="about-link" rel="" target="">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
+  </a>
+  <a href="https://linkedin.com" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-</th>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-<th>
-Reading Time
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1732143600000" data-listing-file-modified-sort="1733694206231" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Post With Code: Numpy" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-image"><img loading="lazy" src="./posts/post-with-code/image.jpg" style="height: 40px;"></span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2024</span>
-</td>
-<td>
-<a href="./posts/post-with-code/index.html" class="title listing-title">Post With Code: Numpy</a>
-</td>
-<td>
-<span class="listing-author">Yero Diamanka</span>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="news" data-listing-date-sort="1731884400000" data-listing-file-modified-sort="1732237569135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31" data-listing-title-sort="Welcome To My Blog" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-image"><p class="card-img-top"><img src="posts\welcome\thumbnail.jpg" style="height: 40px;"  class="thumbnail-image card-img"/></p></span>
-</td>
-<td>
-<span class="listing-date">Nov 18, 2024</span>
-</td>
-<td>
-<a href="./posts/welcome/index.html" class="title listing-title">Welcome To My Blog</a>
-</td>
-<td>
-<span class="listing-author">Yero Diamanka</span>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
 </div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -535,13 +569,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
