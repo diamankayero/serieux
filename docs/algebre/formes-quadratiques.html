@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Algèbre billinéaire – Yéro</title>
+<title>Formes quadratiques – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -227,117 +227,266 @@ window.Quarto = {
     
 <!-- main -->
 <div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Algèbre billinéaire</h1>
+<h1 class="title">Formes quadratiques</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
 <section id="exercice-1" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-1">Exercice 1</h3>
-<p>On considère l’application <span class="math inline">\(\varphi_1 : C^1([0, 1]) \times C^1([0, 1]) \to \mathbb{R}\)</span> définie par :</p>
-<p><span class="math display">\[
-\varphi_1(u, v) = u(0)v(0) + \int_0^1 u'(t)v'(t) \, dt.
-\]</span></p>
+<p>Pour les formes quadratiques suivantes, déterminer une décomposition de Gauss et en déduire le noyau, le rang et la signature.</p>
 <ol type="1">
-<li>Vérifier qu’il s’agit d’une forme bilinéaire.</li>
-<li>Déterminer les parties symétrique et antisymétrique de <span class="math inline">\(\varphi_1\)</span>.</li>
+<li><span class="math inline">\(\varphi(x_1, x_2, x_3) = x_1^2 + 2x_2^2 + 8x_3^2 - 2x_1x_2 + 4x_1x_3\)</span>.</li>
+<li><span class="math inline">\(\varphi(x_1, x_2, x_3, x_4) = 4x_1x_2 + 8x_1x_3 + 24x_2x_3 - 24x_2x_4\)</span>.</li>
+<li><span class="math inline">\(\varphi(x, y, z) = x^2 + 2y^2 + 2z^2 + 2xy - 4xz - 6yz\)</span>.</li>
+<li><span class="math inline">\(\varphi(x, y, z) = xy + xz\)</span>.</li>
+<li><span class="math inline">\(\varphi(x, y, z, t) = xy + 2xz + xt + 2yt + 4zt\)</span>.</li>
+<li><span class="math inline">\(\varphi(x, y, z, t) = x^2 + (4 + \lambda)y^2 + (1 + 4\lambda)z^2 + \lambda t^2 + 4xy + 2xz + 4(1 - \lambda)yz + 2\lambda yt + (1 - 4\lambda)zt\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour vérifier que <span class="math inline">\(\varphi_1\)</span> est une forme bilinéaire, nous montrerons qu’elle est linéaire par rapport à chaque argument séparément.</p>
+<p>Pour chaque forme quadratique, nous effectuerons une décomposition de Gauss pour trouver les éléments demandés.</p>
+<ol type="1">
+<li><span class="math inline">\(\varphi_1(x_1, x_2, x_3) = x_1^2 + 2x_2^2 + 8x_3^2 - 2x_1x_2 + 4x_1x_3\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_1(x_1, x_2, x_3) = (x_1 - x_2 + 2x_3)^2 + x_2^2 + 4x_2x_3 + 4x_3^2 = (x_1 - x_2 + 2x_3)^2 + (x_2 + 2x_3)^2\)</span>.</li>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi_1)\)</span> est engendré par <span class="math inline">\((4, 2, -1)\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi_1) = 3 - 1 = 2\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi_1) = (2, 0)\)</span>.</li>
+</ul></li>
+<li><span class="math inline">\(\varphi_2(x_1, x_2, x_3, x_4) = 4x_1x_2 + 8x_1x_3 + 24x_2x_3 - 24x_2x_4\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_2(x_1, x_2, x_3, x_4) = (x_1 + x_2 + 2x_3)^2 - (x_1 - x_2 - 2x_3)^2 + \frac{1}{6}(x_2 + x_3 - x_4)^2 - \frac{1}{6}(x_2 - x_3 + x_4)^2\)</span>.</li>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi_2) = \{0\}\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi_2) = 4\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi_2) = (2, 2)\)</span>.</li>
+</ul></li>
+<li><span class="math inline">\(\varphi_3(x, y, z) = x^2 + 2y^2 + 2z^2 + 2xy - 4xz - 6yz\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_3(x, y, z) = (x + y - 2z)^2 + (y - z)^2 - 3z^2\)</span>.</li>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi_3) = \{0\}\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi_3) = 3\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi_3) = (2, 1)\)</span>.</li>
+</ul></li>
+<li><span class="math inline">\(\varphi_4(x, y, z) = xy + xz\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_4(x, y, z) = \frac{1}{4}(x + y + z)^2 - \frac{1}{4}(x - y - z)^2\)</span>.</li>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi_4)\)</span> est engendré par <span class="math inline">\((0, 1, -1)\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi_4) = 2\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi_4) = (1, 1)\)</span>.</li>
+</ul></li>
+<li><span class="math inline">\(\varphi_5(x, y, z, t) = xy + 2xz + xt + 2yt + 4zt\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_5(x, y, z, t) = \frac{1}{4}(x + y + 2z + 3t)^2 - \frac{1}{4}(x - y - 2z + t)^2 - 2t^2\)</span>.</li>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi_5)\)</span> est engendré par <span class="math inline">\((0, -2, 1, 0)\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi_5) = 3\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi_5) = (1, 2)\)</span>.</li>
+</ul></li>
+<li><span class="math inline">\(\varphi_6(x, y, z, t) = x^2 + (4 + \lambda)y^2 + (1 + 4\lambda)z^2 + \lambda t^2 + 4xy + 2xz + 4(1 - \lambda)yz + 2\lambda yt + (1 - 4\lambda)zt\)</span>.
+<ul>
+<li>Décomposition de Gauss : <span class="math inline">\(\varphi_6(x, y, z, t) = (x + 2y + z)^2 + \lambda(y - 2z + t)^2 + \frac{1}{4}(z + t)^2 - \frac{1}{4}(z - t)^2\)</span>.</li>
+<li>Discussion :
+<ul>
+<li>Si <span class="math inline">\(\lambda = 0\)</span>, alors <span class="math inline">\(\varphi(x, y, z, t) = (x + 2y + z)^2 + \frac{1}{4}(z + t)^2 - \frac{1}{4}(z - t)^2\)</span>.
+<ul>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi) = \text{vect}((-2, 1, 0, 0))\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi) = 3\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi) = (2, 1)\)</span>.</li>
+</ul></li>
+<li>Si <span class="math inline">\(\lambda &gt; 0\)</span> :
+<ul>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi) = \{0\}\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi) = 4\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi) = (3, 1)\)</span>.</li>
+</ul></li>
+<li>Si <span class="math inline">\(\lambda &lt; 0\)</span> :
+<ul>
+<li>Noyau : <span class="math inline">\(\text{ker}(\varphi) = \{0\}\)</span>.</li>
+<li>Rang : <span class="math inline">\(\text{rg}(\varphi) = 4\)</span>.</li>
+<li>Signature : <span class="math inline">\(\text{sgn}(\varphi) = (2, 2)\)</span>.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-2">Exercice 2</h3>
-<p>On considère l’application <span class="math inline">\(\varphi_2 : \mathbb{R}_3[X] \times \mathbb{R}_3[X] \to \mathbb{R}\)</span> définie par : <span class="math inline">\(\varphi_2(u, v) = u(0)v(1)\)</span>.</p>
+<p>Soit <span class="math inline">\(\varphi : \mathbb{R}^4 \to \mathbb{R}\)</span> la forme quadratique définie par :</p>
+<p><span class="math display">\[
+\varphi(x, y, z, t) = xy + 2xz + 2xt + yz + 4yt + 2zt, \forall (x, y, z, t) \in \mathbb{R}^4.
+\]</span></p>
 <ol type="1">
-<li>Vérifier qu’il s’agit d’une forme bilinéaire.</li>
-<li>Déterminer les parties symétrique et antisymétrique de <span class="math inline">\(\varphi_2\)</span>.</li>
-<li>Écrire la matrice de <span class="math inline">\(\varphi_2\)</span> relativement à la base canonique de <span class="math inline">\(\mathbb{R}_3[X]\)</span>.</li>
-<li>Préciser si <span class="math inline">\(\varphi_2\)</span> est dégénérée.</li>
+<li>Quelle est la matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> ?</li>
+<li>Donner une réduction de Gauss en précisant une base de <span class="math inline">\(\mathbb{R}^4\)</span> orthogonale pour <span class="math inline">\(\varphi\)</span> et la matrice de <span class="math inline">\(\varphi\)</span> dans cette base.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous vérifierons la bilinéarité de <span class="math inline">\(\varphi_2\)</span> en examinant sa linéarité par rapport à chaque argument, et déterminerons les parties symétrique et antisymétrique en utilisant les définitions standard.</p>
+<ol type="1">
+<li>La matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> est :</li>
+</ol>
+<p><span class="math display">\[
+\begin{pmatrix}
+0 &amp; \frac{1}{2} &amp; 1 &amp; 1 \\
+\frac{1}{2} &amp; 0 &amp; \frac{1}{2} &amp; 2 \\
+1 &amp; \frac{1}{2} &amp; 0 &amp; 1 \\
+1 &amp; 2 &amp; 1 &amp; 0
+\end{pmatrix}.
+\]</span></p>
+<ol start="2" type="1">
+<li>Réduction de Gauss :</li>
+</ol>
+<p><span class="math display">\[
+\varphi(x, y, z, t) = (x + z + 4t)(y + 2z + 2t) - (z + 4t)(2z + 2t) + 2zt = \frac{1}{4}(x + y + 3z + 6t)^2 - \frac{1}{4}(x - y - z + 2t)^2 - 2(z + 2t)^2.
+\]</span></p>
+<p>Les formes linéaires <span class="math inline">\(l_1(x, y, z, t) = x + y + 3z + 6t\)</span>, <span class="math inline">\(l_2(x, y, z, t) = x - y - z + 2t\)</span> et <span class="math inline">\(l_3(x, y, z, t) = z + 2t\)</span> sont linéairement indépendantes.</p>
+<p>La signature de <span class="math inline">\(\varphi\)</span> est <span class="math inline">\((1, 2)\)</span> et le rang est <span class="math inline">\(3\)</span>.</p>
+<p>Une base orthogonale pour <span class="math inline">\(\varphi\)</span> est <span class="math inline">\((u_1, u_2, u_3, u_4)\)</span> avec <span class="math inline">\(u_1 = (1, 1, 0, 0)\)</span>, <span class="math inline">\(u_2 = (1, -1, 0, 0)\)</span>, <span class="math inline">\(u_3 = (1, 2, -1, 0)\)</span> et <span class="math inline">\(u_4 = (2, -2, 2, -1)\)</span>.</p>
+<p>La matrice de <span class="math inline">\(\varphi\)</span> dans cette base est :</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{pmatrix}.
+\]</span></p>
 </details>
 </section>
 <section id="exercice-3" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-3">Exercice 3</h3>
-<p>Soient <span class="math inline">\(E = \mathbb{R}[X]\)</span> et <span class="math inline">\(B\)</span> l’application de <span class="math inline">\(E \times E\)</span> dans <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math inline">\(B(P, Q) = P(0)Q(1) + P(1)Q(0)\)</span>.</p>
+<p>On considère la forme bilinéaire <span class="math inline">\(\varphi : \mathbb{R}^4 \times \mathbb{R}^4 \to \mathbb{R}\)</span> suivante :</p>
+<p><span class="math display">\[
+\varphi(x, y) = x_1y_2 + x_2y_1 - 3x_1y_3 - 3x_3y_1 - 3x_2y_4 - 3x_4y_2 + x_3y_4 + x_4y_3, \forall x, y \in \mathbb{R}^4.
+\]</span></p>
 <ol type="1">
-<li>Montrer que <span class="math inline">\(B\)</span> est une forme bilinéaire symétrique.</li>
-<li>Est-elle positive ?</li>
+<li>Écrire la matrice de <span class="math inline">\(\varphi\)</span> relativement à la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> et préciser le rang de <span class="math inline">\(\varphi\)</span>. Quel est son noyau ?</li>
+<li>Donner la forme quadratique <span class="math inline">\(\varphi\)</span> associée.</li>
+<li>Donner une réduction de Gauss en précisant une base <span class="math inline">\(\varphi\)</span>-orthogonale et la signature de <span class="math inline">\(\varphi\)</span>.</li>
+<li>Déterminer l’ensemble des vecteurs isotropes de <span class="math inline">\(\varphi\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous démontrerons la symétrie et la bilinéarité de <span class="math inline">\(B\)</span> en utilisant les définitions correspondantes, puis examinerons si <span class="math inline">\(B\)</span> est positive.</p>
+<ol type="1">
+<li>La matrice de <span class="math inline">\(\varphi\)</span> relativement à la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> est :</li>
+</ol>
+<p><span class="math display">\[
+A = \begin{pmatrix}
+0 &amp; 1 &amp; -3 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; -3 \\
+-3 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; -3 &amp; 1 &amp; 0
+\end{pmatrix}.
+\]</span></p>
+<p>Le déterminant de <span class="math inline">\(A\)</span> est non nul, donc <span class="math inline">\(\varphi\)</span> est non dégénérée et son rang est <span class="math inline">\(4\)</span>. Le noyau est <span class="math inline">\(\{0\}\)</span>.</p>
+<ol start="2" type="1">
+<li><p>La forme quadratique associée est <span class="math inline">\(\varphi(x) = 2x_1x_2 - 6x_1x_3 - 6x_2x_4 + 2x_3x_4\)</span>.</p></li>
+<li><p>Réduction de Gauss :</p></li>
+</ol>
+<p><span class="math display">\[
+\varphi(x) = \frac{1}{2}(x_1 + x_2 - 3x_3 - 3x_4)^2 - \frac{1}{2}(x_1 - x_2 + 3x_3 - 3x_4)^2 - 4(x_3 + x_4)^2 + 4(x_3 - x_4)^2.
+\]</span></p>
+<p>La signature est <span class="math inline">\((2, 2)\)</span>. Une base <span class="math inline">\(\varphi\)</span>-orthogonale est <span class="math inline">\((u_1, u_2, u_3, u_4)\)</span> avec :</p>
+<p><span class="math display">\[
+u_1 = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0, 0\right), u_2 = \left(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}, 0, 0\right), u_3 = (1, 2, -1, 0), u_4 = (2, -2, 2, -1).
+\]</span></p>
+<ol start="4" type="1">
+<li>L’ensemble des vecteurs isotropes est donné par <span class="math inline">\(X^2 + T^2 = Y^2 + Z^2\)</span> pour <span class="math inline">\(U = (X, Y, Z, T)\)</span>.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-4" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-4">Exercice 4</h3>
-<p>Soient <span class="math inline">\(E = \mathbb{R}_n[X]\)</span> et <span class="math inline">\(B\)</span> l’application de <span class="math inline">\(E \times E\)</span> dans <span class="math inline">\(\mathbb{R}\)</span> définie par :</p>
+<p>Soit l’application <span class="math inline">\(\varphi : \mathbb{R}^4 \to \mathbb{R}\)</span> définie par :</p>
 <p><span class="math display">\[
-B(P, Q) = \int_{-1}^1 P(t)Q(t) \sqrt{1 - t^2} \, dt.
+\varphi(x) = 16x_1^2 - 16x_2^2 + 5x_3^2 - 16x_1x_3 + 16x_2x_3 + 2x_3x_4, \forall x \in \mathbb{R}^4.
 \]</span></p>
 <ol type="1">
-<li>Montrer que <span class="math inline">\(B\)</span> est bien définie.</li>
-<li>Montrer que <span class="math inline">\(B\)</span> est une forme bilinéaire symétrique.</li>
-<li>Que peut-on dire des polynômes <span class="math inline">\(P\)</span> satisfaisant <span class="math inline">\(B(P, P) = 0\)</span> ?</li>
-<li>Montrer que <span class="math inline">\(\{X + 1, X^2 - 1, X - X^2\}\)</span> est une base de <span class="math inline">\(\mathbb{R}_2[X]\)</span> et déterminer la matrice de <span class="math inline">\(B\)</span> et l’expression de la forme bilinéaire dans cette nouvelle base.</li>
+<li>Vérifier que <span class="math inline">\(\varphi\)</span> est une forme quadratique. Écrire la matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> et la forme polaire associée.</li>
+<li>Donner une réduction de Gauss, en précisant une base orthogonale ainsi que le rang et la signature de <span class="math inline">\(\varphi\)</span>.</li>
+<li>Déterminer l’ensemble des vecteurs isotropes.</li>
+<li>Trouver l’orthogonal de <span class="math inline">\(F = \text{vec}\{e_1, e_2 + 2e_3\}\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous vérifierons que <span class="math inline">\(B\)</span> est bien définie en montrant que l’intégrale existe et est finie, puis nous démontrerons sa symétrie et sa bilinéarité.</p>
+<ol type="1">
+<li>La matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^4\)</span> est :</li>
+</ol>
+<p><span class="math display">\[
+\begin{pmatrix}
+16 &amp; 0 &amp; -8 &amp; 0 \\
+0 &amp; -16 &amp; 8 &amp; 0 \\
+-8 &amp; 8 &amp; 5 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{pmatrix}.
+\]</span></p>
+<p>La forme polaire associée est <span class="math inline">\(\varphi(x, y) = 16x_1y_1 - 16x_2y_2 + 5x_3y_3 - 8x_1y_3 - 8x_3y_1 + 8x_2y_3 + 8x_3y_2 + x_3y_4 + x_4y_3\)</span>.</p>
+<ol start="2" type="1">
+<li>Réduction de Gauss :</li>
+</ol>
+<p><span class="math display">\[
+\varphi(x) = 16\left(x_1 - \frac{1}{2}x_3\right)^2 - 16\left(x_2 - \frac{1}{2}x_3\right)^2 + 5\left(x_3 + \frac{1}{5}x_4\right)^2 - \frac{1}{5}x_4^2.
+\]</span></p>
+<p>Le rang est <span class="math inline">\(4\)</span> et la signature est <span class="math inline">\((2, 2)\)</span>. Une base orthogonale pour <span class="math inline">\(\varphi\)</span> est <span class="math inline">\((u_1, u_2, u_3, u_4)\)</span> avec :</p>
+<p><span class="math display">\[
+u_1 = (4x_1 - 2x_3), u_2 = (4x_2 - 2x_3), u_3 = (\sqrt{2}x_3 + \frac{1}{\sqrt{5}}x_4), u_4 = (\frac{1}{\sqrt{5}}x_4).
+\]</span></p>
+<ol start="3" type="1">
+<li><p>L’ensemble des vecteurs isotropes est donné par <span class="math inline">\(X^2 + Z^2 = Y^2 + T^2\)</span>.</p></li>
+<li><p>L’orthogonal de <span class="math inline">\(F = \text{vec}\{e_1, e_2 + 2e_3\}\)</span> est <span class="math inline">\(\text{vec}\{(1, 0, 2, -10), (0, 1, 0, 0)\}\)</span>.</p></li>
+</ol>
 </details>
 </section>
 <section id="exercice-5" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-5">Exercice 5</h3>
-<p>Soit <span class="math inline">\(\varphi : \mathbb{R}^3 \to \mathbb{R}\)</span> l’application définie par</p>
+<p>Soit <span class="math inline">\(\varphi\)</span> la forme quadratique de <span class="math inline">\(\mathbb{R}^3\)</span> définie par :</p>
 <p><span class="math display">\[
-\varphi(x, y, z) = y^2 - 3z^2 + 2xy - 4xz + yz
+\varphi(x, y, z) = x^2 - 2yz - xz.
 \]</span></p>
-<p>pour tout <span class="math inline">\((x, y, z) \in \mathbb{R}^3\)</span>.</p>
 <ol type="1">
-<li>Montrer que <span class="math inline">\(\varphi\)</span> est une forme quadratique.</li>
-<li>Expliciter la forme bilinéaire symétrique associée à <span class="math inline">\(\varphi\)</span>.</li>
-<li>Quelle est la matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^3\)</span> ?</li>
+<li>Déterminer le rang et la signature de <span class="math inline">\(\varphi\)</span>. Trouver une base de <span class="math inline">\(\mathbb{R}^3\)</span> orthogonale pour <span class="math inline">\(\varphi\)</span>.</li>
+<li>Pour chaque réel <span class="math inline">\(t\)</span>, on note <span class="math inline">\((P_t)\)</span> le plan d’équation <span class="math inline">\(3x + 2y + tz = 0\)</span>. Déterminer les valeurs de <span class="math inline">\(t\)</span> pour lesquelles <span class="math inline">\(P_t\)</span> contient un vecteur isotrope non nul, puis celles pour lesquelles la restriction de <span class="math inline">\(\varphi\)</span> à <span class="math inline">\(P_t\)</span> est dégénérée.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous démontrerons que <span class="math inline">\(\varphi\)</span> est une forme quadratique en vérifiant qu’elle peut être exprimée comme une combinaison de termes quadratiques et produits. Ensuite, nous trouverons la forme bilinéaire associée et sa matrice.</p>
-</details>
-</section>
-<section id="exercice-6" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-6">Exercice 6</h3>
-<p>Soit <span class="math inline">\(a\)</span> un nombre réel et soit <span class="math inline">\(\varphi : \mathbb{R}^4 \to \mathbb{R}\)</span> l’application définie par</p>
-<p><span class="math display">\[
-\varphi(x, y, z, t) = ax^2 + 2axy + y^2 + 4zt - at^2
-\]</span></p>
-<p>pour tout <span class="math inline">\((x, y, z, t) \in \mathbb{R}^4\)</span>.</p>
 <ol type="1">
-<li>Montrer que <span class="math inline">\(\varphi\)</span> est une forme quadratique.</li>
-<li>Pour quelles valeurs de <span class="math inline">\(a\)</span> la forme quadratique <span class="math inline">\(\varphi\)</span> est-elle non dégénérée ?</li>
-<li>On suppose que la forme quadratique est dégénérée. Trouver une base du noyau de <span class="math inline">\(\varphi\)</span>.</li>
+<li>Décomposition de Gauss :</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous vérifierons que <span class="math inline">\(\varphi\)</span> est une forme quadratique en utilisant les propriétés des termes quadratiques et des produits. Nous déterminerons les valeurs de <span class="math inline">\(a\)</span> pour lesquelles <span class="math inline">\(\varphi\)</span> est non dégénérée et trouverons une base pour le noyau dans le cas contraire.</p>
+<p><span class="math display">\[
+\varphi(x, y, z) = \left(x - \frac{1}{2}z\right)^2 - \left(2y + \frac{1}{2}z\right)^2 + (2y)^2.
+\]</span></p>
+<p>La signature est <span class="math inline">\((2, 1)\)</span> et le rang est <span class="math inline">\(3\)</span>. Une base orthogonale pour <span class="math inline">\(\varphi\)</span> est <span class="math inline">\((u_1, u_2, u_3)\)</span> avec :</p>
+<p><span class="math display">\[
+u_1 = (x - \frac{1}{2}z), u_2 = (2y + \frac{1}{2}z), u_3 = (2y).
+\]</span></p>
+<ol start="2" type="1">
+<li>Pour chaque réel <span class="math inline">\(t\)</span>, on note <span class="math inline">\((P_t)\)</span> le plan d’équation <span class="math inline">\(3x + 2y + tz = 0\)</span>. Une base de <span class="math inline">\((P_t)\)</span> est <span class="math inline">\((−2, 3, 0)\)</span> et <span class="math inline">\((−t, 0, 3)\)</span>. Un vecteur <span class="math inline">\(u \in P_t\)</span> implique qu’il existe deux scalaires non nuls <span class="math inline">\(\lambda\)</span>, <span class="math inline">\(\mu\)</span> tels que :</li>
+</ol>
+<p><span class="math display">\[
+u = (−2\lambda− \mu t, 3\lambda, 3\mu).
+\]</span></p>
+<p>Le vecteur <span class="math inline">\(u\)</span> est un vecteur isotrope pour <span class="math inline">\(\varphi\)</span> si et seulement si :</p>
+<p><span class="math display">\[
+\varphi(u) = 0 \Rightarrow 4\lambda^2 + (4t− 12)\lambda\mu + (t^2 + 3t)\mu^2 = 0.
+\]</span></p>
+<p>Discussion :</p>
+<ul>
+<li><p>Si <span class="math inline">\(t - 1 &gt; 0\)</span>, alors la forme quadratique en <span class="math inline">\(\lambda\)</span> et <span class="math inline">\(\mu\)</span> est la somme de deux carrés et n’est jamais nulle. Donc, il n’y a pas de vecteurs isotropes non nuls.</p></li>
+<li><p>Si <span class="math inline">\(t - 1 = 0\)</span>, alors la forme quadratique en <span class="math inline">\(\lambda\)</span> et <span class="math inline">\(\mu\)</span> est de signature <span class="math inline">\((1, 0)\)</span> et donc de rang <span class="math inline">\(1\)</span>. Il existe un vecteur qui engendre le noyau et donc isotrope. Le noyau est donné par <span class="math inline">\(\lambda = \mu\)</span> et <span class="math inline">\(u = 3\lambda(-1, 1, 1)\)</span>.</p></li>
+<li><p>Si <span class="math inline">\(t - 1 &lt; 0\)</span>, alors la forme quadratique en <span class="math inline">\(\lambda\)</span> et <span class="math inline">\(\mu\)</span> admet au moins une solution. La restriction de la forme quadratique au plan <span class="math inline">\(P_t\)</span> est dégénérée si et seulement si le déterminant de la matrice associée est nul, soit <span class="math inline">\(t = 1\)</span>.</p></li>
+</ul>
 </details>
 </section>
 
