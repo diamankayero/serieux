@@ -2,14 +2,14 @@
   {
     "objectID": "proba-stats/theorie_des_proba.html",
     "href": "proba-stats/theorie_des_proba.html",
-    "title": "About",
+    "title": "Probabilitée",
     "section": "",
     "text": "Donnons la définition d’une probabilité\nCommençons la définition d’une mesure pour voir les choses plus clairement\nDéfinition d’une mesure\nSoit \\((\\Omega, \\mathcal{F})\\) un espace mesurable. Une mesure est une application \\(\\mu : \\mathcal{F} \\to [0, \\infty]\\) telle que :\n\\[\n\\begin{aligned}\n1. &\\quad \\mu(\\varnothing) = 0, \\\\\n2. &\\quad \\text{Pour toute famille dénombrable } (A_n)_{n \\in \\mathbb{N}} \\text{ d'éléments de } \\mathcal{F} \\text{ deux à deux disjoints. Alors,} \\\\\n   &\\quad \\mu\\left(\\bigcup_{n=0}^{\\infty} A_n\\right) = \\sum_{n=0}^{\\infty} \\mu(A_n).\n\\end{aligned} \\]\n\n\n\n Back to top"
   },
   {
     "objectID": "proba-stats/introduction.html",
     "href": "proba-stats/introduction.html",
-    "title": "About",
+    "title": "data",
     "section": "",
     "text": "Back to top"
   },
@@ -163,7 +163,7 @@
   {
     "objectID": "proba-stats/stats.html",
     "href": "proba-stats/stats.html",
-    "title": "About",
+    "title": "Statistiques",
     "section": "",
     "text": "Back to top"
   }
