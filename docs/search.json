@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Yéro",
     "section": "",
-    "text": "categories: true sort-ui: false filter-ui: false page-layout: full title-block-banner: true —\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nReading Time\n\n\n\n\n\n\n\n\n\nNov 21, 2024\n\n\nPost With Code: Numpy\n\n\nYero Diamanka\n\n\n1 min\n\n\n\n\n\n\n\nNov 18, 2024\n\n\nWelcome To My Blog\n\n\nYero Diamanka\n\n\n1 min\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "You can sort or filter the articles according to your preferences.\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\nReading Time\n\n\n\n\n\n\n\n\n\nNov 21, 2024\n\n\nPost With Code: Numpy\n\n\nYero Diamanka\n\n\n1 min\n\n\n\n\n\n\n\nNov 18, 2024\n\n\nWelcome To My Blog\n\n\nYero Diamanka\n\n\n1 min\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "analyse/reel.html",
@@ -74,7 +74,7 @@
     "href": "about.html",
     "title": "Yéro Diamanka",
     "section": "",
-    "text": "Moi c’est Yéro Diamanka, étudiant à l’université de Montpellier\n\n\n\n Back to top"
+    "text": "Moi c’est Yéro Diamanka, étudiant à l’université de Montpellier.\nAvant de venir à Montpellier, j’étais à l’université de Bambey et fait ma licence de Statistique et Informatique Décisionnelle (SID), non fini.\nA montpellier, comme le constatez–vous, j’y fais les maths ! Précisément, une licence mathématique Générale.\nTu veux savoir plus sur moi ?\n\n\n\n Back to top"
   },
   {
     "objectID": "algebre/formes-quadratiques.html",
@@ -135,23 +135,23 @@
   {
     "objectID": "other.html",
     "href": "other.html",
-    "title": "Other",
+    "title": "Tous les éxercices",
     "section": "",
     "text": "Vous y trouverez, des exercices et leurs corrections que j’ai rédigé et trouvé pertinent, lors de mon parcours sur chaque classe passée.\nEt également, n’hésitez de signaler si vous trouviez des érreurs sur les énoncers, ainsi que ma correction des exos."
   },
   {
     "objectID": "other.html#analyse",
     "href": "other.html#analyse",
-    "title": "Other",
+    "title": "Tous les éxercices",
     "section": "Analyse",
     "text": "Analyse\n\n\nNombre réel\nSuites Numériques\nEnsemble de fonction\nIntégrale de Riemann\nIntégrales généralisées\nEquations différentielles\nEspaces L^P\nLa transformation de fourier"
   },
   {
     "objectID": "other.html#algèbre",
     "href": "other.html#algèbre",
-    "title": "Other",
+    "title": "Tous les éxercices",
     "section": "Algèbre",
-    "text": "Algèbre\nFormes quadratiques\nThéorie des groupes\nThéories des anneaux"
+    "text": "Algèbre\nFormes quadratiques\nThéorie des groupes\nThéories des anneaux\n\nProba-Stats\nStatistiques\nThéorie des Probabilitées"
   },
   {
     "objectID": "posts/welcome/index.html",
