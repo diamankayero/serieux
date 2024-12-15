@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Théorie des anneaux – Yéro</title>
+<title>Algèbre bilinéaire – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -231,11 +231,115 @@ window.Quarto = {
   round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Théorie des anneaux</h1>
+<h1 class="title">Algèbre bilinéaire</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
+<section id="exercice-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1">Exercice 1</h3>
+<p>On considère l’application <span class="math inline">\(\varphi_1 : C^1([0, 1]) \times C^1([0, 1]) \to \mathbb{R}\)</span> définie par :</p>
+<p><span class="math display">\[
+\varphi_1(u, v) = u(0)v(0) + \int_0^1 u'(t)v'(t) \, dt.
+\]</span></p>
+<ol type="1">
+<li>Vérifier qu’il s’agit d’une forme bilinéaire.</li>
+<li>Déterminer les parties symétrique et antisymétrique de <span class="math inline">\(\varphi_1\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour vérifier que <span class="math inline">\(\varphi_1\)</span> est une forme bilinéaire, nous montrerons qu’elle est linéaire par rapport à chaque argument séparément.</p>
+</details>
+</section>
+<section id="exercice-2" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2">Exercice 2</h3>
+<p>On considère l’application <span class="math inline">\(\varphi_2 : \mathbb{R}_3[X] \times \mathbb{R}_3[X] \to \mathbb{R}\)</span> définie par : <span class="math inline">\(\varphi_2(u, v) = u(0)v(1)\)</span>.</p>
+<ol type="1">
+<li>Vérifier qu’il s’agit d’une forme bilinéaire.</li>
+<li>Déterminer les parties symétrique et antisymétrique de <span class="math inline">\(\varphi_2\)</span>.</li>
+<li>Écrire la matrice de <span class="math inline">\(\varphi_2\)</span> relativement à la base canonique de <span class="math inline">\(\mathbb{R}_3[X]\)</span>.</li>
+<li>Préciser si <span class="math inline">\(\varphi_2\)</span> est dégénérée.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous vérifierons la bilinéarité de <span class="math inline">\(\varphi_2\)</span> en examinant sa linéarité par rapport à chaque argument, et déterminerons les parties symétrique et antisymétrique en utilisant les définitions standard.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<p>Soient <span class="math inline">\(E = \mathbb{R}[X]\)</span> et <span class="math inline">\(B\)</span> l’application de <span class="math inline">\(E \times E\)</span> dans <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math inline">\(B(P, Q) = P(0)Q(1) + P(1)Q(0)\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(B\)</span> est une forme bilinéaire symétrique.</li>
+<li>Est-elle positive ?</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons la symétrie et la bilinéarité de <span class="math inline">\(B\)</span> en utilisant les définitions correspondantes, puis examinerons si <span class="math inline">\(B\)</span> est positive.</p>
+</details>
+</section>
+<section id="exercice-4" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<p>Soient <span class="math inline">\(E = \mathbb{R}_n[X]\)</span> et <span class="math inline">\(B\)</span> l’application de <span class="math inline">\(E \times E\)</span> dans <span class="math inline">\(\mathbb{R}\)</span> définie par :</p>
+<p><span class="math display">\[
+B(P, Q) = \int_{-1}^1 P(t)Q(t) \sqrt{1 - t^2} \, dt.
+\]</span></p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(B\)</span> est bien définie.</li>
+<li>Montrer que <span class="math inline">\(B\)</span> est une forme bilinéaire symétrique.</li>
+<li>Que peut-on dire des polynômes <span class="math inline">\(P\)</span> satisfaisant <span class="math inline">\(B(P, P) = 0\)</span> ?</li>
+<li>Montrer que <span class="math inline">\(\{X + 1, X^2 - 1, X - X^2\}\)</span> est une base de <span class="math inline">\(\mathbb{R}_2[X]\)</span> et déterminer la matrice de <span class="math inline">\(B\)</span> et l’expression de la forme bilinéaire dans cette nouvelle base.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous vérifierons que <span class="math inline">\(B\)</span> est bien définie en montrant que l’intégrale existe et est finie, puis nous démontrerons sa symétrie et sa bilinéarité.</p>
+</details>
+</section>
+<section id="exercice-5" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<p>Soit <span class="math inline">\(\varphi : \mathbb{R}^3 \to \mathbb{R}\)</span> l’application définie par</p>
+<p><span class="math display">\[
+\varphi(x, y, z) = y^2 - 3z^2 + 2xy - 4xz + yz
+\]</span></p>
+<p>pour tout <span class="math inline">\((x, y, z) \in \mathbb{R}^3\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(\varphi\)</span> est une forme quadratique.</li>
+<li>Expliciter la forme bilinéaire symétrique associée à <span class="math inline">\(\varphi\)</span>.</li>
+<li>Quelle est la matrice de <span class="math inline">\(\varphi\)</span> dans la base canonique de <span class="math inline">\(\mathbb{R}^3\)</span> ?</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons que <span class="math inline">\(\varphi\)</span> est une forme quadratique en vérifiant qu’elle peut être exprimée comme une combinaison de termes quadratiques et produits. Ensuite, nous trouverons la forme bilinéaire associée et sa matrice.</p>
+</details>
+</section>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<p>Soit <span class="math inline">\(a\)</span> un nombre réel et soit <span class="math inline">\(\varphi : \mathbb{R}^4 \to \mathbb{R}\)</span> l’application définie par</p>
+<p><span class="math display">\[
+\varphi(x, y, z, t) = ax^2 + 2axy + y^2 + 4zt - at^2
+\]</span></p>
+<p>pour tout <span class="math inline">\((x, y, z, t) \in \mathbb{R}^4\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(\varphi\)</span> est une forme quadratique.</li>
+<li>Pour quelles valeurs de <span class="math inline">\(a\)</span> la forme quadratique <span class="math inline">\(\varphi\)</span> est-elle non dégénérée ?</li>
+<li>On suppose que la forme quadratique est dégénérée. Trouver une base du noyau de <span class="math inline">\(\varphi\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous vérifierons que <span class="math inline">\(\varphi\)</span> est une forme quadratique en utilisant les propriétés des termes quadratiques et des produits. Nous déterminerons les valeurs de <span class="math inline">\(a\)</span> pour lesquelles <span class="math inline">\(\varphi\)</span> est non dégénérée et trouverons une base pour le noyau dans le cas contraire.</p>
+</details>
+</section>
 
 
 
