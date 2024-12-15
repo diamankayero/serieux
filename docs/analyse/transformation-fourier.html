@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ensembles de fonctions – Yéro</title>
+<title>Suites numériques – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -229,159 +229,175 @@ window.Quarto = {
 <div class="quarto-about-jolla">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ensembles de fonctions</h1>
+<h1 class="title">Suites numériques</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
 <section id="exercice-1" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-1">Exercice 1</h3>
-<p>Les fonctions suivantes sont-elles en escalier sur <span class="math inline">\(I\)</span> ?</p>
+<p>Soient <span class="math inline">\(f, g : \mathbb{R} \to \mathbb{R}\)</span>.</p>
 <ol type="1">
-<li><p><span class="math inline">\(I = [0; 1]\)</span> et <span class="math inline">\(f(x) = x^2\)</span>.</p></li>
-<li><p><span class="math inline">\(I = [-1; 1]\)</span> et <span class="math inline">\(f(x) = 0\)</span> pour <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 1\)</span>.</p></li>
-<li><p><span class="math inline">\(I = [1; 5]\)</span> et <span class="math inline">\(f(x) = \lfloor \sqrt{x} \rfloor\)</span>.</p></li>
-<li><p><span class="math inline">\(I = \left[\frac{1}{5}; 1\right]\)</span> et <span class="math inline">\(f(x) = \lfloor \frac{1}{x} \rfloor\)</span>.</p></li>
-<li><p><span class="math inline">\(I = [0; 1]\)</span> et <span class="math inline">\(f(x) = \lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 0\)</span>.</p></li>
+<li>Étudier la parité de <span class="math inline">\(f * g\)</span> lorsque <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> sont des fonctions paires, et lorsque l’une est paire et l’autre impaire.</li>
+<li>Pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>, exprimer <span class="math inline">\(\hat{f}(-\xi)\)</span> en fonction de <span class="math inline">\(\hat{f}(\xi)\)</span>. Si <span class="math inline">\(f\)</span> est paire, montrer que <span class="math inline">\(\hat{f}(\xi) \in \mathbb{R}\)</span> pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>. Que se passe-t-il si <span class="math inline">\(f\)</span> est impaire ?</li>
+<li>Que deviennent les résultats précédents si <span class="math inline">\(f\)</span> est à valeur complexe ?</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour répondre à ces questions, nous vérifierons si les fonctions ont un nombre fini de discontinuités sur les intervalles donnés.</p>
+<ol type="1">
+<li>Si <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> sont des fonctions paires, alors <span class="math inline">\(f * g\)</span> est paire. Si <span class="math inline">\(f\)</span> est paire et <span class="math inline">\(g\)</span> est impaire, alors <span class="math inline">\(f * g\)</span> est impaire.</li>
+<li>On a <span class="math inline">\(\hat{f}(-\xi) = \overline{\hat{f}(\xi)}\)</span>. Si <span class="math inline">\(f\)</span> est paire, <span class="math inline">\(\hat{f}(\xi) \in \mathbb{R}\)</span> pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>. Si <span class="math inline">\(f\)</span> est impaire, <span class="math inline">\(\hat{f}(\xi)\)</span> est purement imaginaire.</li>
+<li>Si <span class="math inline">\(f\)</span> est à valeur complexe, les résultats sont similaires, mais <span class="math inline">\(\hat{f}(\xi)\)</span> peut être complexe.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-2">Exercice 2</h3>
-<p>Soit <span class="math inline">\(f : [0, 3] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = (x-1)(x-2)\)</span>. Trouver une fonction en escalier sur <span class="math inline">\([0, 3]\)</span> qui vérifie <span class="math inline">\(|\Phi(x) - f(x)| \leq \frac{1}{2}\)</span> pour tout <span class="math inline">\(x \in [0, 3]\)</span>.</p>
+<p>Soit <span class="math inline">\(g : \mathbb{R} \to \mathbb{R}\)</span> définie par</p>
+<p><span class="math display">\[
+g(x) = \begin{cases}
+0 &amp; \text{si } |x| &gt; 1 \\
+1 + x &amp; \text{si } -1 \leq x &lt; 0 \\
+1 - x &amp; \text{si } 0 \leq x \leq 1
+\end{cases}
+\]</span></p>
+<p>Calculer <span class="math inline">\(\hat{g}\)</span> et en déduire <span class="math inline">\(\int_{0}^{+\infty} \frac{\sin^2 t}{t^2} \, dt\)</span> et <span class="math inline">\(\int_{0}^{+\infty} \frac{\sin^4 t}{t^4} \, dt\)</span>.</p>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour ce faire, nous devons construire une fonction en escalier <span class="math inline">\(\Phi\)</span> qui approche <span class="math inline">\(f\)</span> avec une erreur maximale de <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+<p>La transformée de Fourier de <span class="math inline">\(g\)</span> est <span class="math inline">\(\hat{g}(\xi) = \frac{2(1 - \cos \xi)}{\xi^2}\)</span>. En utilisant cette expression, nous pouvons calculer les intégrales demandées.</p>
 </details>
 </section>
 <section id="exercice-3" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-3">Exercice 3</h3>
-<p>Soit <span class="math inline">\(a &lt; b\)</span>. Démontrer que si <span class="math inline">\(f\)</span> est en escalier sur <span class="math inline">\([a; b]\)</span> et ne s’annule pas, alors <span class="math inline">\(\frac{1}{f}\)</span> est en escalier sur <span class="math inline">\([a; b]\)</span>.</p>
+<p>Transformée de Fourier de la Gaussienne</p>
+<p>Pour <span class="math inline">\(\sigma &gt; 0\)</span>, on note <span class="math inline">\(g_\sigma(x) = \frac{1}{\sigma} e^{-\frac{x^2}{2\sigma^2}}\)</span>. Le but est de calculer <span class="math inline">\(\hat{g}_\sigma\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(\hat{g}_\sigma\)</span> est dérivable et exprimer <span class="math inline">\(\hat{g}_\sigma'(\xi)\)</span> en fonction de <span class="math inline">\(\hat{g}_\sigma(\xi)\)</span> (Utiliser une IPP).</li>
+<li>En déduire <span class="math inline">\(\hat{g}_\sigma(\xi)\)</span> pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>. Que peut-on dire de <span class="math inline">\(\hat{g}_1\)</span> ?</li>
+</ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous montrerons que les discontinuités de <span class="math inline">\(f\)</span> et <span class="math inline">\(\frac{1}{f}\)</span> sont alignées et qu’elles sont en nombre fini sur <span class="math inline">\([a; b]\)</span>.</p>
+<ol type="1">
+<li>Par intégration par parties, on montre que <span class="math inline">\(\hat{g}_\sigma'(\xi) = -2\pi i \xi \hat{g}_\sigma(\xi)\)</span>.</li>
+<li>On en déduit que <span class="math inline">\(\hat{g}_\sigma(\xi) = e^{-2\pi^2 \sigma^2 \xi^2}\)</span>. En particulier, <span class="math inline">\(\hat{g}_1(\xi) = e^{-2\pi^2 \xi^2}\)</span>.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-4" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-4">Exercice 4</h3>
-<p>Tout nombre <span class="math inline">\(x \in [0, 1[\)</span> admet une écriture décimale propre unique <span class="math inline">\(0, a_1a_2a_3\ldots\)</span>. On note <span class="math inline">\(u_x\)</span> la première décimale <span class="math inline">\((a_1)\)</span> après la virgule dans l’écriture de <span class="math inline">\(x\)</span>. Soit <span class="math inline">\(\Phi : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(\Phi(x) = u_x\)</span> pour <span class="math inline">\(x \in [0, 1[\)</span> et <span class="math inline">\(\Phi(1) = 0\)</span>. Montrer que <span class="math inline">\(\Phi\)</span> est une fonction en escalier.</p>
+<p>Soient <span class="math inline">\(f, g : \mathbb{R} \to \mathbb{C}\)</span> définies par <span class="math inline">\(f(x) = e^{-|x|}\)</span> et <span class="math inline">\(g(x) = \frac{1}{1+x^2}\)</span>.</p>
+<ol type="1">
+<li>Calculer <span class="math inline">\(\hat{f}\)</span>.</li>
+<li>Justifier que <span class="math inline">\(f(x) = \frac{1}{\pi} \int_{\mathbb{R}} \frac{e^{ixs}}{1 + s^2} \, ds\)</span> pour tout <span class="math inline">\(x \in \mathbb{R}\)</span>. En déduire <span class="math inline">\(\int_{\mathbb{R}} \frac{\cos t}{1 + t^2} \, dt\)</span> et <span class="math inline">\(\hat{g}(\xi)\)</span> pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>.</li>
+<li>Calculer <span class="math inline">\(f * f\)</span> et en déduire la transformée de Fourier de <span class="math inline">\(h(x) = \frac{1}{(1+x^2)^2}\)</span>.</li>
+<li>En utilisant les propriétés de dérivation, calculer la transformée de Fourier de <span class="math inline">\(k(x) = \frac{x}{(1+x^2)^2}\)</span>.</li>
+</ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous vérifierons que <span class="math inline">\(\Phi\)</span> a un nombre fini de discontinuités sur <span class="math inline">\([0, 1]\)</span>, ce qui est une caractéristique des fonctions en escalier.</p>
+<ol type="1">
+<li><span class="math inline">\(\hat{f}(\xi) = \frac{2}{1 + 4\pi^2 \xi^2}\)</span>.</li>
+<li>Par inversion de la transformée de Fourier, on justifie que <span class="math inline">\(f(x) = \frac{1}{\pi} \int_{\mathbb{R}} \frac{e^{ixs}}{1 + s^2} \, ds\)</span>. En déduire que <span class="math inline">\(\int_{\mathbb{R}} \frac{\cos t}{1 + t^2} \, dt = \pi\)</span> et que <span class="math inline">\(\hat{g}(\xi) = \pi e^{-2\pi |\xi|}\)</span>.</li>
+<li>On calcule <span class="math inline">\(f * f = \frac{2}{1+x^2}\)</span>. Donc <span class="math inline">\(\hat{h}(\xi) = \frac{\pi}{\cosh(\pi \xi)}\)</span>.</li>
+<li>En utilisant les propriétés de dérivation, on trouve que <span class="math inline">\(\hat{k}(\xi) = -i\pi \xi \hat{h}(\xi)\)</span>.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-5" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-5">Exercice 5</h3>
-<p>La fonction <span class="math inline">\(t \mapsto \sin\left(\frac{1}{t}\right)\)</span> si <span class="math inline">\(t &gt; 0\)</span> et <span class="math inline">\(0\)</span> si <span class="math inline">\(t = 0\)</span> est-elle continue par morceaux sur <span class="math inline">\([0, 1]\)</span> ?</p>
+<p>Formule de réciprocité</p>
+<p>Soient <span class="math inline">\(f, g \in L^1(\mathbb{R})\)</span>. Montrer que <span class="math inline">\(f\hat{g} \in L^1(\mathbb{R})\)</span> et $ g L^1()$, et que</p>
+<p><span class="math display">\[
+\int_{\mathbb{R}} f\hat{g} \, d\lambda_1 = \int_{\mathbb{R}} \hat{f}g \, d\lambda_1.
+\]</span></p>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous examinerons la continuité de la fonction sur les intervalles <span class="math inline">\([0, 1]\)</span> en excluant <span class="math inline">\(t = 0\)</span> et en incluant <span class="math inline">\(t = 0\)</span> séparément.</p>
+<p>En utilisant les propriétés des transformées de Fourier et des intégrales, nous montrons que les deux intégrales sont égales.</p>
 </details>
 </section>
 <section id="exercice-6" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-6">Exercice 6</h3>
-<p>La composée de deux fonctions continues par morceaux est-elle forcément continue par morceaux ?</p>
+<p>Pour tout <span class="math inline">\(a &gt; 0\)</span>, on note <span class="math inline">\(f_a = 1_{[-a,a]}\)</span>. Calculer <span class="math inline">\(\hat{f_a}\)</span> et en déduire <span class="math inline">\(\int_{0}^{+\infty} \frac{\sin^2 t}{t^2} \, dt\)</span>.</p>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous analyserons les propriétés de continuité des fonctions composées et vérifierons si la continuité par morceaux est préservée.</p>
+<p>La transformée de Fourier de <span class="math inline">\(f_a\)</span> est <span class="math inline">\(\hat{f_a}(\xi) = \frac{\sin(a\xi)}{\pi \xi}\)</span>. En utilisant cette expression, nous pouvons calculer l’intégrale demandée.</p>
 </details>
 </section>
 <section id="exercice-7" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-7">Exercice 7</h3>
-<p>Soit <span class="math inline">\(f\)</span> la fonction définie sur <span class="math inline">\([0; 1]\)</span> par <span class="math inline">\(f(x) = x^2\lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x &gt; 0\)</span> et <span class="math inline">\(f(0) = 0\)</span>.</p>
+<p>Soit <span class="math inline">\(f \in L^1(\mathbb{R})\)</span>.</p>
 <ol type="1">
-<li>Montrer que <span class="math inline">\(f\)</span> est continue par morceaux sur <span class="math inline">\(]0; 1]\)</span>.</li>
-<li>Montrer que <span class="math inline">\(f\)</span> n’est pas continue par morceaux sur <span class="math inline">\([0; 1]\)</span>.</li>
-<li>Montrer que <span class="math inline">\(f\)</span> est continue en 0.</li>
+<li>Pour tout <span class="math inline">\(s &gt; 0\)</span>, on note <span class="math inline">\(f_s\)</span> la fonction définie par <span class="math inline">\(f_s(x) = \frac{1}{s}f\left(\frac{x}{s}\right)\)</span>. Montrer que <span class="math inline">\(f_s \in L^1(\mathbb{R})\)</span> et exprimer <span class="math inline">\(\hat{f_s}\)</span> en fonction de <span class="math inline">\(\hat{f}\)</span>.</li>
+<li>Pour tout <span class="math inline">\(y \in \mathbb{R}\)</span>, exprimer <span class="math inline">\(\hat{\tau_y f}\)</span> en fonction de <span class="math inline">\(\hat{f}\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour chaque question, nous vérifierons les points de continuité et de discontinuité de la fonction sur les intervalles donnés.</p>
+<ol type="1">
+<li>On montre que <span class="math inline">\(f_s \in L^1(\mathbb{R})\)</span> et que <span class="math inline">\(\hat{f_s}(\xi) = \hat{f}(s\xi)\)</span>.</li>
+<li>On montre que <span class="math inline">\(\hat{\tau_y f}(\xi) = e^{-2\pi i y \xi} \hat{f}(\xi)\)</span>.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-8" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-8">Exercice 8</h3>
-<p>On considère la fonction <span class="math inline">\(f\)</span> définie sur <span class="math inline">\([-1; 1]\)</span> par :</p>
+<p>Extrait d’un sujet d’examen</p>
+<p>Soit <span class="math inline">\(f = 1_{[-\pi/2, \pi/2]}\)</span>, et soit <span class="math inline">\(g : \mathbb{R} \to \mathbb{R}\)</span> définie par</p>
 <p><span class="math display">\[
-f(x) = \begin{cases}
--2x - 1 &amp; \text{si } x \in ]-1; 0[ \\
-x^2 &amp; \text{si } x \in ]0; 1[ \\
-0 &amp; \text{si } x \in \{-1; 1\} \\
-1 &amp; \text{si } x = 0
+g(x) = \begin{cases}
+0 &amp; \text{si } |x| &gt; \frac{\pi}{2} \\
+\cos x &amp; \text{si } -\frac{\pi}{2} \leq x \leq \frac{\pi}{2}
 \end{cases}
 \]</span></p>
-<p>Déterminer une fonction continue <span class="math inline">\(g\)</span> et une fonction en escalier <span class="math inline">\(\phi\)</span> sur <span class="math inline">\([-1; 1]\)</span> telles que <span class="math inline">\(f = g + \phi\)</span>.</p>
+<ol type="1">
+<li>Calculer les transformées de Fourier <span class="math inline">\(\hat{f}\)</span> et <span class="math inline">\(\hat{g}\)</span>.</li>
+<li>Calculer <span class="math inline">\(f * g\)</span> et <span class="math inline">\(\hat{f * g}\)</span>.</li>
+<li>Justifier que les intégrales suivantes sont bien définies et les calculer en utilisant ce qui précède.</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li><span class="math inline">\(\int_{-\infty}^{+\infty} \frac{\sin^2 t}{t^2} \, dt\)</span>.</li>
+<li><span class="math inline">\(\int_{-\infty}^{+\infty} \frac{\sin t}{t(\pi^2 - t^2)} \, dt\)</span>.</li>
+</ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Nous construirons <span class="math inline">\(g\)</span> et <span class="math inline">\(\phi\)</span> en utilisant les propriétés de continuité et les discontinuités spécifiques de <span class="math inline">\(f\)</span>.</p>
+<ol type="1">
+<li>On calcule <span class="math inline">\(\hat{f}(\xi) = \frac{2\sin(\pi \xi/2)}{\pi \xi}\)</span> et <span class="math inline">\(\hat{g}(\xi) = \frac{\pi \sin(\pi \xi/2)}{\pi \xi/2}\)</span>.</li>
+<li>On trouve <span class="math inline">\(f * g(x) = \frac{2\sin x}{\pi x}\)</span> et <span class="math inline">\(\hat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi)\)</span>.</li>
+<li>On justifie et calcule les intégrales données en utilisant les résultats obtenus.</li>
+</ol>
 </details>
 </section>
 <section id="exercice-9" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-9">Exercice 9</h3>
-<p>Soit <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = x\)</span>. Soit <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Trouver deux fonctions en escalier <span class="math inline">\(\Phi\)</span> et <span class="math inline">\(\Psi\)</span> sur <span class="math inline">\([0, 1]\)</span> telles que <span class="math inline">\(\Phi \leq f \leq \Psi\)</span> et <span class="math inline">\(f(x) - \Phi(x) \leq \frac{1}{n}\)</span> et <span class="math inline">\(\Psi(x) - f(x) \leq \frac{1}{n}\)</span> pour tout <span class="math inline">\(x \in [0, 1]\)</span>.</p>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous déterminerons <span class="math inline">\(\Phi\)</span> et <span class="math inline">\(\Psi\)</span> en utilisant des approximations par morceaux de <span class="math inline">\(f\)</span> avec une précision de <span class="math inline">\(\frac{1}{n}\)</span>.</p>
-</details>
-</section>
-<section id="exercice-10" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-10">Exercice 10</h3>
+<p>Extrait d’un sujet d’examen</p>
+<p>Soient <span class="math inline">\(f, g : \mathbb{R} \to \mathbb{C}\)</span> définies par <span class="math inline">\(f(x) = xe^{-|x|}\)</span> et <span class="math inline">\(g(x) = \frac{x}{(1+x^2)^2}\)</span>.</p>
 <ol type="1">
-<li>Montrer que les fonctions réglées sur un segment sont forcément bornées.</li>
-<li>La fonction définie sur <span class="math inline">\([0; 1]\)</span> par <span class="math inline">\(f(0) = 0\)</span> et <span class="math inline">\(f(x) = \frac{1}{x}\)</span> pour <span class="math inline">\(x \neq 0\)</span> est-elle réglée ?</li>
+<li>Calculer <span class="math inline">\(\hat{f}\)</span>.</li>
+<li>Justifier que <span class="math inline">\(f(x) = -\frac{2i}{\pi} \int_{\mathbb{R}} \frac{se^{ixs}}{(1 + s^2)^2} \, ds\)</span> pour tout <span class="math inline">\(x \in \mathbb{R}\)</span>. En déduire <span class="math inline">\(\int_{\mathbb{R}} \frac{t \sin t}{(1 + t^2)^2} \, dt\)</span> et <span class="math inline">\(\hat{g}(\xi)\)</span> pour tout <span class="math inline">\(\xi \in \mathbb{R}\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Pour montrer cela, nous utiliserons les propriétés des fonctions réglées et leur comportement sur des segments bornés.</p>
-</details>
-</section>
-<section id="exercice-11" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-11">Exercice 11</h3>
-<p>Soit <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(0) = 1\)</span> et <span class="math inline">\(f(x) = x\lfloor \frac{1}{x} \rfloor\)</span> pour tout <span class="math inline">\(x \in ]0, 1]\)</span>.</p>
 <ol type="1">
-<li>Donner la formule de <span class="math inline">\(f\)</span> sur chaque intervalle <span class="math inline">\(] \frac{1}{n+1} , \frac{1}{n}]\)</span>, <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Quelle est l’image de cet intervalle par <span class="math inline">\(f\)</span> ?</li>
-<li>Soit <span class="math inline">\(\epsilon &gt; 0\)</span>. Trouver <span class="math inline">\(N\)</span> tel que <span class="math inline">\(|1 - f| &lt; \epsilon\)</span> sur <span class="math inline">\([0, \frac{1}{N}]\)</span>.</li>
-<li>Avec les notations de (2), montrer qu’il existe une fonction <span class="math inline">\(\Phi\)</span> en escalier sur <span class="math inline">\([\frac{1}{N}, 1]\)</span> telle que <span class="math inline">\(|\Phi - f| &lt; \epsilon\)</span> sur cet intervalle.</li>
-<li>En déduire que <span class="math inline">\(f\)</span> est réglée.</li>
+<li>On calcule <span class="math inline">\(\hat{f}(\xi) = \frac{2i \xi}{(1 + \xi^2)^2}\)</span>.</li>
+<li>On justifie l’égalité et on en déduit que <span class="math inline">\(\int_{\mathbb{R}} \frac{t \sin t}{(1 + t^2)^2} \, dt = \pi/2\)</span> et <span class="math inline">\(\hat{g}(\xi) = \frac{\pi \xi e^{-2\pi |\xi|}}{1 + 4\pi^2 \xi^2}\)</span>.</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous aborderons chaque question en utilisant des propriétés des fonctions réglées et des approximations par morceaux.</p>
-</details>
-</section>
-<section id="exercice-12" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-12">Exercice 12</h3>
-<p>Montrer que <span class="math inline">\(f : [0, 1] \to \mathbb{R}\)</span> définie par <span class="math inline">\(f(x) = \frac{1}{x} - \lfloor \frac{1}{x} \rfloor\)</span> si <span class="math inline">\(x \neq 0\)</span> et <span class="math inline">\(f(0) = 1\)</span> n’est pas réglée.</p>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous démontrerons que <span class="math inline">\(f\)</span> n’est pas réglée en examinant ses discontinuités et leur comportement sur <span class="math inline">\([0, 1]\)</span>.</p>
 </details>
 </section>
 

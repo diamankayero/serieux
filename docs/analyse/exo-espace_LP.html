@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Espace L_P – Yéro</title>
+<title>Espace L^P – Yéro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../analyse/exo-espace_LP.html">
- <span class="dropdown-text">Espace L_P</span></a>
+ <span class="dropdown-text">Espace L^P</span></a>
   </li>  
     </ul>
   </li>
@@ -229,7 +229,7 @@ window.Quarto = {
 <div class="quarto-about-jolla">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Espace L_P</h1>
+<h1 class="title">Espace L^P</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -251,7 +251,7 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>La fonction exponentielle ( t e^t ) est convexe (de ( ) dans ( )). On a donc, pour tout ( t_1, t_2 ) et tout ( t ),</p>
+<p>La fonction exponentielle ( t e^t ) est convexe (de ( ) dans ( )). On a donc, pour tout ( t_1, t_2 ) et tout ( t [0, 1] ),</p>
 <p><span class="math display">\[ e^{t t_1 + (1-t) t_2} \leq t e^{t_1} + (1-t) e^{t_2}. \]</span></p>
 <p>Soit <span class="math inline">\(a, b &gt; 0\)</span> (les autres cas sont triviaux). On prend <span class="math inline">\(t = \frac{1}{p}\)</span> (de sorte que <span class="math inline">\(1 - t = \frac{1}{q}\)</span>), <span class="math inline">\(t_1 = p \ln(a)\)</span> et <span class="math inline">\(t_2 = q \ln(b)\)</span>. On obtient bien</p>
 <p><span class="math display">\[ ab \leq \frac{a^p}{p} + \frac{b^q}{q}. \]</span></p>
@@ -287,10 +287,254 @@ window.Quarto = {
 <p>Ce qui démontre l’inégalité.</p>
 </details>
 </div>
-
-
-
 </section>
+<section id="exercice-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1">Exercice 1</h3>
+<p>Soient <span class="math inline">\((X, \mathcal{A}, \mu)\)</span> un espace mesuré, et <span class="math inline">\(p, q, r \in [1, +\infty]\)</span> tels que <span class="math inline">\(\frac{1}{p} + \frac{1}{q} = \frac{1}{r}\)</span>.</p>
+<p>Si <span class="math inline">\(f \in L^p(X, \mu)\)</span> et <span class="math inline">\(g \in L^q(X, \mu)\)</span>, montrer qu’on a <span class="math inline">\(fg \in L^r(X, \mu)\)</span> et <span class="math inline">\(\|fg\|_r \leq \|f\|_p \|g\|_q\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour démontrer cette inégalité, nous utiliserons l’inégalité de Hölder.</p>
+</details>
+</section>
+<section id="exercice-2" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2">Exercice 2</h3>
+<p>Inclusions entre espaces <span class="math inline">\(L^p\)</span></p>
+<ol type="1">
+<li>Soit <span class="math inline">\((X, \mathcal{A}, \mu)\)</span> un espace mesuré tel que <span class="math inline">\(\mu(X) &lt; +\infty\)</span>. Si <span class="math inline">\(p, q \in [1, +\infty]\)</span> vérifient <span class="math inline">\(p &lt; q\)</span>, montrer que <span class="math inline">\(L^q(X, \mu) \subset L^p(X, \mu)\)</span>.</li>
+<li>On considère <span class="math inline">\(\mathbb{N}\)</span> muni de la mesure de comptage. Si <span class="math inline">\(p, q \in [1, +\infty]\)</span> vérifient <span class="math inline">\(p &lt; q\)</span>, montrer que <span class="math inline">\(\ell^p \subset \ell^q\)</span>.</li>
+<li>On considère <span class="math inline">\(\mathbb{R}\)</span> muni de la mesure de Lebesgue et <span class="math inline">\(p, q \in [1, +\infty]\)</span> tels que <span class="math inline">\(p &lt; q\)</span>. Donner un exemple de fonctions <span class="math inline">\(f \in L^p(\mathbb{R})\)</span> telle que <span class="math inline">\(f \notin L^q(\mathbb{R})\)</span>, et un exemple de fonction <span class="math inline">\(g \in L^q(\mathbb{R})\)</span> telle que <span class="math inline">\(g \notin L^p(\mathbb{R})\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Pour chaque cas, nous démontrerons les inclusions en utilisant des propriétés des espaces <span class="math inline">\(L^p\)</span> et des fonctions spécifiques.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<p>On considère <span class="math inline">\(\mathbb{R}\)</span> muni de la mesure de Lebesgue <span class="math inline">\(\lambda_1\)</span>.</p>
+<ol type="1">
+<li>Pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, on note <span class="math inline">\(f_n(x) = e^{-n|x|}\)</span>. Montrer que <span class="math inline">\(f_n \in L^p(\mathbb{R})\)</span> pour tout <span class="math inline">\(p \in [1, +\infty]\)</span> et tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Calculer <span class="math inline">\(\|f_n\|_p\)</span>.</li>
+<li>Pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, on note <span class="math inline">\(g_n(x) = \frac{1}{(n + |x|)^2}\)</span>. Montrer que <span class="math inline">\(g_n \in L^p(\mathbb{R})\)</span> pour tout <span class="math inline">\(p \in [1, +\infty]\)</span> et tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>. Calculer <span class="math inline">\(\|g_n\|_p\)</span>.</li>
+<li>On considère les normes <span class="math inline">\(\|.\|_1\)</span> et <span class="math inline">\(\|.\|_2\)</span> sur <span class="math inline">\(E = L^1(\mathbb{R}) \cap L^2(\mathbb{R})\)</span>. Ces deux normes sont équivalentes sur <span class="math inline">\(E\)</span> s’il existe <span class="math inline">\(0 &lt; a &lt; b\)</span> tels que <span class="math inline">\(a\|f\|_1 \leq \|f\|_2 \leq b\|f\|_1\)</span> pour tout <span class="math inline">\(f \in E\)</span>. Montrer que <span class="math inline">\(\|.\|_1\)</span> et <span class="math inline">\(\|.\|_2\)</span> ne sont pas équivalentes sur <span class="math inline">\(E\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons les propriétés de chaque fonction en utilisant des intégrales spécifiques et des inégalités.</p>
+</details>
+</section>
+<section id="exercice-4" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<ol type="1">
+<li>Soit <span class="math inline">\(D = \{(x, y) \in \mathbb{R}^2 \mid x &gt; 0, y &gt; 0 \text{ et } 1 &lt; x^2 + y^2 &lt; 4\}\)</span>. Calculer <span class="math inline">\(\int_D \frac{xy}{x^2 + y^2} \, dx \, dy\)</span>.</li>
+<li>Soit <span class="math inline">\(B \subset \mathbb{R}^3\)</span> la boule unité, et <span class="math inline">\(a &gt; 1\)</span>. Calculer <span class="math inline">\(\int_B \frac{1}{\sqrt{x^2 + y^2 + (z - a)^2}} \, dx \, dy \, dz\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous utiliserons des changements de variables en coordonnées polaires et sphériques pour calculer ces intégrales.</p>
+</details>
+</section>
+<section id="exercice-5" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<p>Soient <span class="math inline">\(a, b &gt; 1\)</span> et <span class="math inline">\(D\)</span> l’ouvert de <span class="math inline">\(\mathbb{R}^2\)</span> contenant le point <span class="math inline">\((1, 1)\)</span> et délimité par les droites d’équation <span class="math inline">\(y = ax\)</span> et <span class="math inline">\(y = \frac{x}{a}\)</span>, et par les hyperboles d’équation <span class="math inline">\(y = \frac{b}{x}\)</span> et <span class="math inline">\(y = \frac{1}{bx}\)</span>.</p>
+<p>Pour tout <span class="math inline">\((x, y) \in \mathbb{R}^2\)</span>, on note <span class="math inline">\(u = xy\)</span> et <span class="math inline">\(v = \frac{x}{y}\)</span>. Montrer que <span class="math inline">\((x, y) \in D \iff (u, v) \in \left] \frac{1}{b}, b \right[ \times \left] \frac{1}{a}, a \right[\)</span> et calculer <span class="math inline">\(\lambda_2(D)\)</span> en faisant un changement de variables.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous utiliserons le changement de variables proposé pour transformer l’intégrale double en une intégrale plus simple à évaluer.</p>
+</details>
+</section>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<p>La fonction Bêta d’Euler</p>
+<p>On considère la fonction <span class="math inline">\(B : \mathbb{R}^*_+ \times \mathbb{R}^*_+ \to \mathbb{R}\)</span> définie par <span class="math inline">\(B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt\)</span>.</p>
+<ol type="1">
+<li>Montrer que la fonction <span class="math inline">\(B\)</span> est bien définie et que <span class="math inline">\(B(x, y) = B(y, x) = 2 \int_0^{\pi/2} \sin^{2x-1} \theta \cos^{2y-1} \theta \, d\theta\)</span>.</li>
+<li>Soit <span class="math inline">\(U = \mathbb{R}^*_+ \times ]0, 1[\)</span> et <span class="math inline">\(F : U \to \mathbb{R}^2\)</span> définie par <span class="math inline">\(F(u, v) = (uv, u(1 - v))\)</span>.
+<ul>
+<li>Montrer que <span class="math inline">\(F\)</span> est un difféomorphisme de <span class="math inline">\(U\)</span> sur <span class="math inline">\(V = (\mathbb{R}^*_+)^2\)</span>.</li>
+<li>Pour <span class="math inline">\(x, y \in \mathbb{R}^*_+\)</span>, soit <span class="math inline">\(I(x, y) = \int_{(\mathbb{R}^*_+)^2} s^{x-1} t^{y-1} e^{-(s+t)} \, ds \, dt\)</span>. Calculer <span class="math inline">\(I(x, y)\)</span> en utilisant le changement de variable <span class="math inline">\((s, t) = F(u, v)\)</span> et en déduire que <span class="math inline">\(B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}\)</span>.</li>
+</ul></li>
+<li>Calculer <span class="math inline">\(B\left(\frac{1}{2}, \frac{1}{2}\right)\)</span>. En déduire <span class="math inline">\(\Gamma\left(\frac{1}{2}\right)\)</span> et <span class="math inline">\(\Gamma\left(\frac{2n+1}{2}\right)\)</span> pour tout <span class="math inline">\(n \in \mathbb{N}\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons les propriétés de la fonction Bêta et utiliserons des transformations de variables pour calculer les intégrales associées.</p>
+</details>
+</section>
+<section id="exercice-7" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-7">Exercice 7</h3>
+<p>Soit <span class="math inline">\(f = 1_{[-\frac{1}{2}, \frac{1}{2}]}\)</span>.</p>
+<ol type="1">
+<li>Calculer <span class="math inline">\(f * f\)</span> et <span class="math inline">\(f * f * f\)</span>.</li>
+<li>On note <span class="math inline">\(f^{*n} = f^{*(n-1)} * f\)</span> avec <span class="math inline">\(f^{*1} = f\)</span> et <span class="math inline">\(n \geq 2\)</span>. Vérifier que pour tout <span class="math inline">\(n \geq 1\)</span>, <span class="math inline">\(f^{*n} \in L^1(\mathbb{R})\)</span> et que <span class="math inline">\(\|f^{*n}\|_1 = 1\)</span>.</li>
+<li>Montrer que pour tout <span class="math inline">\(n \geq 2\)</span>, <span class="math inline">\(f^{*n}\)</span> est de classe <span class="math inline">\(C^{n-2}\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous effectuerons les convolutions demandées et vérifierons les propriétés des fonctions obtenues.</p>
+</details>
+</section>
+<section id="exercice-8" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-8">Exercice 8</h3>
+<p>Soient <span class="math inline">\(p \in [1, +\infty[\)</span> et <span class="math inline">\(q\)</span> son exposant conjugué. Soient <span class="math inline">\(f \in L^p(\mathbb{R}^n)\)</span>, <span class="math inline">\(g \in L^q(\mathbb{R}^n)\)</span> et <span class="math inline">\(h = f * g\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(h(x)\)</span> est bien définie pour tout <span class="math inline">\(x \in \mathbb{R}^n\)</span> et que <span class="math inline">\(h\)</span> est une fonction bornée sur <span class="math inline">\(\mathbb{R}^n\)</span>.</li>
+<li>Montrer que pour tout <span class="math inline">\(x, u \in \mathbb{R}^n\)</span>, on a <span class="math inline">\(h(x + u) - h(x) = (\tau_{-u} f - f) * g\)</span> et en déduire que <span class="math inline">\(h\)</span> est continue sur <span class="math inline">\(\mathbb{R}^n\)</span>.</li>
+<li>Soient <span class="math inline">\(A, B\)</span> deux boréliens de <span class="math inline">\(\mathbb{R}^n\)</span> de mesures non nulles et finies. Calculer <span class="math inline">\(\int_{\mathbb{R}^n} 1_A * 1_B \, d\lambda_n\)</span> et en déduire que <span class="math inline">\(1_A * 1_B\)</span> est une fonction continue non nulle.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons la continuité et la borne de <span class="math inline">\(h\)</span> en utilisant les propriétés de la convolution et des intégrales de Lebesgue.</p>
+</details>
+</section>
+<section id="exercice-9" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-9">Exercice 9</h3>
+<p>Soient <span class="math inline">\(a_1, \ldots, a_n \in \mathbb{R}\)</span> des nombres réels deux à deux distincts, et soit <span class="math inline">\(\mu = \delta_{a1} + \cdots + \delta_{an}\)</span>, mesure sur <span class="math inline">\((\mathbb{R}, \mathcal{B}(\mathbb{R}))\)</span>.</p>
+<ol type="1">
+<li>Soient <span class="math inline">\(f, g : \mathbb{R} \to \mathbb{R}\)</span> deux fonctions mesurables. À quelle condition nécessaire et suffisante a-t-on <span class="math inline">\(f = g \, \mu-\text{p.p.}\)</span> ?</li>
+<li>Montrer que pour tout <span class="math inline">\(p, q \in [0, +\infty]\)</span>, on a <span class="math inline">\(L^p(\mathbb{R}, \mu) = L^q(\mathbb{R}, \mu)\)</span>.</li>
+<li>Montrer que <span class="math inline">\(L^p(\mathbb{R}, \mu)\)</span> est un espace vectoriel de dimension finie et en donner une base.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous examinerons les conditions nécessaires et suffisantes pour que <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> soient égales presque partout, et démontrerons les propriétés des espaces <span class="math inline">\(L^p\)</span> sous la mesure <span class="math inline">\(\mu\)</span>.</p>
+</details>
+</section>
+<section id="exercice-10" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-10">Exercice 10</h3>
+<p>Inégalité d’interpolation</p>
+<p>Soient <span class="math inline">\((X, \mathcal{A}, \mu)\)</span> un espace mesuré, et <span class="math inline">\(p, q, r \in [1, +\infty]\)</span> tels que <span class="math inline">\(p &lt; r &lt; q\)</span>.</p>
+<ol type="1">
+<li>Montrer qu’il existe un unique <span class="math inline">\(a \in ]0, 1[\)</span> tel que <span class="math inline">\(\frac{1}{r} = \frac{a}{p} + \frac{1-a}{q}\)</span>.</li>
+<li>Pour toute fonction mesurable <span class="math inline">\(f : X \to \mathbb{C}\)</span>, montrer que <span class="math inline">\(\|f\|_r \leq \|f\|_p^a \|f\|_q^{1-a}\)</span>. Que dit cette inégalité sur les espaces <span class="math inline">\(L^p(X)\)</span>, <span class="math inline">\(L^q(X)\)</span> et <span class="math inline">\(L^r(X)\)</span> ?</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons l’existence de <span class="math inline">\(a\)</span> en utilisant des propriétés des fractions, et montrerons l’inégalité d’interpolation en utilisant des techniques d’intégration.</p>
+</details>
+</section>
+<section id="exercice-11" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-11">Exercice 11</h3>
+<p>Soit <span class="math inline">\((X, \mathcal{A}, \mu)\)</span> un espace mesuré pour lequel les parties de mesures non nulles ont une mesure uniformément minorée : <span class="math inline">\(0 &lt; \alpha = \inf\{\mu(A) \mid A \in \mathcal{A} \text{ et } \mu(A) &gt; 0\}\)</span>.</p>
+<ol type="1">
+<li>Donner un exemple d’espace mesuré ayant cette propriété.</li>
+<li>Soit <span class="math inline">\(p \in [0, +\infty[\)</span>, et soit <span class="math inline">\(f \in L^p(X)\)</span>.
+<ul>
+<li>Soit <span class="math inline">\(c &lt; \|f\|_\infty\)</span>. Montrer qu’il existe une partie mesurable <span class="math inline">\(E\)</span> telle que <span class="math inline">\(\mu(E) &gt; 0\)</span> et <span class="math inline">\(|f(x)| \geq c\)</span> pour tout <span class="math inline">\(x \in E\)</span>. En déduire que <span class="math inline">\(\int_X |f|^p \, d\mu \geq c^p \alpha\)</span>.</li>
+<li>Montrer que <span class="math inline">\(\|f\|_\infty \leq \alpha^{-\frac{1}{p}} \|f\|_p\)</span>.</li>
+</ul></li>
+<li>Soient <span class="math inline">\(p, q \in [0, +\infty[\)</span> tels que <span class="math inline">\(p &lt; q\)</span>. En utilisant ce qui précède, montrer que <span class="math inline">\(\|f\|_q \leq \alpha^{\frac{1}{q} - \frac{1}{p}} \|f\|_p\)</span>.</li>
+<li>Que disent ces inégalités sur les inclusions entre espaces <span class="math inline">\(L^p(X)\)</span> et <span class="math inline">\(L^q(X)\)</span> ?</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous fournirons un exemple d’un espace mesuré ayant la propriété spécifiée, et démontrerons les inégalités données en utilisant des propriétés des fonctions dans les espaces <span class="math inline">\(L^p\)</span>.</p>
+</details>
+</section>
+<section id="exercice-12" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-12">Exercice 12</h3>
+<ol type="1">
+<li>Soit <span class="math inline">\(D = \{(x, y) \in \mathbb{R}^2 \mid x &gt; 0 \text{ et } x^2 + y^2 &lt; 1\}\)</span>. Calculer <span class="math inline">\(\int_D \frac{1}{1 + x^2 + y^2} \, dx \, dy\)</span>.</li>
+<li>Soit <span class="math inline">\(D = \{(x, y, z) \in \mathbb{R}^3 \mid 0 &lt; z &lt; a \text{ et } x^2 + y^2 &lt; a^2\}\)</span>. Calculer <span class="math inline">\(\int_D \frac{z}{\sqrt{x^2 + y^2}} \, dx \, dy \, dz\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous utiliserons des changements de variables en coordonnées polaires et cylindriques pour calculer ces intégrales.</p>
+</details>
+</section>
+<section id="exercice-13" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-13">Exercice 13</h3>
+<p>Soit <span class="math inline">\(D = \{(x, y) \in \mathbb{R}^2 \mid x &lt; y &lt; 2x \text{ et } x &lt; y^2 &lt; 2x\}\)</span>. Calculer <span class="math inline">\(\int_D \frac{y}{x} \, dx \, dy\)</span> en utilisant le changement de variables <span class="math inline">\(u = \frac{x}{y}\)</span>, <span class="math inline">\(v = \frac{y^2}{x}\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous utiliserons le changement de variables proposé pour transformer l’intégrale double en une intégrale plus simple à évaluer.</p>
+</details>
+</section>
+<section id="exercice-14" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-14">Exercice 14</h3>
+<p>Soient <span class="math inline">\(f, g \in L^1(\mathbb{R})\)</span> deux fonctions paires. Montrer que <span class="math inline">\(f * g\)</span> est paire. Que peut-on dire si <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> sont impaires ? Si l’une est paire et l’autre impaire ?</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons les propriétés de symétrie de la convolution en utilisant les propriétés des fonctions paires et impaires.</p>
+</details>
+</section>
+<section id="exercice-15" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-15">Exercice 15</h3>
+<p>Soient <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> deux fonctions de classe <span class="math inline">\(C^1\)</span> sur <span class="math inline">\(\mathbb{R}\)</span>, bornées et de dérivées bornées. On suppose de plus que <span class="math inline">\(f \in L^1(\mathbb{R})\)</span> et <span class="math inline">\(g' \in L^1(\mathbb{R})\)</span>. Montrer que <span class="math inline">\(f * g\)</span> est bien définie sur <span class="math inline">\(\mathbb{R}\)</span> et est une fonction de classe <span class="math inline">\(C^2\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons que la convolution <span class="math inline">\(f * g\)</span> hérite des propriétés de régularité des fonctions <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span>.</p>
+</details>
+</section>
+<section id="exercice-16" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-16">Exercice 16</h3>
+<p>Extrait d’un sujet d’examen</p>
+<p>On considère <span class="math inline">\(\mathbb{R}^3\)</span> muni de sa tribu borélienne et de la mesure de Lebesgue <span class="math inline">\(\lambda_3\)</span>. Pour tout <span class="math inline">\(u, v \in \mathbb{R}^3\)</span> on note <span class="math inline">\([u, v]\)</span> le segment d’extrémités <span class="math inline">\(u\)</span> et <span class="math inline">\(v\)</span> défini par <span class="math inline">\([u, v] = \{(1 - t)u + tv \mid t \in [0, 1]\}\)</span>.</p>
+<p>Dans la suite on identifie <span class="math inline">\(\mathbb{R}^3\)</span> à <span class="math inline">\(\mathbb{R}^2 \times \mathbb{R}\)</span>, on pourra donc noter <span class="math inline">\((x, s)\)</span> les points de <span class="math inline">\(\mathbb{R}^3\)</span>, avec <span class="math inline">\(x \in \mathbb{R}^2\)</span> et <span class="math inline">\(s \in \mathbb{R}\)</span>.</p>
+<p>Soit <span class="math inline">\(A \in \mathcal{B}(\mathbb{R}^2)\)</span>, le cône <span class="math inline">\(C_A\)</span> de sommet <span class="math inline">\((0, 1) \in \mathbb{R}^3\)</span> et de base <span class="math inline">\(A\)</span> est l’union des segments de <span class="math inline">\(\mathbb{R}^3\)</span> joignant <span class="math inline">\((0, 1)\)</span> à un point de <span class="math inline">\(A \times \{0\} : C_A = \bigcup_{x \in A} [(0, 1), (x, 0)]\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(C_A\)</span> est un borélien de <span class="math inline">\(\mathbb{R}^3\)</span>.</li>
+<li>Pour tout <span class="math inline">\(s \in \mathbb{R}\)</span>, déterminer <span class="math inline">\((C_A)_{,s} = \{x \in \mathbb{R}^2 \mid (x, s) \in C_A\}\)</span>. En déduire <span class="math inline">\(\lambda_2((C_A)_{,s})\)</span>.</li>
+<li>Calculer <span class="math inline">\(\lambda_3(C_A)\)</span> en fonction de <span class="math inline">\(\lambda_2(A)\)</span>.</li>
+<li>Soit <span class="math inline">\(h &gt; 0\)</span>. On note <span class="math inline">\(C_{A, h}\)</span> le cône de sommet <span class="math inline">\((0, h) \in \mathbb{R}^3\)</span> et de base <span class="math inline">\(A : C_{A, h}\)</span> est l’union des segments de <span class="math inline">\(\mathbb{R}^3\)</span> joignant <span class="math inline">\((0, h)\)</span> à un point de <span class="math inline">\(A \times \{0\}\)</span>. Que vaut <span class="math inline">\(\lambda_3(C_{A, h})\)</span> ?</li>
+<li>En identifiant <span class="math inline">\(\mathbb{R}^{n+1}\)</span> à <span class="math inline">\(\mathbb{R}^n \times \mathbb{R}\)</span>, généraliser ce qui précède aux cônes de <span class="math inline">\(\mathbb{R}^{n+1}\)</span> de sommet <span class="math inline">\((0, 1) \in \mathbb{R}^n \times \mathbb{R}\)</span> et de base <span class="math inline">\(A \in \mathcal{B}(\mathbb{R}^n)\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous démontrerons que <span class="math inline">\(C_A\)</span> est un borélien, déterminerons les sections du cône et utiliserons des intégrales pour calculer les volumes.</p>
+</details>
+</section>
+<section id="exercice-17" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-17">Exercice 17</h3>
+<p>Extrait d’un sujet d’examen</p>
+<p>On rappelle que la fonction bêta d’Euler est définie par <span class="math inline">\(B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt\)</span> et vérifie <span class="math inline">\(B(x, y) = B(y, x) = 2 \int_0^{\pi/2} \sin^{2x-1} \theta \cos^{2y-1} \theta \, d\theta = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\)</span>.</p>
+<p>Pour <span class="math inline">\(a, b &gt; 0\)</span>, on note <span class="math inline">\(I_{a, b} = \int_D |x|^{a-1} |y|^{b-1} \, dx \, dy\)</span>, où <span class="math inline">\(D = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 &lt; 1\}\)</span> est le disque unité de <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
+<ol type="1">
+<li>En utilisant des coordonnées polaires, exprimer <span class="math inline">\(I_{a, b}\)</span> à l’aide de la fonction <span class="math inline">\(\Gamma\)</span>.</li>
+<li>Même question pour <span class="math inline">\(J_{a, b, c} = \int_B |x|^{a-1} |y|^{b-1} |z|^{c-1} \, dx \, dy \, dz\)</span>, où <span class="math inline">\(B\)</span> est la boule unité de <span class="math inline">\(\mathbb{R}^3\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous utiliserons les transformations en coordonnées polaires et sphériques pour exprimer les intégrales en termes de la fonction <span class="math inline">\(\Gamma\)</span>.</p>
+</details>
+</section>
+
+
+
 </section>
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> 
   <hr class="about-sep">
