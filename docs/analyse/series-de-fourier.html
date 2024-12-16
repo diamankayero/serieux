@@ -236,182 +236,124 @@ window.Quarto = {
 </header><main class="content" id="quarto-document-content">
 <section id="exercice-1" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-1">Exercice 1</h3>
-<p>Dans toute l’exercice <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> et <span class="math inline">\(z\)</span> sont des réels. 1. Démontrer les relations suivantes :</p>
-<p><span class="math display">\[2|xy| \leq x^2 + y^2 \quad \text{et} \quad \sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
-<ol start="2" type="1">
-<li>Montrer que <span class="math inline">\(|x| = \max\{x, -x\}\)</span>. Le maximum de deux nombres <span class="math inline">\((x, y)\)</span> (c’est-à-dire le plus grand des deux) est noté <span class="math inline">\(\max\{x, y\}\)</span>. De même, on notera <span class="math inline">\(\min\{x, y\}\)</span> le plus petit des deux nombres <span class="math inline">\((x, y)\)</span>.</li>
-<li>Démontrer que : <span class="math display">\[\max\{x, y\} = \frac{x + y + |x - y|}{2} \quad \text{et} \quad \min\{x, y\} = \frac{x + y - |x - y|}{2}.\]</span> On pose <span class="math inline">\(x^+ = \max\{x, 0\}\)</span> et <span class="math inline">\(x^- = \max\{0, -x\}\)</span>.</li>
-<li>Montrer que <span class="math inline">\(|x| = x^+ + x^-\)</span> et <span class="math inline">\(x = x^+ - x^-\)</span>.</li>
-<li>En déduire une formule pour <span class="math inline">\(\max\{x, y, z\}\)</span> avec <span class="math inline">\(x, y, z \in \mathbb{R}\)</span>.</li>
+<p>Soit <span class="math inline">\(f : \mathbb{R} \to \mathbb{R}\)</span> la fonction <span class="math inline">\(2\pi\)</span>-périodique, impaire telle que :</p>
+<p><span class="math display">\[
+\forall x \in ]0, \pi[, \ f(x) = 1 \quad \text{et} \quad f(n\pi) = 0 \ \text{pour tout} \ n \in \mathbb{Z}.
+\]</span></p>
+<ol type="1">
+<li>Calculer les coefficients de Fourier réels de <span class="math inline">\(f\)</span>.</li>
+<li>Montrer que la série de Fourier de <span class="math inline">\(f\)</span> converge simplement sur <span class="math inline">\(\mathbb{R}\)</span> vers <span class="math inline">\(f\)</span>. Justifier sans calcul que cette convergence n’est pas uniforme. En déduire que <span class="math display">\[\sum_{k=0}^{+\infty} \frac{(-1)^k}{2k + 1} = \frac{\pi}{4}.\]</span></li>
+<li>À l’aide de l’égalité de Bessel-Parseval, montrer que <span class="math display">\[\sum_{k=0}^{+\infty} \frac{1}{(2k + 1)^2} = \frac{\pi^2}{8}.\]</span> En déduire la somme des séries <span class="math display">\[\sum_{k=1}^{+\infty} \frac{1}{k^2} \quad \text{et} \quad \sum_{k=1}^{+\infty} \frac{(-1)^k}{k^2}.\]</span></li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication :</p>
+<ol type="1">
+<li><p>Les coefficients de Fourier réels de <span class="math inline">\(f\)</span> sont : <span class="math display">\[
+a_0 = \frac{1}{\pi} \int_{0}^{\pi} f(x) \, dx = 1, \quad a_k = 0, \quad b_k = \frac{4}{k \pi}.
+\]</span></p></li>
+<li><p>La série de Fourier de <span class="math inline">\(f\)</span> est : <span class="math display">\[
+f(x) = \sum_{k=1}^{+\infty} \frac{4}{k \pi} \sin(kx).
+\]</span> La convergence n’est pas uniforme car <span class="math inline">\(f\)</span> a des discontinuités. En utilisant le théorème de convergence simple, nous obtenons : <span class="math display">\[
+\sum_{k=0}^{+\infty} \frac{(-1)^k}{2k + 1} = \frac{\pi}{4}.
+\]</span></p></li>
+<li><p>En utilisant l’égalité de Bessel-Parseval, nous avons : <span class="math display">\[
+\sum_{k=0}^{+\infty} \frac{1}{(2k + 1)^2} = \frac{\pi^2}{8}.
+\]</span> En déduire : <span class="math display">\[
+\sum_{k=1}^{+\infty} \frac{1}{k^2} = \frac{\pi^2}{6}, \quad \sum_{k=1}^{+\infty} \frac{(-1)^k}{k^2} = -\frac{\pi^2}{12}.
+\]</span></p></li>
+</ol>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-2">Exercice 2</h3>
-<p>Soient <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> des réels. Démontrer les inégalités suivantes :</p>
+<p>Soit <span class="math inline">\(f : \mathbb{R} \to \mathbb{C}\)</span> une fonction <span class="math inline">\(2\pi\)</span>-périodique, dérivable, telle qu’il existe <span class="math inline">\(\lambda \in \mathbb{R}\)</span> vérifiant :</p>
+<p><span class="math display">\[
+\forall x \in \mathbb{R}, \ f'(x) = f(x + \lambda).
+\]</span></p>
 <ol type="1">
-<li><span class="math display">\[|x| + |y| \leq |x + y| + |x - y|\]</span></li>
-<li><span class="math display">\[1 + |xy - 1| \leq (1 + |x - 1|)(1 + |y - 1|)\]</span></li>
+<li>Démontrer la relation suivante : <span class="math inline">\(\forall n \in \mathbb{Z}, \ (in - e^{in\lambda})c_n(f) = 0\)</span>.</li>
+<li>En déduire qu’une telle fonction <span class="math inline">\(f\)</span> non identiquement nulle existe si et seulement si <span class="math inline">\(\lambda \equiv \frac{\pi}{2} \ [2\pi]\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication :</p>
+<ol type="1">
+<li><p>En prenant la transformée de Fourier des deux côtés de l’équation, nous obtenons : <span class="math display">\[
+(in - e^{in\lambda})c_n(f) = 0.
+\]</span></p></li>
+<li><p>Une telle fonction <span class="math inline">\(f\)</span> existe si et seulement si <span class="math inline">\(\lambda \equiv \frac{\pi}{2} \ [2\pi]\)</span>, car cela implique que les coefficients de Fourier <span class="math inline">\(c_n(f)\)</span> ne sont pas tous nuls.</p></li>
+</ol>
 </details>
 </section>
 <section id="exercice-3" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-3">Exercice 3</h3>
-<p>Montrer par récurrence que pour un ensemble de nombres réels <span class="math inline">\(x_1, \ldots, x_n\)</span>, nous avons les propositions suivantes :</p>
+<p>Soient <span class="math inline">\(\alpha \in \mathbb{R} \setminus \mathbb{Z}\)</span> et <span class="math inline">\(f_\alpha\)</span> la fonction, <span class="math inline">\(2\pi\)</span>-périodique, définie sur <span class="math inline">\(\mathbb{R}\)</span> par :</p>
+<p><span class="math display">\[
+f_\alpha(t) := \cos \alpha t, \ \text{pour tout} \ t \in [-\pi, \pi].
+\]</span></p>
 <ol type="1">
-<li><span class="math display">\[\left| \sum_{i=1}^{n} x_i \right| \leq \sum_{i=1}^{n} |x_i|\]</span></li>
-<li>Si <span class="math inline">\(\forall i \in \{1, \ldots, n\}, 0 \leq |x_i| \leq y_i\)</span>, alors <span class="math display">\[\left| \prod_{i=1} x_i \right| \leq \prod_{i=1} |x_i|.\]</span></li>
+<li><ol type="a">
+<li>Déterminer la série de Fourier de <span class="math inline">\(f_\alpha\)</span>.</li>
+<li>En déduire, pour tout <span class="math inline">\(t \in \mathbb{R} \setminus \pi \mathbb{Z}\)</span>, que <span class="math display">\[
+\cot t = \frac{1}{t} + \sum_{n=1}^{+\infty} \frac{2t}{t^2 - n^2 \pi^2}.
+\]</span></li>
+</ol></li>
+<li>Soient <span class="math inline">\(x\)</span> un élément de l’intervalle ouvert <span class="math inline">\(]0, \pi[\)</span> et <span class="math inline">\(n\)</span> un entier positif non nul. Soient <span class="math inline">\(f\)</span> et <span class="math inline">\(u_n\)</span> les fonctions numériques définies sur l’intervalle <span class="math inline">\([0, x]\)</span> par :</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indiacation : on le fait par reccurence</p>
-</details>
-</section>
-<section id="exercice-4" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-4">Exercice 4</h3>
-<ol type="1">
-<li>Soit <span class="math inline">\(n\)</span> un entier naturel. Montrer que pour deux nombres réels <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> tels que <span class="math inline">\(0 \leq x \leq y\)</span>, alors <span class="math inline">\(x^n \leq y^n\)</span>.</li>
-<li>Vérifier que pour tous réels <span class="math inline">\(x_i, x_j &gt; 0\)</span>, on a : <span class="math display">\[\frac{x_i}{x_j} + \frac{x_j}{x_i} = \frac{x_i^2 + x_j^2}{x_i x_j} \geq 2.\]</span></li>
-<li>Soit <span class="math inline">\(n &gt; 1\)</span> fixé. Démontrer que <span class="math display">\[(x_1 + \ldots + x_n) \left(\frac{1}{x_1} + \ldots + \frac{1}{x_n}\right) \geq n^2.\]</span></li>
-<li>En déduire <span class="math display">\[\min \left\{(x_1 + \ldots + x_n) \left(\frac{1}{x_1} + \ldots + \frac{1}{x_n}\right); x_1, \ldots, x_n \in \mathbb{R}^*\right\}.\]</span></li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-5" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-5">Exercice 5</h3>
-<p>Soit <span class="math inline">\(A\)</span> une partie de <span class="math inline">\(\mathbb{R}\)</span>, <span class="math inline">\(\alpha \in \mathbb{R}\)</span> et <span class="math inline">\(\beta \in \mathbb{R}^+\)</span> tel que <span class="math display">\[\forall a \in A, \ \beta \leq a \leq \alpha.\]</span></p>
-<ol type="1">
-<li>Montrer que la partie <span class="math inline">\(B\)</span> de <span class="math inline">\(\mathbb{R}\)</span> formée des inverses des éléments de <span class="math inline">\(A\)</span> est bornée.</li>
-<li>Exprimer ses bornes inférieures et supérieures en fonction de celles de <span class="math inline">\(A\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication</p>
-</details>
-</section>
-<section id="exercice-6" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-6">Exercice 6</h3>
-<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \frac{1}{n} + (-1)^n; n \in \mathbb{N}^* \right\}.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(E\)</span> est infini et borné.</li>
-<li>Déterminer s’il existe la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-7" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-7">Exercice 7</h3>
-<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux parties non vides de <span class="math inline">\(\mathbb{R}\)</span> telles que <span class="math display">\[\forall (a, b) \in A \times B, \ a \leq b.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(\sup A\)</span> et <span class="math inline">\(\inf B\)</span> existent et que <span class="math inline">\(\sup A \leq \inf B\)</span>.</li>
-<li>Soit <span class="math inline">\(A\)</span> une partie non vide et bornée de <span class="math inline">\(\mathbb{R}\)</span>. On note <span class="math inline">\(B = \{|x - y|; (x, y) \in A^2\}\)</span>, montrer que <span class="math inline">\(B\)</span> est majorée.</li>
-<li>On note <span class="math inline">\(\delta(A)\)</span> la borne supérieure de cet ensemble, prouver que <span class="math inline">\(\delta(A) = \sup(A) - \inf(A)\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-8" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-8">Exercice 8</h3>
-<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \left(\frac{n - 1}{n}\right) \left(\frac{n + 1}{n}\right); n \in \mathbb{N}^* \right\}.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(E\)</span> est infini et borné.</li>
-<li>Déterminer s’il existe la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-9-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-9-tpe">Exercice 9 : [TPE]</h3>
-<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux parties non vides et majorées de <span class="math inline">\(\mathbb{R}\)</span>. On note <span class="math inline">\(A + B = \{a + b \ | \ (a, b) \in A \times B\}\)</span>.</p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(\sup A + \sup B\)</span> est un majorant de <span class="math inline">\(A + B\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A + B) = \sup A + \sup B\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A \cup B) = \max\{\sup A, \sup B\}\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A \cdot B) = \sup A \cdot \sup B\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-10-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-10-tpe">Exercice 10 : [TPE]</h3>
-<p>Soit <span class="math inline">\(f : \mathbb{Q} \to \mathbb{Q}\)</span> telle que <span class="math inline">\(\forall x, y \in \mathbb{Q}, f(x+y) = f(x) + f(y)\)</span>.</p>
+<p><span class="math display">\[
+\forall t \in [0, x], \ f(t) := \begin{cases}
+\cot t - \frac{1}{t} &amp; \text{si} \ t \in ]0, x], \\
+0 &amp; \text{si} \ t = 0,
+\end{cases}
+\]</span></p>
+<p>et</p>
+<p><span class="math display">\[
+u_n(t) := \frac{2t}{t^2 - n^2 \pi^2}.
+\]</span></p>
 <ol type="a">
-<li>On suppose <span class="math inline">\(f\)</span> constante égale <span class="math inline">\(C\)</span>, quelle est la valeur de <span class="math inline">\(C\)</span> ? On revient au cas général.</li>
-<li>Calculer <span class="math inline">\(f(0)\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\forall x \in \mathbb{Q}, f(-x) = -f(x)\)</span>.</li>
-<li>Établir que <span class="math inline">\(\forall n \in \mathbb{N}, \forall x \in \mathbb{Q}, f(nx) = nf(x)\)</span> et généraliser cette propriété à <span class="math inline">\(n \in \mathbb{Z}\)</span>.</li>
-<li>On pose <span class="math inline">\(a = f(1)\)</span>. Montrer que <span class="math inline">\(\forall x \in \mathbb{Q}, f(x) = ax\)</span>.</li>
+<li>Justifier que <span class="math inline">\(f\)</span> est intégrable sur <span class="math inline">\([0, x]\)</span> et calculer l’intégrale <span class="math inline">\(\int_{0}^{x} f(t) \, dt\)</span>.</li>
+<li>Montrer que la série de fonctions <span class="math inline">\(\sum_{n \geq 1} u_n\)</span> est uniformément convergente sur <span class="math inline">\([0, x]\)</span>.</li>
+<li>Montrer, à l’aide de ce qui précède, que : <span class="math display">\[
+\forall x \in ]-\pi, \pi[, \ \sin x = x \prod_{n=1}^{+\infty} \left(1 - \frac{x^2}{n^2 \pi^2}\right).
+\]</span></li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-11-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-11-tpe">Exercice 11 : [TPE]</h3>
-<p>Soient <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> deux réels strictement positifs. Les parties suivantes sont-elles majorées, minorées ? Si oui, déterminer leurs bornes supérieures, inférieures.</p>
 <ol type="1">
-<li><span class="math inline">\(\{a + bn; n \in \mathbb{N}\}\)</span></li>
-<li><span class="math inline">\(\{a + (-1)^n b; n \in \mathbb{N}\}\)</span></li>
-<li><span class="math inline">\(\{a + \frac{b}{n}; n \in \mathbb{N}^*\}\)</span></li>
-<li><span class="math inline">\(\{(-1)^n a + \frac{b}{n}; n \in \mathbb{N}^*\}\)</span></li>
-<li><span class="math inline">\(\{a + \frac{(-1)^n b}{n}; n \in \mathbb{N}^*\}\)</span></li>
+<li><ol type="a">
+<li>La série de Fourier de <span class="math inline">\(f_\alpha\)</span> est : <span class="math display">\[
+f_\alpha(t) = \sum_{n=-\infty}^{+\infty} c_n e^{int},
+\]</span> où les coefficients <span class="math inline">\(c_n\)</span> sont donnés par : <span class="math display">\[
+c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} \cos(\alpha t) e^{-int} \, dt.
+\]</span></li>
+</ol></li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-12-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-12-tpe">Exercice 12 : [TPE]</h3>
-<p>Démontrer que les réels suivants sont irrationnels :</p>
-<ol type="1">
-<li><span class="math inline">\(\sqrt{x} + \sqrt{y}\)</span> où <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> sont des rationnels positifs tels que <span class="math inline">\(\sqrt{x}\)</span> et <span class="math inline">\(\sqrt{y}\)</span> sont irrationnels.</li>
-<li><span class="math inline">\(\sqrt{2} + \sqrt{3} + \sqrt{5}\)</span>.</li>
+<!-- -->
+<ol start="2" type="a">
+<li>En déduire que : <span class="math display">\[
+\cot t = \frac{1}{t} + \sum_{n=1}^{+\infty} \frac{2t}{t^2 - n^2 \pi^2}.
+\]</span></li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
+<!-- -->
+<ol start="2" type="1">
+<li><ol type="a">
+<li><span class="math inline">\(f\)</span> est intégrable sur <span class="math inline">\([0, x]\)</span> car <span class="math inline">\(\cot t\)</span> et <span class="math inline">\(\frac{1}{t}\)</span> sont intégrables sur cet intervalle. Nous avons : <span class="math display">\[
+\int_{0}^{x} f(t) \, dt = \int_{0}^{x} \left(\cot t - \frac{1}{t}\right) \, dt.
+\]</span></li>
+</ol></li>
+</ol>
+<!-- -->
+<ol start="2" type="a">
+<li><p>La série de fonctions <span class="math inline">\(\sum_{n \geq 1} u_n\)</span> est uniformément convergente sur <span class="math inline">\([0, x]\)</span> car les <span class="math inline">\(u_n\)</span> sont dominées par une fonction intégrable.</p></li>
+<li><p>En utilisant les résultats précédents, nous obtenons : <span class="math display">\[
+\forall x \in ]-\pi, \pi[, \ \sin x = x \prod_{n=1}^{+\infty} \left(1 - \frac{x^2}{n^2 \pi^2}\right).
+\]</span></p></li>
+</ol>
 </details>
 </section>
 
