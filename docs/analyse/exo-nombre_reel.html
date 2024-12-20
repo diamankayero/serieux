@@ -257,6 +257,13 @@ window.Quarto = {
 <p>Alors, <span class="math display">\[ x^2+y^2 \leq x^2+y^2+ 2|x||y| \leq x^2+y^2+ x^2+y^2.\]</span></p>
 <p><span class="math display">\[ x^2+y^2 \leq (|x|+|y|)^2 \leq 2(x^2+y^2)\]</span>.</p>
 <p>d’ou, <span class="math display">\[\sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
+<ol start="2" type="1">
+<li>Soient $x, y R.</li>
+</ol>
+<p>Si <span class="math inline">\(max \{x,-x\}= x\)</span> . Alors <span class="math inline">\(x \geq -x\)</span> <span class="math inline">\(\Leftrightarrow 2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = x.\)</span></p>
+<p><span class="math display">\[x \geq 0 \Rightarrow |x| =x= max\{x,-x\}\]</span></p>
+<p>Si <span class="math inline">\(max {x,-x}= -x\)</span> . Alors <span class="math inline">\(-x \geq x\)</span> <span class="math inline">\(\Leftrightarrow -2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = -x.\)</span></p>
+<p><span class="math display">\[-x \geq 0 \Rightarrow |x| =-x= max\{x,-x\}\]</span> D’ou <span class="math inline">\(|x| = max\{x,-x\}\)</span></p>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
@@ -313,7 +320,27 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication</p>
+<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux ensembles inclus dans <span class="math inline">\(\mathbb R\)</span>. 1. Montrons que la partie <span class="math inline">\(B\)</span> formé par les inverses de <span class="math inline">\(A\)</span> est bornée.</p>
+<p>Soit <span class="math inline">\(a \in A\)</span>, <span class="math inline">\(B = \{\frac{1}{a} , a \in A\}\)</span>. <span class="math inline">\(B\)</span> est non vide.</p>
+<p>Soientt <span class="math inline">\(\alpha \in \mathbb R, \quad  \beta \in  \mathbb R_{+}^{*}\)</span>.</p>
+<p>On a <span class="math inline">\(\beta&gt;0\)</span> et <span class="math inline">\(\beta \leq \alpha\)</span> $ $. Donc,</p>
+<p><span class="math display">\[ \frac{1}{\alpha} \leq \frac{1}{a} \leq \frac{1}{\beta} \in B.\]</span> Donc <span class="math inline">\(B\)</span> est majoré par <span class="math inline">\(\frac{1}{\beta}\)</span>, et minoré par <span class="math inline">\(\frac{1}{\alpha}\)</span>.</p>
+<ol start="2" type="1">
+<li>Exprimons sa borne <span class="math inline">\(sup\)</span> et <span class="math inline">\(inf\)</span> en fonction de celles de <span class="math inline">\(A\)</span>.</li>
+</ol>
+<p>On a <span class="math inline">\(B \neq \emptyset\)</span> et minoré donc <span class="math inline">\(B\)</span> admet une borne inférieure.</p>
+<p>On determine d’abord la borne <span class="math inline">\(supA\)</span> et <span class="math inline">\(infA\)</span>.</p>
+<p>On a pour tout <span class="math inline">\(a \in A\)</span>, <span class="math inline">\(\beta \leq a \leq \alpha\)</span>.</p>
+<p><span class="math inline">\(A\)</span> est minoré par <span class="math inline">\(\beta\)</span> de plus <span class="math inline">\(\beta \in A\)</span> alors <span class="math inline">\(minA = \beta\)</span>.</p>
+<p>d’ou, <span class="math display">\[ infA =\beta\]</span></p>
+<p><span class="math inline">\(A\)</span> est majoré par <span class="math inline">\(\alpha\)</span> de plus <span class="math inline">\(\alpha \in A\)</span> alors <span class="math inline">\(maxA = \alpha\)</span>.</p>
+<p>d’ou, <span class="math display">\[ supA =\alpha\]</span></p>
+<p>Il reste maintenant celles de <span class="math inline">\(B\)</span>.</p>
+<p>On sait que, <span class="math inline">\(\frac{1}{\alpha} \leq \frac{1}{a} \leq \frac{1}{\beta}\)</span> . Alors, <span class="math inline">\(\frac{1}{supA} \leq \frac{1}{a} \leq \frac{1}{infA}\)</span>.</p>
+<p><span class="math inline">\(B\)</span> est majoré par <span class="math inline">\(\frac{1}{infA}\)</span> de plus <span class="math inline">\(\frac{1}{infA} \in B\)</span> alors <span class="math inline">\(maxB = \frac{1}{infA}\)</span>.</p>
+<p>d’ou, <span class="math display">\[ supB = \frac{1}{infA}\]</span></p>
+<p><span class="math inline">\(B\)</span> est minoré par <span class="math inline">\(\frac{1}{supA}\)</span> de plus <span class="math inline">\(\frac{1}{supA} \in B\)</span> alors <span class="math inline">\(minB = \frac{1}{supA}\)</span>.</p>
+<p>d’ou, <span class="math display">\[ infB = \frac{1}{supA}\]</span></p>
 </details>
 </section>
 <section id="exercice-6" class="level3 exercise-box">
@@ -420,6 +447,142 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
+</details>
+</section>
+<section id="exercice-1-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-1-1">Exercice 1</h3>
+<p>Soient A et B deux parties non vides de <span class="math inline">\(\mathbb{R}\)</span>. Montrer que :</p>
+<ol type="1">
+<li>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> sont majorées, <span class="math inline">\(A \cup B\)</span> est majorée et <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont majorées donc A et B admettent des bornes supérieures. Soient <span class="math inline">\(\sup A\)</span> et <span class="math inline">\(\sup B\)</span> les bornes supérieures respectives de A et B. Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \leq \sup A\)</span> ou <span class="math inline">\(x \leq \sup B\)</span> i.e.&nbsp;<span class="math inline">\(x \leq \sup(\sup A, \sup B)\)</span> d’où <span class="math inline">\(\forall x \in A \cup B, x \leq \sup(\sup A, \sup B)\)</span>.</p>
+<p>On peut conclure que <span class="math inline">\(\sup(\sup A, \sup B)\)</span> majore <span class="math inline">\(A \cup B\)</span>. <span class="math inline">\(\sup(A \cup B)\)</span> existe car <span class="math inline">\(A \cup B\)</span> est non vide ( <span class="math inline">\(A \subset A \cup B\)</span> ou <span class="math inline">\(B \subset A \cup B\)</span>) et majorée par <span class="math inline">\(\sup(\sup A, \sup B)\)</span> de plus nous avons <span class="math inline">\(\sup(A \cup B) \leq \sup(\sup A, \sup B)\)</span>.</p>
+<p>Montrons maintenant que <span class="math inline">\(\sup(A \cup B) \geq \sup(\sup A, \sup B)\)</span> : on a <span class="math inline">\(A \subset A \cup B\)</span> alors <span class="math inline">\(\sup(A \cup B) \geq \sup A\)</span> de même nous avons <span class="math inline">\(B \subset A \cup B\)</span> alors <span class="math inline">\(\sup(A \cup B) \geq \sup B\)</span> d’où <span class="math inline">\(\sup(A \cup B) \geq \sup(\sup A, \sup B)\)</span>.</p>
+Donc <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.
+</details>
+<ol start="2" type="1">
+<li>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B sont minorées\)</span>, <span class="math inline">\(A \cup B\)</span> est minorée et <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont minorées donc A et B admettent des bornes inférieures. Soient <span class="math inline">\(\inf A\)</span> et <span class="math inline">\(\inf B\)</span> les bornes inférieures respectives de A et B. Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \geq \inf A\)</span> ou <span class="math inline">\(x \geq \inf B\)</span> i.e.&nbsp;<span class="math inline">\(x \geq \inf(\inf A, \inf B)\)</span> donc <span class="math inline">\(\inf(\inf A, \inf B)\)</span> est un minorant de <span class="math inline">\(A \cup B\)</span>. Il découle aussi <span class="math inline">\(\inf(\inf A, \inf B) \leq \inf(A \cup B)\)</span> car <span class="math inline">\(\inf(A \cup B)\)</span> est le plus grand des minorants de <span class="math inline">\(A \cup B\)</span>.</p>
+<p>Montrons maintenant que <span class="math inline">\(\inf(A \cup B) \geq \inf(\inf A, \inf B)\)</span> : on a <span class="math inline">\(A \subset A \cup B\)</span> alors <span class="math inline">\(\inf(A \cup B) \leq \inf A\)</span> de même nous avons <span class="math inline">\(B \subset A \cup B\)</span> alors <span class="math inline">\(\inf(A \cup B) \leq \inf B\)</span> d’où <span class="math inline">\(\inf(A \cup B) \leq \inf(\inf A, \inf B)\)</span>.</p>
+Donc <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.
+</details>
+</section>
+<section id="exercice-2-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2-1">Exercice 2</h3>
+<p>Soit <span class="math inline">\(E(x)\)</span> la fonction partie entière définie sur <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<ol type="1">
+<li>Montrer que la fonction partie entière est croissante sur <span class="math inline">\(\mathbb{R}\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Soient <span class="math inline">\(x, y \in \mathbb{R}\)</span> tels que <span class="math inline">\(x \leq y\)</span>. Montrons que <span class="math inline">\(E(x) \leq E(y)\)</span>. <span class="math inline">\(\forall x \in \mathbb{R}\)</span>, nous avons <span class="math inline">\(E(x) \leq x &lt; E(x) + 1\)</span>. De même <span class="math inline">\(\forall y \in \mathbb{R}\)</span>, nous avons <span class="math inline">\(E(y) \leq y &lt; E(y) + 1\)</span>. Or <span class="math inline">\(x \leq y\)</span> d’où <span class="math inline">\(E(x) \leq x \leq y &lt; E(y) + 1\)</span>.</p>
+Donc <span class="math inline">\(E(x) \leq E(y)\)</span> car <span class="math inline">\(E(y)\)</span> est le plus grand entier naturel inférieur à <span class="math inline">\(E(y) + 1\)</span>.
+</details>
+<ol start="2" type="1">
+<li>Montrer que <span class="math inline">\(\forall x, y \in \mathbb{R}, E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Nous avons <span class="math inline">\(E(x) \leq x &lt; E(x) + 1\)</span> et <span class="math inline">\(E(y) \leq y &lt; E(y) + 1\)</span>. En faisant la somme des deux inégalités, nous obtenons <span class="math inline">\(E(x) + E(y) \leq x + y &lt; E(x) + E(y) + 2\)</span>.</p>
+<p>Comme <span class="math inline">\(E(x)\)</span> est une fonction croissante, alors en appliquant la fonction partie entière à l’inégalité, nous avons <span class="math inline">\(E(E(x) + E(y)) \leq E(x + y) &lt; E(E(x) + E(y) + 2)\)</span>.</p>
+Donc <span class="math inline">\(E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.
+</details>
+<ol start="3" type="1">
+<li>En déduire que <span class="math inline">\(\forall x \in \mathbb{R}, E(x + 1) = E(x) + 1\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+D’après l’inégalité précédente, en prenant <span class="math inline">\(y = 1\)</span>, nous avons <span class="math inline">\(E(x) + E(1) \leq E(x + 1) \leq E(x) + E(1) + 1\)</span>. Comme <span class="math inline">\(E(1) = 1\)</span>, nous obtenons <span class="math inline">\(E(x) + 1 \leq E(x + 1) \leq E(x) + 2\)</span>. Le plus grand entier naturel inférieur à <span class="math inline">\(E(x) + 2\)</span> est <span class="math inline">\(E(x) + 1\)</span>, donc <span class="math inline">\(E(x + 1) = E(x) + 1\)</span>.
+</details>
+</section>
+<section id="exercice-3-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3-1">Exercice 3</h3>
+<p>Étudier la convergence et déterminer la limite, lorsqu’elle existe, de la suite <span class="math inline">\(\{U_n\}\)</span> définie par :</p>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n}\]</span></p>
+<p>où <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> sont des réels tels que <span class="math inline">\(|a| \neq |b|\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Comme <span class="math inline">\(|a| \neq |b|\)</span>, nous avons deux possibilités :</p>
+<ul>
+<li>Si $|a| &gt; <span class="math inline">\(|b|\)</span>, alors</li>
+</ul>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{a^n}{a^n} \left( \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n} \right) = \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n}.\]</span></p>
+<p>Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{b}{a}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = 1\)</span>.</p>
+<ul>
+<li>Si $|a| &lt; <span class="math inline">\(|b|\)</span>, alors</li>
+</ul>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{b^n}{b^n} \left( \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1} \right) = \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1}.\]</span></p>
+Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{a}{b}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = -1\)</span>.
+</details>
+</section>
+<section id="exercice-4-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4-1">Exercice 4</h3>
+<p>Soit <span class="math inline">\(\{U_n\}\)</span> une suite numérique telle que <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \ell\)</span>.</p>
+<ol type="1">
+<li>Montrer que <span class="math inline">\(|\ell| &lt; 1 \implies \{U_n\}\)</span> converge vers 0.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Supposons que <span class="math inline">\(|\ell| &lt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> converge vers 0.</p>
+<p><span class="math inline">\(\forall \epsilon &gt; 0, \exists N \in \mathbb{N}, \forall n \in \mathbb{N}, n \geq N \implies \left|\frac{U_{n+1}}{U_n} - \ell \right| &lt; \epsilon\)</span> alors pour tout <span class="math inline">\(n &gt; N\)</span>, <span class="math inline">\(-\epsilon &lt; \frac{U_{n+1}}{U_n} - \ell &lt; \epsilon \implies \ell - \epsilon &lt; \frac{U_{n+1}}{U_n} &lt; \ell + \epsilon\)</span>.</p>
+<p>Par itération, nous obtenons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N}\)</span>.</p>
+<p>Donc, <span class="math inline">\(\frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N} \implies U_{n+1} &lt; U_N (\ell + \epsilon)^{n-N}\)</span>.</p>
+Comme <span class="math inline">\(|\ell| &lt; 1\)</span>, soit <span class="math inline">\(\epsilon_1 = \frac{1 - \ell}{2}\)</span> alors <span class="math inline">\(\ell + \epsilon_1 &lt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &lt; U_N (\ell + \epsilon_1)^{n-N} \to 0\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.
+</details>
+<ol start="2" type="1">
+<li>Montrer que <span class="math inline">\(|\ell| &gt; 1 \implies \{U_n\}\)</span> diverge.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Supposons que <span class="math inline">\(|\ell| &gt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> diverge.</p>
+D’après l’inégalité précédente, nous avons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N}\)</span>. Comme <span class="math inline">\(|\ell| &gt; 1\)</span>, soit <span class="math inline">\(\epsilon_2 = \frac{\ell - 1}{2}\)</span> alors <span class="math inline">\(\ell - \epsilon_2 &gt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &gt; U_N (\ell - \epsilon_2)^{n-N} \to +\infty\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.
+</details>
+<ol start="3" type="1">
+<li>Que peut-on dire concernant la convergence de la suite si <span class="math inline">\(|\ell| = 1\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Cas <span class="math inline">\(\ell = 1\)</span> :</p>
+<p>Soient <span class="math inline">\(U_n = n\)</span> et <span class="math inline">\(V_n = \frac{1}{n}\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{n+1}{n} = 1\)</span> et <span class="math inline">\(U_n\)</span> diverge car <span class="math inline">\(\lim_{n \to \infty} U_n = +\infty\)</span>.</p>
+<span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{\frac{1}{n+1}}{\frac{1}{n}} = \lim_{n \to \infty} \frac{n}{n+1} = 1\)</span> et <span class="math inline">\(V_n\)</span> converge vers 0.
+</details>
+<ol start="4" type="1">
+<li>Application : Étudier les suites définies par <span class="math inline">\(U_n = \frac{n^k}{x^n}\)</span> et <span class="math inline">\(V_n = \frac{x^n}{n!}\)</span>.</li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p><span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{(n+1)^k x^n}{x^{n+1} n^k} = \lim_{n \to \infty} \frac{(n+1)^k}{x n^k} = \frac{1}{x}\)</span>.</p>
+<ul>
+<li>Si <span class="math inline">\(x = 1\)</span> alors d’après le cas <span class="math inline">\(\ell = 1\)</span>, on ne peut rien conclure.</li>
+<li>Si <span class="math inline">\(x &gt; 1\)</span> alors <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(U_n\)</span> converge.</li>
+<li>Si <span class="math inline">\(x &lt; 1\)</span> alors <span class="math inline">\(|\ell| &gt; 1\)</span>, <span class="math inline">\(U_n\)</span> diverge.</li>
+</ul>
+<span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{x^{n+1} n!}{(n+1)! x^n} = \lim_{n \to \infty} \frac{x}{n+1} = 0\)</span>, d’après <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(V_n\)</span> converge.
 </details>
 </section>
 
