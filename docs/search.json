@@ -165,7 +165,14 @@
     "href": "other.html#algèbre",
     "title": "Tous les exercices",
     "section": "Algèbre",
-    "text": "Algèbre\nAlgèbre bilinéaire\nFormes quadratiques\nThéorie des groupes\nThéories des anneaux\n\nProba-Stats\nStatistiques\nThéorie des Probabilitées"
+    "text": "Algèbre\nAlgèbre bilinéaire\nFormes quadratiques\nThéorie des groupes\nThéories des anneaux"
+  },
+  {
+    "objectID": "other.html#proba-stats",
+    "href": "other.html#proba-stats",
+    "title": "Tous les exercices",
+    "section": "Proba-Stats",
+    "text": "Proba-Stats\n\n\nStatistiques\nThéorie des Probabilitées"
   },
   {
     "objectID": "posts/welcome/index.html",
