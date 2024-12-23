@@ -34,12 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -210,7 +208,6 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -251,7 +248,7 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>La fonction exponentielle ( t e^t ) est convexe (de ( ) dans ( )). On a donc, pour tout ( t_1, t_2 ) et tout ( t [0, 1] ),</p>
+<p>La fonction exponentielle $ t e^t $ est convexe de $ $ dans $ $. On a donc, pour tout $ t_1, t_2 $ et tout $ t $,</p>
 <p><span class="math display">\[ e^{t t_1 + (1-t) t_2} \leq t e^{t_1} + (1-t) e^{t_2}. \]</span></p>
 <p>Soit <span class="math inline">\(a, b &gt; 0\)</span> (les autres cas sont triviaux). On prend <span class="math inline">\(t = \frac{1}{p}\)</span> (de sorte que <span class="math inline">\(1 - t = \frac{1}{q}\)</span>), <span class="math inline">\(t_1 = p \ln(a)\)</span> et <span class="math inline">\(t_2 = q \ln(b)\)</span>. On obtient bien</p>
 <p><span class="math display">\[ ab \leq \frac{a^p}{p} + \frac{b^q}{q}. \]</span></p>
@@ -492,27 +489,6 @@ window.Quarto = {
 </section>
 <section id="exercice-16" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-16">Exercice 16</h3>
-<p>Extrait d’un sujet d’examen</p>
-<p>On considère <span class="math inline">\(\mathbb{R}^3\)</span> muni de sa tribu borélienne et de la mesure de Lebesgue <span class="math inline">\(\lambda_3\)</span>. Pour tout <span class="math inline">\(u, v \in \mathbb{R}^3\)</span> on note <span class="math inline">\([u, v]\)</span> le segment d’extrémités <span class="math inline">\(u\)</span> et <span class="math inline">\(v\)</span> défini par <span class="math inline">\([u, v] = \{(1 - t)u + tv \mid t \in [0, 1]\}\)</span>.</p>
-<p>Dans la suite on identifie <span class="math inline">\(\mathbb{R}^3\)</span> à <span class="math inline">\(\mathbb{R}^2 \times \mathbb{R}\)</span>, on pourra donc noter <span class="math inline">\((x, s)\)</span> les points de <span class="math inline">\(\mathbb{R}^3\)</span>, avec <span class="math inline">\(x \in \mathbb{R}^2\)</span> et <span class="math inline">\(s \in \mathbb{R}\)</span>.</p>
-<p>Soit <span class="math inline">\(A \in \mathcal{B}(\mathbb{R}^2)\)</span>, le cône <span class="math inline">\(C_A\)</span> de sommet <span class="math inline">\((0, 1) \in \mathbb{R}^3\)</span> et de base <span class="math inline">\(A\)</span> est l’union des segments de <span class="math inline">\(\mathbb{R}^3\)</span> joignant <span class="math inline">\((0, 1)\)</span> à un point de <span class="math inline">\(A \times \{0\} : C_A = \bigcup_{x \in A} [(0, 1), (x, 0)]\)</span>.</p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(C_A\)</span> est un borélien de <span class="math inline">\(\mathbb{R}^3\)</span>.</li>
-<li>Pour tout <span class="math inline">\(s \in \mathbb{R}\)</span>, déterminer <span class="math inline">\((C_A)_{,s} = \{x \in \mathbb{R}^2 \mid (x, s) \in C_A\}\)</span>. En déduire <span class="math inline">\(\lambda_2((C_A)_{,s})\)</span>.</li>
-<li>Calculer <span class="math inline">\(\lambda_3(C_A)\)</span> en fonction de <span class="math inline">\(\lambda_2(A)\)</span>.</li>
-<li>Soit <span class="math inline">\(h &gt; 0\)</span>. On note <span class="math inline">\(C_{A, h}\)</span> le cône de sommet <span class="math inline">\((0, h) \in \mathbb{R}^3\)</span> et de base <span class="math inline">\(A : C_{A, h}\)</span> est l’union des segments de <span class="math inline">\(\mathbb{R}^3\)</span> joignant <span class="math inline">\((0, h)\)</span> à un point de <span class="math inline">\(A \times \{0\}\)</span>. Que vaut <span class="math inline">\(\lambda_3(C_{A, h})\)</span> ?</li>
-<li>En identifiant <span class="math inline">\(\mathbb{R}^{n+1}\)</span> à <span class="math inline">\(\mathbb{R}^n \times \mathbb{R}\)</span>, généraliser ce qui précède aux cônes de <span class="math inline">\(\mathbb{R}^{n+1}\)</span> de sommet <span class="math inline">\((0, 1) \in \mathbb{R}^n \times \mathbb{R}\)</span> et de base <span class="math inline">\(A \in \mathcal{B}(\mathbb{R}^n)\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous démontrerons que <span class="math inline">\(C_A\)</span> est un borélien, déterminerons les sections du cône et utiliserons des intégrales pour calculer les volumes.</p>
-</details>
-</section>
-<section id="exercice-17" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-17">Exercice 17</h3>
-<p>Extrait d’un sujet d’examen</p>
 <p>On rappelle que la fonction bêta d’Euler est définie par <span class="math inline">\(B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt\)</span> et vérifie <span class="math inline">\(B(x, y) = B(y, x) = 2 \int_0^{\pi/2} \sin^{2x-1} \theta \cos^{2y-1} \theta \, d\theta = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\)</span>.</p>
 <p>Pour <span class="math inline">\(a, b &gt; 0\)</span>, on note <span class="math inline">\(I_{a, b} = \int_D |x|^{a-1} |y|^{b-1} \, dx \, dy\)</span>, où <span class="math inline">\(D = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 &lt; 1\}\)</span> est le disque unité de <span class="math inline">\(\mathbb{R}^2\)</span>.</p>
 <ol type="1">
@@ -568,150 +544,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
