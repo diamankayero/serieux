@@ -240,77 +240,115 @@ window.Quarto = {
 <p><span class="math display">\[2|xy| \leq x^2 + y^2 \quad \text{et} \quad \sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
 <ol start="2" type="1">
 <li>Montrer que <span class="math inline">\(|x| = \max\{x, -x\}\)</span>. Le maximum de deux nombres <span class="math inline">\((x, y)\)</span> (c’est-à-dire le plus grand des deux) est noté <span class="math inline">\(\max\{x, y\}\)</span>. De même, on notera <span class="math inline">\(\min\{x, y\}\)</span> le plus petit des deux nombres <span class="math inline">\((x, y)\)</span>.</li>
-<li>Démontrer que : <span class="math display">\[\max\{x, y\} = \frac{x + y + |x - y|}{2} \quad \text{et} \quad \min\{x, y\} = \frac{x + y - |x - y|}{2}.\]</span> On pose <span class="math inline">\(x^+ = \max\{x, 0\}\)</span> et <span class="math inline">\(x^- = \max\{0, -x\}\)</span>.</li>
-<li>Montrer que <span class="math inline">\(|x| = x^+ + x^-\)</span> et <span class="math inline">\(x = x^+ - x^-\)</span>.</li>
-<li>En déduire une formule pour <span class="math inline">\(\max\{x, y, z\}\)</span> avec <span class="math inline">\(x, y, z \in \mathbb{R}\)</span>.</li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Soient <span class="math inline">\(x, y\)</span> <span class="math inline">\(\in \mathbb R\)</span> .On sait que <span class="math display">\[ 0 \leq (|x|-|y|)^2 \Leftrightarrow x^2 -2|x||y| + y^2 \geq 0 \Leftrightarrow x^2 + y^2 \geq 2|x||y|
-\]</span>.</p>
+<ol type="1">
+<li>Soient <span class="math inline">\(x, y\)</span> <span class="math inline">\(\in \mathbb R\)</span> .On sait que <span class="math display">\[ 0 \leq (|x|-|y|)^2 \Leftrightarrow x^2 -2|x||y| + y^2 \geq 0 \Leftrightarrow x^2 + y^2 \geq 2|x||y|
+\]</span>.</li>
+</ol>
 <p>D’ou le résultat.</p>
 <p>Il reste à montrer que <span class="math inline">\(\sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\)</span></p>
 <p>Soient <span class="math inline">\(x, y \in \mathbb R\)</span>.</p>
-<p>Comme <span class="math inline">\(|xy| = |x||y|\)</span> et $ 0 |x||y| x<sup>2+y</sup>2.$$</p>
+<p>Comme <span class="math inline">\(|xy| = |x||y|\)</span> et $ 0 |x||y| x<sup>2+y</sup>2.$</p>
 <p>Alors, <span class="math display">\[ x^2+y^2 \leq x^2+y^2+ 2|x||y| \leq x^2+y^2+ x^2+y^2.\]</span></p>
 <p><span class="math display">\[ x^2+y^2 \leq (|x|+|y|)^2 \leq 2(x^2+y^2)\]</span>.</p>
 <p>d’ou, <span class="math display">\[\sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
 <ol start="2" type="1">
-<li>Soient $x, y R.</li>
+<li>Soient <span class="math inline">\(x, y \in \mathbb R.\)</span></li>
 </ol>
 <p>Si <span class="math inline">\(max \{x,-x\}= x\)</span> . Alors <span class="math inline">\(x \geq -x\)</span> <span class="math inline">\(\Leftrightarrow 2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = x.\)</span></p>
 <p><span class="math display">\[x \geq 0 \Rightarrow |x| =x= max\{x,-x\}\]</span></p>
-<p>Si <span class="math inline">\(max {x,-x}= -x\)</span> . Alors <span class="math inline">\(-x \geq x\)</span> <span class="math inline">\(\Leftrightarrow -2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = -x.\)</span></p>
+<p>Si <span class="math inline">\(max \{x,-x\}= -x\)</span> . Alors <span class="math inline">\(-x \geq x\)</span> <span class="math inline">\(\Leftrightarrow -2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = -x.\)</span></p>
 <p><span class="math display">\[-x \geq 0 \Rightarrow |x| =-x= max\{x,-x\}\]</span> D’ou <span class="math inline">\(|x| = max\{x,-x\}\)</span></p>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-2">Exercice 2</h3>
-<p>Soient <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> des réels. Démontrer les inégalités suivantes :</p>
-<ol type="1">
-<li><span class="math display">\[|x| + |y| \leq |x + y| + |x - y|\]</span></li>
-<li><span class="math display">\[1 + |xy - 1| \leq (1 + |x - 1|)(1 + |y - 1|)\]</span></li>
-</ol>
+<p>Soit <span class="math inline">\(E = \left\{ \frac{1}{n} + \frac{1}{m} \mid (n,m) \in \mathbb{N}^* \times \mathbb{N}^* \right\}\)</span>. Déterminer, si elles existent, la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</p>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-3" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-3">Exercice 3</h3>
-<p>Montrer par récurrence que pour un ensemble de nombres réels <span class="math inline">\(x_1, \ldots, x_n\)</span>, nous avons les propositions suivantes :</p>
-<ol type="1">
-<li><span class="math display">\[\left| \sum_{i=1}^{n} x_i \right| \leq \sum_{i=1}^{n} |x_i|\]</span></li>
-<li>Si <span class="math inline">\(\forall i \in \{1, \ldots, n\}, 0 \leq |x_i| \leq y_i\)</span>, alors <span class="math display">\[\left| \prod_{i=1} x_i \right| \leq \prod_{i=1} |x_i|.\]</span></li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indiacation : on le fait par reccurence</p>
+<p>Déterminons, si elles existent, la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</p>
+<p><strong>Recherche de la borne supérieure :</strong></p>
+<p>Il est clair que <span class="math inline">\(E\)</span> est non vide et notons par <span class="math inline">\(e_{n,m}\)</span> les éléments de <span class="math inline">\(E\)</span>. <span class="math inline">\(\forall (n,m) \in \mathbb{N}^* \times \mathbb{N}^*\)</span>, nous avons <span class="math inline">\(n \geq 1\)</span> et <span class="math inline">\(m \geq 1\)</span>. Par conséquent, <span class="math display">\[\frac{1}{n} \leq 1 \quad \text{et} \quad \frac{1}{m} \leq 1\]</span> <span class="math display">\[\frac{1}{n} + \frac{1}{m} \leq 1 + 1 \Rightarrow e_{n,m} \leq e_{1,1}\]</span></p>
+<p>On en déduit que <span class="math inline">\(e_{1,1}\)</span> est un majorant de <span class="math inline">\(E\)</span> ; de plus comme <span class="math inline">\(e_{1,1} \in E\)</span> alors <span class="math display">\[e_{1,1} = \max(E) = \sup(E)\]</span></p>
+<p><strong>Recherche de la borne inférieure :</strong></p>
+<p>On a <span class="math inline">\(\forall (n,m) \in \mathbb{N}^* \times \mathbb{N}^*\)</span>, <span class="math inline">\(0 &lt; \frac{1}{n} + \frac{1}{m}\)</span>. Donc <span class="math inline">\(0\)</span> est un minorant de <span class="math inline">\(E\)</span>.</p>
+<p>Montrons que <span class="math inline">\(0 = \inf(E)\)</span>. Il suffit de montrer que <span class="math inline">\(y \in \mathbb{R}\)</span>, <span class="math inline">\(y &gt; 0\)</span>, alors il existe <span class="math inline">\(\alpha \in E\)</span> tel que <span class="math inline">\(0 &lt; \alpha &lt; y\)</span>. D’après la propriété d’Archimède, <span class="math display">\[\forall y \in \mathbb{R}^*_+, \forall x \in \mathbb{R}^*_+, \exists n \in \mathbb{N}^* : ny &gt; x\]</span></p>
+<p>En posant <span class="math inline">\(x = e_{1,1}\)</span>, on obtient l’existence d’un entier naturel non nul <span class="math inline">\(n\)</span> tel que <span class="math inline">\(ny &gt; e_{1,1}\)</span>, autrement dit, tel que <span class="math inline">\(y &gt; \frac{1}{n} + \frac{1}{n}\)</span>. Comme <span class="math inline">\(\alpha = e_{n,n} \in E\)</span>, on conclut que <span class="math inline">\(0\)</span> est bien la borne inférieure de <span class="math inline">\(E\)</span>.</p>
 </details>
 </section>
 <section id="exercice-4" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \frac{n - 1}{n} \cdot \frac{n + 1}{n} ; n \in \mathbb{N}^* \right\}.\]</span></p>
 <ol type="1">
-<li>Soit <span class="math inline">\(n\)</span> un entier naturel. Montrer que pour deux nombres réels <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> tels que <span class="math inline">\(0 \leq x \leq y\)</span>, alors <span class="math inline">\(x^n \leq y^n\)</span>.</li>
-<li>Vérifier que pour tous réels <span class="math inline">\(x_i, x_j &gt; 0\)</span>, on a : <span class="math display">\[\frac{x_i}{x_j} + \frac{x_j}{x_i} = \frac{x_i^2 + x_j^2}{x_i x_j} \geq 2.\]</span></li>
-<li>Soit <span class="math inline">\(n &gt; 1\)</span> fixé. Démontrer que <span class="math display">\[(x_1 + \ldots + x_n) \left(\frac{1}{x_1} + \ldots + \frac{1}{x_n}\right) \geq n^2.\]</span></li>
-<li>En déduire <span class="math display">\[\min \left\{(x_1 + \ldots + x_n) \left(\frac{1}{x_1} + \ldots + \frac{1}{x_n}\right); x_1, \ldots, x_n \in \mathbb{R}^*\right\}.\]</span></li>
+<li><p>Montrons que <span class="math inline">\(E\)</span> est infini et borné.</p></li>
+<li><p>Déterminer, si elles existent, la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</p></li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Indication :</p>
+<p><strong>1. Montrons que</strong> <span class="math inline">\(E\)</span> est infini et borné :</p>
+<p>Montrons que les éléments de <span class="math inline">\(E\)</span> sont tous distincts, ce qui prouvera que <span class="math inline">\(E\)</span> est infini. Raisonnons par l’absurde en supposant deux éléments égaux pour deux entiers strictement positifs <span class="math inline">\(n_1\)</span> et <span class="math inline">\(n_2\)</span> (avec <span class="math inline">\(n_1 \neq n_2\)</span>) : <span class="math display">\[u_{n_1} = u_{n_2} \Leftrightarrow \frac{n_1 - 1}{n_1} \cdot \frac{n_1 + 1}{n_1} = \frac{n_2 - 1}{n_2} \cdot \frac{n_2 + 1}{n_2} \Leftrightarrow n_1^2 = n_2^2 \Leftrightarrow n_1 = n_2\]</span> Ce qui est absurde. Donc <span class="math inline">\(E\)</span> est infini.</p>
+<p>Montrons que <span class="math inline">\(u_n\)</span> est borné. Pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, <span class="math inline">\(\frac{n - 1}{n} \leq 1\)</span> et <span class="math inline">\(\frac{n + 1}{n} \leq 2\)</span>, donc <span class="math inline">\(u_n \leq 1\)</span>. De plus, pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, <span class="math inline">\(n &gt; 1\)</span> et <span class="math inline">\(\frac{n - 1}{n} &gt; 0\)</span>, donc <span class="math inline">\(u_n &gt; 0\)</span>. On en tire que <span class="math inline">\(E\)</span> est minorée par <span class="math inline">\(0\)</span> et majorée par <span class="math inline">\(1\)</span>.</p>
+<p><strong>2. Déterminer si elle existe la borne supérieure et la borne inférieure de</strong> <span class="math inline">\(E\)</span> :</p>
+<p>Sachant <span class="math inline">\(0 = u_1 \in E\)</span>, <span class="math inline">\(E\)</span> admet une borne inférieure <span class="math inline">\(m\)</span> et une borne supérieure <span class="math inline">\(M\)</span> qui vérifient : <span class="math inline">\(m \geq 0\)</span> et <span class="math inline">\(M \leq 1\)</span>.</p>
+<p>Comme <span class="math inline">\(u_1 = 0\)</span>, on a <span class="math inline">\(\inf(E) = 0\)</span>.</p>
+<p>Montrons que <span class="math inline">\(\sup(E) = 1\)</span>. Pour cela, pour tout <span class="math inline">\(\epsilon &gt; 0\)</span>, montrons que <span class="math inline">\(1 - \epsilon\)</span> n’est pas un majorant de <span class="math inline">\(E\)</span>. Il faut trouver <span class="math inline">\(u_n \in E\)</span> tel que <span class="math inline">\(1 - \epsilon &lt; u_n\)</span>. On a <span class="math display">\[1 - \epsilon &lt; u_n \Leftrightarrow 1 - \epsilon &lt; \frac{n - 1}{n} \cdot \frac{n + 1}{n} \Leftrightarrow (1 - \epsilon) (n^2 + 1) &lt; n^2 - 1 \Leftrightarrow n^2 &gt; \frac{2 - \epsilon}{\epsilon}\]</span></p>
+<p>Si <span class="math inline">\(\epsilon &gt; 1\)</span>, on a <span class="math inline">\(1 - \epsilon &lt; 0 \leq u_n\)</span>. Si <span class="math inline">\(\epsilon \leq 1\)</span> alors <span class="math inline">\(\frac{2 - \epsilon}{\epsilon} = 1 + \frac{1 - \epsilon}{\epsilon} &gt; 0\)</span>, on peut prendre <span class="math inline">\(n &gt; \sqrt{\frac{2 - \epsilon}{\epsilon}}\)</span> pour montrer que <span class="math inline">\(1 - \epsilon\)</span> n’est pas un majorant de <span class="math inline">\(E\)</span>. Donc, on a <span class="math inline">\(\sup(E) = 1\)</span>.</p>
 </details>
 </section>
 <section id="exercice-5" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<p>Soient <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> deux nombres réels.</p>
+<p>Montrons que : <span class="math display">\[\max\{x, y\} = \frac{x + y + |x - y|}{2}\]</span></p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Montrons que** <span class="math inline">\(\max\{x, y\} = \frac{x + y + |x - y|}{2}\)</span> :</p>
+<p>Deux cas sont possibles : ou bien <span class="math inline">\(x \leq y\)</span> ou bien <span class="math inline">\(x &gt; y\)</span>.</p>
+<p>Cas 1 : Si <span class="math inline">\(x \leq y\)</span> alors <span class="math inline">\(x - y \leq 0\)</span> et <span class="math display">\[\max\{x, y\} = y \quad \text{et} \quad \frac{x + y + |x - y|}{2} = \frac{x + y - (x - y)}{2} = y\]</span> <span class="math display">\[\Rightarrow \max\{x, y\} = \frac{x + y + |x - y|}{2}\]</span></p>
+<p>Cas 2 : Si <span class="math inline">\(x &gt; y\)</span> alors <span class="math inline">\(x - y &gt; 0\)</span> et <span class="math display">\[\max\{x, y\} = x \quad \text{et} \quad \frac{x + y + |x - y|}{2} = \frac{x + y + (x - y)}{2} = x\]</span> <span class="math display">\[\Rightarrow \max\{x, y\} = \frac{x + y + |x - y|}{2}\]</span></p>
+<p>On a démontré que dans les deux cas envisageables, la relation est vraie.</p>
+</details>
+</section>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math inline">\(E = \{ x \in \mathbb{Q}^+ \mid x^2 &lt; 2 \}\)</span>.</p>
+<ol type="1">
+<li><p>Montrons que <span class="math inline">\(E\)</span> est majorée dans <span class="math inline">\(\mathbb{Q}\)</span>.</p></li>
+<li><p>Montrons que si <span class="math inline">\(a \in E\)</span>, il existe <span class="math inline">\(r \in \mathbb{Q}^+\)</span> tel que <span class="math inline">\(a + r \in E\)</span>.</p></li>
+<li><p><span class="math inline">\(E\)</span> a-t-elle une borne supérieure dans <span class="math inline">\(\mathbb{Q}\)</span> ?</p></li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p><strong>1. Montrons que</strong> <span class="math inline">\(E\)</span> est majorée dans <span class="math inline">\(\mathbb{Q}\)</span> :</p>
+<p>Soit <span class="math inline">\(x \in E\)</span>. On remarque que si <span class="math inline">\(x &gt; 2\)</span> alors <span class="math inline">\(x^2 &gt; 4 &gt; 2\)</span> implique que <span class="math inline">\(x \notin E\)</span>, ce qui est une contradiction. On en déduit que pour tout <span class="math inline">\(x \in E\)</span>, <span class="math inline">\(x &lt; 2\)</span>. De plus, pour tout <span class="math inline">\(x \in E\)</span>, on a <span class="math inline">\(x &lt; 2\)</span>.</p>
+<p><strong>2. Montrons que si</strong> <span class="math inline">\(a \in E\)</span>, il existe <span class="math inline">\(r \in \mathbb{Q}^+\)</span> tel que $a + r E :</p>
+<p>Pour tout <span class="math inline">\(a \in E\)</span>, par définition on a <span class="math inline">\(a^2 &lt; 2\)</span>, donc <span class="math inline">\(2 - a^2 &gt; 0\)</span>. Posons <span class="math inline">\(r = \frac{2 - a^2}{2a + 2} \in \mathbb{Q}^+\)</span>.</p>
+<p>On obtient <span class="math inline">\(r &lt; \frac{2}{2a + 2} &lt; 2\)</span> et sachant que <span class="math inline">\(a \in \mathbb{Q}^+\)</span>, alors <span class="math inline">\(a + r \in \mathbb{Q}^+\)</span>. On obtient : <span class="math display">\[(a + r)^2 = a^2 + 2ar + r^2 = a^2 + (2a + r)r &lt; a^2 + (2a + 2)r = a^2 + 2 - a^2 = 2\]</span> Donc <span class="math inline">\(a + r \in E\)</span>.</p>
+<p><strong>3.</strong> <span class="math inline">\(E\)</span> a-t-elle une borne supérieure dans <span class="math inline">\(\mathbb{Q}\)</span> :</p>
+<p>Supposons qu’il existe <span class="math inline">\(y \in \mathbb{Q}\)</span> tel que <span class="math inline">\(y = \sup(E)\)</span>. Donc <span class="math inline">\(1 \leq y \leq 2\)</span> car <span class="math inline">\(1 \in E\)</span> et <span class="math inline">\(2\)</span> est un majorant de <span class="math inline">\(E\)</span>.</p>
+<p>Cas 1 : Supposons que <span class="math inline">\(y^2 &lt; 2\)</span>. On a <span class="math inline">\(y \in E\)</span>. D’après la question précédente, <span class="math inline">\(z = y + r \in E\)</span>. On a donc trouvé un <span class="math inline">\(z \in E\)</span> tel que <span class="math inline">\(z &gt; y = \sup(E)\)</span>. Ce qui est une contradiction.</p>
+<p>Cas 2 : Supposons que <span class="math inline">\(y^2 &gt; 2\)</span>. Soit <span class="math inline">\(\epsilon &gt; 0\)</span> tel que <span class="math inline">\((y - \epsilon)^2 &gt; 2\)</span>. On a <span class="math inline">\((y - \epsilon)^2 = y^2 - 2y\epsilon + \epsilon^2\)</span>. Sachant que <span class="math inline">\(y \leq 2\)</span>, nous avons <span class="math inline">\(-2y\epsilon \geq -4\epsilon\)</span> et que <span class="math display">\[(y - \epsilon)^2 &gt; y^2 - 4\epsilon + \epsilon^2 &gt; y^2 - 4\epsilon\]</span></p>
+<p>Si <span class="math inline">\(y^2 - 4\epsilon &gt; 2\)</span>, c’est-à-dire <span class="math inline">\(\epsilon &lt; \frac{y^2 - 2}{4}\)</span> alors <span class="math inline">\((y - \epsilon)^2 &gt; 2\)</span>.</p>
+<p>Posons <span class="math inline">\(\epsilon = \frac{y^2 - 2}{6}\)</span>. On obtient <span class="math inline">\(\epsilon = \frac{y^2 - 2}{6} &lt; \frac{2^2 - 2}{6} = \frac{1}{3} &lt; 1 &lt; y\)</span>.</p>
+<p>Donc <span class="math inline">\(M = y - \frac{y^2 - 2}{6} \in \mathbb{Q}^+\)</span>, <span class="math inline">\(M &lt; y\)</span> et <span class="math inline">\(M^2 &gt; 2\)</span>.</p>
+<p>Supposons qu’il existe <span class="math inline">\(x \in E\)</span> tel que <span class="math inline">\(x &gt; M\)</span>, alors <span class="math inline">\(x^2 &gt; M^2 &gt; 2\)</span>, ce qui est absurde. Donc pour tout <span class="math inline">\(x \in E\)</span>, <span class="math inline">\(x &lt; M\)</span> et <span class="math inline">\(M\)</span> est un majorant plus petit que <span class="math inline">\(y\)</span>. Ce qui est une contradiction.</p>
+<p>Cas 3 : Supposons que <span class="math inline">\(y^2 = 2\)</span>. Sachant que <span class="math inline">\(y \in \mathbb{Q}^+\)</span>, il existe deux entiers naturels <span class="math inline">\(m\)</span> et <span class="math inline">\(n\)</span> premiers entre eux tels que <span class="math inline">\(y = \frac{m}{n}\)</span>. <span class="math inline">\(y^2 = 2\)</span> implique que <span class="math display">\[\left( \frac{m}{n} \right)^2 = 2 \Rightarrow m^2 = 2n^2 \Rightarrow m \text{ est pair, donc divisible par 2} \Rightarrow \frac{m}{2} \in \mathbb{Z}\]</span> <span class="math display">\[4 \left( \frac{m}{2} \right)^2 = 2n^2 \Rightarrow n^2 = 2 \left( \frac{m}{2} \right)^2 \Rightarrow n \text{ est pair, donc divisible par 2}\]</span></p>
+<p><span class="math inline">\(2\)</span> est un facteur commun de <span class="math inline">\(m\)</span> et <span class="math inline">\(n\)</span>, ce qui est absurde.</p>
+</details>
+</section>
+<section id="exercice-7" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-7">Exercice 7</h3>
 <p>Soit <span class="math inline">\(A\)</span> une partie de <span class="math inline">\(\mathbb{R}\)</span>, <span class="math inline">\(\alpha \in \mathbb{R}\)</span> et <span class="math inline">\(\beta \in \mathbb{R}^+\)</span> tel que <span class="math display">\[\forall a \in A, \ \beta \leq a \leq \alpha.\]</span></p>
 <ol type="1">
 <li>Montrer que la partie <span class="math inline">\(B\)</span> de <span class="math inline">\(\mathbb{R}\)</span> formée des inverses des éléments de <span class="math inline">\(A\)</span> est bornée.</li>
@@ -320,14 +358,13 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux ensembles inclus dans <span class="math inline">\(\mathbb R\)</span>. 1. Montrons que la partie <span class="math inline">\(B\)</span> formé par les inverses de <span class="math inline">\(A\)</span> est bornée.</p>
+<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux ensembles inclus dans <span class="math inline">\(\mathbb R\)</span>.</p>
+<p><strong>1.</strong> Montrons que la partie <span class="math inline">\(B\)</span> formé par les inverses de <span class="math inline">\(A\)</span> est bornée.</p>
 <p>Soit <span class="math inline">\(a \in A\)</span>, <span class="math inline">\(B = \{\frac{1}{a} , a \in A\}\)</span>. <span class="math inline">\(B\)</span> est non vide.</p>
 <p>Soientt <span class="math inline">\(\alpha \in \mathbb R, \quad  \beta \in  \mathbb R_{+}^{*}\)</span>.</p>
 <p>On a <span class="math inline">\(\beta&gt;0\)</span> et <span class="math inline">\(\beta \leq \alpha\)</span> $ $. Donc,</p>
 <p><span class="math display">\[ \frac{1}{\alpha} \leq \frac{1}{a} \leq \frac{1}{\beta} \in B.\]</span> Donc <span class="math inline">\(B\)</span> est majoré par <span class="math inline">\(\frac{1}{\beta}\)</span>, et minoré par <span class="math inline">\(\frac{1}{\alpha}\)</span>.</p>
-<ol start="2" type="1">
-<li>Exprimons sa borne <span class="math inline">\(sup\)</span> et <span class="math inline">\(inf\)</span> en fonction de celles de <span class="math inline">\(A\)</span>.</li>
-</ol>
+<p><strong>2.</strong> Exprimons sa borne <span class="math inline">\(sup\)</span> et <span class="math inline">\(inf\)</span> en fonction de celles de <span class="math inline">\(A\)</span>.</p>
 <p>On a <span class="math inline">\(B \neq \emptyset\)</span> et minoré donc <span class="math inline">\(B\)</span> admet une borne inférieure.</p>
 <p>On determine d’abord la borne <span class="math inline">\(supA\)</span> et <span class="math inline">\(infA\)</span>.</p>
 <p>On a pour tout <span class="math inline">\(a \in A\)</span>, <span class="math inline">\(\beta \leq a \leq \alpha\)</span>.</p>
@@ -343,246 +380,55 @@ window.Quarto = {
 <p>d’ou, <span class="math display">\[ infB = \frac{1}{supA}\]</span></p>
 </details>
 </section>
-<section id="exercice-6" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-6">Exercice 6</h3>
-<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \frac{1}{n} + (-1)^n; n \in \mathbb{N}^* \right\}.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(E\)</span> est infini et borné.</li>
-<li>Déterminer s’il existe la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-7" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-7">Exercice 7</h3>
-<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux parties non vides de <span class="math inline">\(\mathbb{R}\)</span> telles que <span class="math display">\[\forall (a, b) \in A \times B, \ a \leq b.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(\sup A\)</span> et <span class="math inline">\(\inf B\)</span> existent et que <span class="math inline">\(\sup A \leq \inf B\)</span>.</li>
-<li>Soit <span class="math inline">\(A\)</span> une partie non vide et bornée de <span class="math inline">\(\mathbb{R}\)</span>. On note <span class="math inline">\(B = \{|x - y|; (x, y) \in A^2\}\)</span>, montrer que <span class="math inline">\(B\)</span> est majorée.</li>
-<li>On note <span class="math inline">\(\delta(A)\)</span> la borne supérieure de cet ensemble, prouver que <span class="math inline">\(\delta(A) = \sup(A) - \inf(A)\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
 <section id="exercice-8" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-8">Exercice 8</h3>
-<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \left(\frac{n - 1}{n}\right) \left(\frac{n + 1}{n}\right); n \in \mathbb{N}^* \right\}.\]</span></p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(E\)</span> est infini et borné.</li>
-<li>Déterminer s’il existe la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-9-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-9-tpe">Exercice 9 : [TPE]</h3>
-<p>Soient <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> deux parties non vides et majorées de <span class="math inline">\(\mathbb{R}\)</span>. On note <span class="math inline">\(A + B = \{a + b \ | \ (a, b) \in A \times B\}\)</span>.</p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(\sup A + \sup B\)</span> est un majorant de <span class="math inline">\(A + B\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A + B) = \sup A + \sup B\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A \cup B) = \max\{\sup A, \sup B\}\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\sup(A \cdot B) = \sup A \cdot \sup B\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-10-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-10-tpe">Exercice 10 : [TPE]</h3>
-<p>Soit <span class="math inline">\(f : \mathbb{Q} \to \mathbb{Q}\)</span> telle que <span class="math inline">\(\forall x, y \in \mathbb{Q}, f(x+y) = f(x) + f(y)\)</span>.</p>
-<ol type="a">
-<li>On suppose <span class="math inline">\(f\)</span> constante égale <span class="math inline">\(C\)</span>, quelle est la valeur de <span class="math inline">\(C\)</span> ? On revient au cas général.</li>
-<li>Calculer <span class="math inline">\(f(0)\)</span>.</li>
-<li>Montrer que <span class="math inline">\(\forall x \in \mathbb{Q}, f(-x) = -f(x)\)</span>.</li>
-<li>Établir que <span class="math inline">\(\forall n \in \mathbb{N}, \forall x \in \mathbb{Q}, f(nx) = nf(x)\)</span> et généraliser cette propriété à <span class="math inline">\(n \in \mathbb{Z}\)</span>.</li>
-<li>On pose <span class="math inline">\(a = f(1)\)</span>. Montrer que <span class="math inline">\(\forall x \in \mathbb{Q}, f(x) = ax\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-11-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-11-tpe">Exercice 11 : [TPE]</h3>
-<p>Soient <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> deux réels strictement positifs. Les parties suivantes sont-elles majorées, minorées ? Si oui, déterminer leurs bornes supérieures, inférieures.</p>
-<ol type="1">
-<li><span class="math inline">\(\{a + bn; n \in \mathbb{N}\}\)</span></li>
-<li><span class="math inline">\(\{a + (-1)^n b; n \in \mathbb{N}\}\)</span></li>
-<li><span class="math inline">\(\{a + \frac{b}{n}; n \in \mathbb{N}^*\}\)</span></li>
-<li><span class="math inline">\(\{(-1)^n a + \frac{b}{n}; n \in \mathbb{N}^*\}\)</span></li>
-<li><span class="math inline">\(\{a + \frac{(-1)^n b}{n}; n \in \mathbb{N}^*\}\)</span></li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Indication :</p>
-</details>
-</section>
-<section id="exercice-12-tpe" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-12-tpe">Exercice 12 : [TPE]</h3>
-<p>Démontrer que les réels suivants sont irrationnels :</p>
-<ol type="1">
-<li><span class="math inline">\(\sqrt{x} + \sqrt{y}\)</span> où <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> sont des rationnels positifs tels que <span class="math inline">\(\sqrt{x}\)</span> et <span class="math inline">\(\sqrt{y}\)</span> sont irrationnels.</li>
-<li><span class="math inline">\(\sqrt{2} + \sqrt{3} + \sqrt{5}\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-</details>
-</section>
-<section id="exercice-1-1" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-1-1">Exercice 1</h3>
 <p>Soient A et B deux parties non vides de <span class="math inline">\(\mathbb{R}\)</span>. Montrer que :</p>
 <ol type="1">
-<li>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> sont majorées, <span class="math inline">\(A \cup B\)</span> est majorée et <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.</li>
+<li><p>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> sont majorées, <span class="math inline">\(A \cup B\)</span> est majorée et <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.</p></li>
+<li><p>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span> sont minorées, <span class="math inline">\(A \cup B\)</span> est minorée et <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.</p></li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont majorées donc A et B admettent des bornes supérieures. Soient <span class="math inline">\(\sup A\)</span> et <span class="math inline">\(\sup B\)</span> les bornes supérieures respectives de A et B. Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \leq \sup A\)</span> ou <span class="math inline">\(x \leq \sup B\)</span> i.e.&nbsp;<span class="math inline">\(x \leq \sup(\sup A, \sup B)\)</span> d’où <span class="math inline">\(\forall x \in A \cup B, x \leq \sup(\sup A, \sup B)\)</span>.</p>
-<p>On peut conclure que <span class="math inline">\(\sup(\sup A, \sup B)\)</span> majore <span class="math inline">\(A \cup B\)</span>. <span class="math inline">\(\sup(A \cup B)\)</span> existe car <span class="math inline">\(A \cup B\)</span> est non vide ( <span class="math inline">\(A \subset A \cup B\)</span> ou <span class="math inline">\(B \subset A \cup B\)</span>) et majorée par <span class="math inline">\(\sup(\sup A, \sup B)\)</span> de plus nous avons <span class="math inline">\(\sup(A \cup B) \leq \sup(\sup A, \sup B)\)</span>.</p>
+<p>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont majorées donc A et B admettent des bornes supérieures.</p>
+<p>Soient <span class="math inline">\(\sup A\)</span> et <span class="math inline">\(\sup B\)</span> les bornes supérieures respectives de A et B.</p>
+<p>Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \leq \sup A\)</span> ou <span class="math inline">\(x \leq \sup B\)</span> i.e.&nbsp;<span class="math inline">\(x \leq \sup(\sup A, \sup B)\)</span> d’où <span class="math inline">\(\forall x \in A \cup B, x \leq \sup(\sup A, \sup B)\)</span>.</p>
+<p>On peut conclure que <span class="math inline">\(\sup(\sup A, \sup B)\)</span> majore <span class="math inline">\(A \cup B\)</span>.</p>
+<p><span class="math inline">\(\sup(A \cup B)\)</span> existe car <span class="math inline">\(A \cup B\)</span> est non vide ( <span class="math inline">\(A \subset A \cup B\)</span> ou <span class="math inline">\(B \subset A \cup B\)</span>) et majorée par <span class="math inline">\(\sup(\sup A, \sup B)\)</span> de plus nous avons <span class="math inline">\(\sup(A \cup B) \leq \sup(\sup A, \sup B)\)</span>.</p>
 <p>Montrons maintenant que <span class="math inline">\(\sup(A \cup B) \geq \sup(\sup A, \sup B)\)</span> : on a <span class="math inline">\(A \subset A \cup B\)</span> alors <span class="math inline">\(\sup(A \cup B) \geq \sup A\)</span> de même nous avons <span class="math inline">\(B \subset A \cup B\)</span> alors <span class="math inline">\(\sup(A \cup B) \geq \sup B\)</span> d’où <span class="math inline">\(\sup(A \cup B) \geq \sup(\sup A, \sup B)\)</span>.</p>
-Donc <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.
-</details>
+<p>Donc <span class="math inline">\(\sup(A \cup B) = \sup(\sup A, \sup B)\)</span>.</p>
 <ol start="2" type="1">
-<li>Si <span class="math inline">\(A\)</span> et <span class="math inline">\(B sont minorées\)</span>, <span class="math inline">\(A \cup B\)</span> est minorée et <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.</li>
+<li>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont minorées donc A et B admettent des bornes inférieures.</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>A et B sont des parties non vides de <span class="math inline">\(\mathbb{R}\)</span> et de plus elles sont minorées donc A et B admettent des bornes inférieures. Soient <span class="math inline">\(\inf A\)</span> et <span class="math inline">\(\inf B\)</span> les bornes inférieures respectives de A et B. Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \geq \inf A\)</span> ou <span class="math inline">\(x \geq \inf B\)</span> i.e.&nbsp;<span class="math inline">\(x \geq \inf(\inf A, \inf B)\)</span> donc <span class="math inline">\(\inf(\inf A, \inf B)\)</span> est un minorant de <span class="math inline">\(A \cup B\)</span>. Il découle aussi <span class="math inline">\(\inf(\inf A, \inf B) \leq \inf(A \cup B)\)</span> car <span class="math inline">\(\inf(A \cup B)\)</span> est le plus grand des minorants de <span class="math inline">\(A \cup B\)</span>.</p>
+<p>Soient <span class="math inline">\(\inf A\)</span> et <span class="math inline">\(\inf B\)</span> les bornes inférieures respectives de A et B. Soit <span class="math inline">\(x \in A \cup B \iff x \in A\)</span> ou <span class="math inline">\(x \in B\)</span> c’est-à-dire <span class="math inline">\(x \geq \inf A\)</span> ou <span class="math inline">\(x \geq \inf B\)</span> i.e.&nbsp;<span class="math inline">\(x \geq \inf(\inf A, \inf B)\)</span> donc <span class="math inline">\(\inf(\inf A, \inf B)\)</span> est un minorant de <span class="math inline">\(A \cup B\)</span>.</p>
+<p>Il découle aussi <span class="math inline">\(\inf(\inf A, \inf B) \leq \inf(A \cup B)\)</span> car <span class="math inline">\(\inf(A \cup B)\)</span> est le plus grand des minorants de <span class="math inline">\(A \cup B\)</span>.</p>
 <p>Montrons maintenant que <span class="math inline">\(\inf(A \cup B) \geq \inf(\inf A, \inf B)\)</span> : on a <span class="math inline">\(A \subset A \cup B\)</span> alors <span class="math inline">\(\inf(A \cup B) \leq \inf A\)</span> de même nous avons <span class="math inline">\(B \subset A \cup B\)</span> alors <span class="math inline">\(\inf(A \cup B) \leq \inf B\)</span> d’où <span class="math inline">\(\inf(A \cup B) \leq \inf(\inf A, \inf B)\)</span>.</p>
-Donc <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.
+<p>Donc <span class="math inline">\(\inf(A \cup B) = \inf(\inf A, \inf B)\)</span>.</p>
 </details>
 </section>
-<section id="exercice-2-1" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-2-1">Exercice 2</h3>
+<section id="exercice-9" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-9">Exercice 9</h3>
 <p>Soit <span class="math inline">\(E(x)\)</span> la fonction partie entière définie sur <span class="math inline">\(\mathbb{R}\)</span>.</p>
 <ol type="1">
-<li>Montrer que la fonction partie entière est croissante sur <span class="math inline">\(\mathbb{R}\)</span>.</li>
+<li><p>Montrer que la fonction partie entière est croissante sur <span class="math inline">\(\mathbb{R}\)</span>.</p></li>
+<li><p>Montrer que <span class="math inline">\(\forall x, y \in \mathbb{R}, E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.</p></li>
+<li><p>En déduire que <span class="math inline">\(\forall x \in \mathbb{R}, E(x + 1) = E(x) + 1\)</span>.</p></li>
 </ol>
 <details>
 <summary>
 <strong>Corrigé</strong>
 </summary>
 <p>Soient <span class="math inline">\(x, y \in \mathbb{R}\)</span> tels que <span class="math inline">\(x \leq y\)</span>. Montrons que <span class="math inline">\(E(x) \leq E(y)\)</span>. <span class="math inline">\(\forall x \in \mathbb{R}\)</span>, nous avons <span class="math inline">\(E(x) \leq x &lt; E(x) + 1\)</span>. De même <span class="math inline">\(\forall y \in \mathbb{R}\)</span>, nous avons <span class="math inline">\(E(y) \leq y &lt; E(y) + 1\)</span>. Or <span class="math inline">\(x \leq y\)</span> d’où <span class="math inline">\(E(x) \leq x \leq y &lt; E(y) + 1\)</span>.</p>
-Donc <span class="math inline">\(E(x) \leq E(y)\)</span> car <span class="math inline">\(E(y)\)</span> est le plus grand entier naturel inférieur à <span class="math inline">\(E(y) + 1\)</span>.
-</details>
+<p>Donc <span class="math inline">\(E(x) \leq E(y)\)</span> car <span class="math inline">\(E(y)\)</span> est le plus grand entier naturel inférieur à <span class="math inline">\(E(y) + 1\)</span>.</p>
 <ol start="2" type="1">
-<li>Montrer que <span class="math inline">\(\forall x, y \in \mathbb{R}, E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.</li>
+<li>Nous avons <span class="math inline">\(E(x) \leq x &lt; E(x) + 1\)</span> et <span class="math inline">\(E(y) \leq y &lt; E(y) + 1\)</span>. En faisant la somme des deux inégalités, nous obtenons <span class="math inline">\(E(x) + E(y) \leq x + y &lt; E(x) + E(y) + 2\)</span>.</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Nous avons <span class="math inline">\(E(x) \leq x &lt; E(x) + 1\)</span> et <span class="math inline">\(E(y) \leq y &lt; E(y) + 1\)</span>. En faisant la somme des deux inégalités, nous obtenons <span class="math inline">\(E(x) + E(y) \leq x + y &lt; E(x) + E(y) + 2\)</span>.</p>
 <p>Comme <span class="math inline">\(E(x)\)</span> est une fonction croissante, alors en appliquant la fonction partie entière à l’inégalité, nous avons <span class="math inline">\(E(E(x) + E(y)) \leq E(x + y) &lt; E(E(x) + E(y) + 2)\)</span>.</p>
-Donc <span class="math inline">\(E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.
-</details>
+<p>Donc <span class="math inline">\(E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.</p>
 <ol start="3" type="1">
-<li>En déduire que <span class="math inline">\(\forall x \in \mathbb{R}, E(x + 1) = E(x) + 1\)</span>.</li>
+<li>D’après l’inégalité précédente, en prenant <span class="math inline">\(y = 1\)</span>, nous avons <span class="math inline">\(E(x) + E(1) \leq E(x + 1) \leq E(x) + E(1) + 1\)</span>. Comme <span class="math inline">\(E(1) = 1\)</span>, nous obtenons <span class="math inline">\(E(x) + 1 \leq E(x + 1) \leq E(x) + 2\)</span>. Le plus grand entier naturel inférieur à <span class="math inline">\(E(x) + 2\)</span> est <span class="math inline">\(E(x) + 1\)</span>, donc <span class="math inline">\(E(x + 1) = E(x) + 1\)</span>.</li>
 </ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-D’après l’inégalité précédente, en prenant <span class="math inline">\(y = 1\)</span>, nous avons <span class="math inline">\(E(x) + E(1) \leq E(x + 1) \leq E(x) + E(1) + 1\)</span>. Comme <span class="math inline">\(E(1) = 1\)</span>, nous obtenons <span class="math inline">\(E(x) + 1 \leq E(x + 1) \leq E(x) + 2\)</span>. Le plus grand entier naturel inférieur à <span class="math inline">\(E(x) + 2\)</span> est <span class="math inline">\(E(x) + 1\)</span>, donc <span class="math inline">\(E(x + 1) = E(x) + 1\)</span>.
-</details>
-</section>
-<section id="exercice-3-1" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-3-1">Exercice 3</h3>
-<p>Étudier la convergence et déterminer la limite, lorsqu’elle existe, de la suite <span class="math inline">\(\{U_n\}\)</span> définie par :</p>
-<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n}\]</span></p>
-<p>où <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> sont des réels tels que <span class="math inline">\(|a| \neq |b|\)</span>.</p>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Comme <span class="math inline">\(|a| \neq |b|\)</span>, nous avons deux possibilités :</p>
-<ul>
-<li>Si $|a| &gt; <span class="math inline">\(|b|\)</span>, alors</li>
-</ul>
-<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{a^n}{a^n} \left( \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n} \right) = \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n}.\]</span></p>
-<p>Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{b}{a}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = 1\)</span>.</p>
-<ul>
-<li>Si $|a| &lt; <span class="math inline">\(|b|\)</span>, alors</li>
-</ul>
-<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{b^n}{b^n} \left( \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1} \right) = \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1}.\]</span></p>
-Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{a}{b}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = -1\)</span>.
-</details>
-</section>
-<section id="exercice-4-1" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-4-1">Exercice 4</h3>
-<p>Soit <span class="math inline">\(\{U_n\}\)</span> une suite numérique telle que <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \ell\)</span>.</p>
-<ol type="1">
-<li>Montrer que <span class="math inline">\(|\ell| &lt; 1 \implies \{U_n\}\)</span> converge vers 0.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Supposons que <span class="math inline">\(|\ell| &lt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> converge vers 0.</p>
-<p><span class="math inline">\(\forall \epsilon &gt; 0, \exists N \in \mathbb{N}, \forall n \in \mathbb{N}, n \geq N \implies \left|\frac{U_{n+1}}{U_n} - \ell \right| &lt; \epsilon\)</span> alors pour tout <span class="math inline">\(n &gt; N\)</span>, <span class="math inline">\(-\epsilon &lt; \frac{U_{n+1}}{U_n} - \ell &lt; \epsilon \implies \ell - \epsilon &lt; \frac{U_{n+1}}{U_n} &lt; \ell + \epsilon\)</span>.</p>
-<p>Par itération, nous obtenons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N}\)</span>.</p>
-<p>Donc, <span class="math inline">\(\frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N} \implies U_{n+1} &lt; U_N (\ell + \epsilon)^{n-N}\)</span>.</p>
-Comme <span class="math inline">\(|\ell| &lt; 1\)</span>, soit <span class="math inline">\(\epsilon_1 = \frac{1 - \ell}{2}\)</span> alors <span class="math inline">\(\ell + \epsilon_1 &lt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &lt; U_N (\ell + \epsilon_1)^{n-N} \to 0\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.
-</details>
-<ol start="2" type="1">
-<li>Montrer que <span class="math inline">\(|\ell| &gt; 1 \implies \{U_n\}\)</span> diverge.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Supposons que <span class="math inline">\(|\ell| &gt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> diverge.</p>
-D’après l’inégalité précédente, nous avons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N}\)</span>. Comme <span class="math inline">\(|\ell| &gt; 1\)</span>, soit <span class="math inline">\(\epsilon_2 = \frac{\ell - 1}{2}\)</span> alors <span class="math inline">\(\ell - \epsilon_2 &gt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &gt; U_N (\ell - \epsilon_2)^{n-N} \to +\infty\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.
-</details>
-<ol start="3" type="1">
-<li>Que peut-on dire concernant la convergence de la suite si <span class="math inline">\(|\ell| = 1\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p>Cas <span class="math inline">\(\ell = 1\)</span> :</p>
-<p>Soient <span class="math inline">\(U_n = n\)</span> et <span class="math inline">\(V_n = \frac{1}{n}\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{n+1}{n} = 1\)</span> et <span class="math inline">\(U_n\)</span> diverge car <span class="math inline">\(\lim_{n \to \infty} U_n = +\infty\)</span>.</p>
-<span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{\frac{1}{n+1}}{\frac{1}{n}} = \lim_{n \to \infty} \frac{n}{n+1} = 1\)</span> et <span class="math inline">\(V_n\)</span> converge vers 0.
-</details>
-<ol start="4" type="1">
-<li>Application : Étudier les suites définies par <span class="math inline">\(U_n = \frac{n^k}{x^n}\)</span> et <span class="math inline">\(V_n = \frac{x^n}{n!}\)</span>.</li>
-</ol>
-<details>
-<summary>
-<strong>Corrigé</strong>
-</summary>
-<p><span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{(n+1)^k x^n}{x^{n+1} n^k} = \lim_{n \to \infty} \frac{(n+1)^k}{x n^k} = \frac{1}{x}\)</span>.</p>
-<ul>
-<li>Si <span class="math inline">\(x = 1\)</span> alors d’après le cas <span class="math inline">\(\ell = 1\)</span>, on ne peut rien conclure.</li>
-<li>Si <span class="math inline">\(x &gt; 1\)</span> alors <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(U_n\)</span> converge.</li>
-<li>Si <span class="math inline">\(x &lt; 1\)</span> alors <span class="math inline">\(|\ell| &gt; 1\)</span>, <span class="math inline">\(U_n\)</span> diverge.</li>
-</ul>
-<span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{x^{n+1} n!}{(n+1)! x^n} = \lim_{n \to \infty} \frac{x}{n+1} = 0\)</span>, d’après <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(V_n\)</span> converge.
 </details>
 </section>
 

@@ -236,6 +236,68 @@ window.Quarto = {
 </header><main class="content" id="quarto-document-content">
 <section id="exercice-1" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-1">Exercice 1</h3>
+<p>Étudier la convergence et déterminer la limite, lorsqu’elle existe, de la suite <span class="math inline">\(\{U_n\}\)</span> définie par :</p>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n}\]</span></p>
+<p>où <span class="math inline">\(a\)</span> et <span class="math inline">\(b\)</span> sont des réels tels que <span class="math inline">\(|a| \neq |b|\)</span>.</p>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Comme <span class="math inline">\(|a| \neq |b|\)</span>, nous avons deux possibilités :</p>
+<ul>
+<li>Si $|a| &gt; <span class="math inline">\(|b|\)</span>, alors</li>
+</ul>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{a^n}{a^n} \left( \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n} \right) = \frac{1 - \left(\frac{b}{a}\right)^n}{1 + \left(\frac{b}{a}\right)^n}.\]</span></p>
+<p>Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{b}{a}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = 1\)</span>.</p>
+<ul>
+<li>Si $|a| &lt; <span class="math inline">\(|b|\)</span>, alors</li>
+</ul>
+<p><span class="math display">\[U_n = \frac{a^n - b^n}{a^n + b^n} = \frac{b^n}{b^n} \left( \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1} \right) = \frac{\left(\frac{a}{b}\right)^n - 1}{\left(\frac{a}{b}\right)^n + 1}.\]</span></p>
+<p>Comme <span class="math inline">\(\lim_{n \to \infty} \left(\frac{a}{b}\right)^n \to 0\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} U_n = -1\)</span>.</p>
+</details>
+</section>
+<section id="exercice-2" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-2">Exercice 2</h3>
+<p>Soit <span class="math inline">\(\{U_n\}\)</span> une suite numérique telle que <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \ell\)</span>.</p>
+<ol type="1">
+<li><p>Montrer que <span class="math inline">\(|\ell| &lt; 1 \implies \{U_n\}\)</span> converge vers 0.</p></li>
+<li><p>Montrer que <span class="math inline">\(|\ell| &gt; 1 \implies \{U_n\}\)</span> diverge.</p></li>
+<li><p>Que peut-on dire concernant la convergence de la suite si <span class="math inline">\(|\ell| = 1\)</span>.</p></li>
+<li><p>Application : Étudier les suites définies par <span class="math inline">\(U_n = \frac{n^k}{x^n}\)</span> et <span class="math inline">\(V_n = \frac{x^n}{n!}\)</span>.</p></li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p>Supposons que <span class="math inline">\(|\ell| &lt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> converge vers 0.</p>
+<p><span class="math inline">\(\forall \epsilon &gt; 0, \exists N \in \mathbb{N}, \forall n \in \mathbb{N}, n \geq N \implies \left|\frac{U_{n+1}}{U_n} - \ell \right| &lt; \epsilon\)</span> alors pour tout <span class="math inline">\(n &gt; N\)</span>, <span class="math inline">\(-\epsilon &lt; \frac{U_{n+1}}{U_n} - \ell &lt; \epsilon \implies \ell - \epsilon &lt; \frac{U_{n+1}}{U_n} &lt; \ell + \epsilon\)</span>.</p>
+<p>Par itération, nous obtenons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N}\)</span>.</p>
+<p>Donc, <span class="math inline">\(\frac{U_{n+1}}{U_N} &lt; (\ell + \epsilon)^{n-N} \implies U_{n+1} &lt; U_N (\ell + \epsilon)^{n-N}\)</span>.</p>
+<p>Comme <span class="math inline">\(|\ell| &lt; 1\)</span>, soit <span class="math inline">\(\epsilon_1 = \frac{1 - \ell}{2}\)</span> alors <span class="math inline">\(\ell + \epsilon_1 &lt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &lt; U_N (\ell + \epsilon_1)^{n-N} \to 0\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>Supposons que <span class="math inline">\(|\ell| &gt; 1\)</span> et montrons que <span class="math inline">\(\{U_n\}\)</span> diverge.</p>
+<p>D’après l’inégalité précédente, nous avons <span class="math inline">\((\ell - \epsilon)^{n-N} &lt; \frac{U_{n+1}}{U_N}\)</span>. Comme <span class="math inline">\(|\ell| &gt; 1\)</span>, soit <span class="math inline">\(\epsilon_2 = \frac{\ell - 1}{2}\)</span> alors <span class="math inline">\(\ell - \epsilon_2 &gt; 1\)</span>, donc <span class="math inline">\(U_{n+1} &gt; U_N (\ell - \epsilon_2)^{n-N} \to +\infty\)</span> lorsque <span class="math inline">\(n \to \infty\)</span>.</p>
+<ol start="3" type="1">
+<li>Cas <span class="math inline">\(\ell = 1\)</span> :</li>
+</ol>
+<p>Soient <span class="math inline">\(U_n = n\)</span> et <span class="math inline">\(V_n = \frac{1}{n}\)</span>, nous avons <span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{n+1}{n} = 1\)</span> et <span class="math inline">\(U_n\)</span> diverge car <span class="math inline">\(\lim_{n \to \infty} U_n = +\infty\)</span>.</p>
+<p><span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{\frac{1}{n+1}}{\frac{1}{n}} = \lim_{n \to \infty} \frac{n}{n+1} = 1\)</span> et <span class="math inline">\(V_n\)</span> converge vers 0.</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p><span class="math inline">\(\lim_{n \to \infty} \frac{U_{n+1}}{U_n} = \lim_{n \to \infty} \frac{(n+1)^k x^n}{x^{n+1} n^k} = \lim_{n \to \infty} \frac{(n+1)^k}{x n^k} = \frac{1}{x}\)</span>.</p>
+<ul>
+<li>Si <span class="math inline">\(x = 1\)</span> alors d’après le cas <span class="math inline">\(\ell = 1\)</span>, on ne peut rien conclure.</li>
+<li>Si <span class="math inline">\(x &gt; 1\)</span> alors <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(U_n\)</span> converge.</li>
+<li>Si <span class="math inline">\(x &lt; 1\)</span> alors <span class="math inline">\(|\ell| &gt; 1\)</span>, <span class="math inline">\(U_n\)</span> diverge.</li>
+</ul>
+<p><span class="math inline">\(\lim_{n \to \infty} \frac{V_{n+1}}{V_n} = \lim_{n \to \infty} \frac{x^{n+1} n!}{(n+1)! x^n} = \lim_{n \to \infty} \frac{x}{n+1} = 0\)</span>, d’après <span class="math inline">\(|\ell| &lt; 1\)</span>, <span class="math inline">\(V_n\)</span> converge.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
 <p>Considérons la suite définie par :</p>
 <p><span class="math display">\[U_0 = 1 \text{ et } \forall n \in \mathbb{N}, \ U_{n+1} = \frac{3 + 2U_n}{2 + U_n}.\]</span></p>
 <ol type="1">
@@ -249,8 +311,8 @@ window.Quarto = {
 <p>Indication :</p>
 </details>
 </section>
-<section id="exercice-2" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-2">Exercice 2</h3>
+<section id="exercice-4" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-4">Exercice 4</h3>
 <p>Soit <span class="math inline">\(u_n\)</span> et <span class="math inline">\(v_n\)</span> deux suites numériques définies par :</p>
 <p><span class="math display">\[u_n = \sum_{k=1}^{2n} \frac{(-1)^k}{k^2} \text{ et } v_n = \sum_{k=1}^{2n+1} \frac{(-1)^k}{k^2}.\]</span></p>
 <ol type="1">
@@ -264,8 +326,8 @@ window.Quarto = {
 <p>Indication :</p>
 </details>
 </section>
-<section id="exercice-3" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<section id="exercice-3-1" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3-1">Exercice 3</h3>
 <p>Soit <span class="math inline">\(\alpha\)</span> et <span class="math inline">\(\beta\)</span> deux réels vérifiant <span class="math inline">\(0 \leq \beta \leq \alpha \leq \infty\)</span>. On définit par récurrence deux suites <span class="math inline">\((a_n)_{n \in \mathbb{N}}\)</span> et <span class="math inline">\((b_n)_{n \in \mathbb{N}}\)</span> en posant :</p>
 <p><span class="math display">\[a_n = \frac{1}{2}(a_{n-1} + b_{n-1}) \text{ et } b_n = \sqrt{a_{n-1}b_{n-1}} \text{ si } n \geq 1, \ a_0 = \alpha, \ b_0 = \beta.\]</span></p>
 <ol type="1">
@@ -281,8 +343,8 @@ window.Quarto = {
 <p>Indication :</p>
 </details>
 </section>
-<section id="exercice-4" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-4">Exercice 4</h3>
+<section id="exercice-5" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-5">Exercice 5</h3>
 <p>On considère <span class="math inline">\((u_n)_{n \in \mathbb{N}}\)</span> une suite numérique dont aucun terme n’est nul. Supposons que</p>
 <p><span class="math display">\[\lim_{n \to +\infty} \left|\frac{u_{n+1}}{u_n}\right| = l \text{ avec } l \in [0, 1].\]</span></p>
 <ol type="1">
@@ -308,8 +370,8 @@ window.Quarto = {
 <p>Indication :</p>
 </details>
 </section>
-<section id="exercice-5" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-5">Exercice 5</h3>
+<section id="exercice-6" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-6">Exercice 6</h3>
 <p>On considère la suite <span class="math inline">\((u_n)\)</span> définie par <span class="math inline">\(u_n = \frac{n!}{n^n}\)</span>.</p>
 <ol type="1">
 <li>Montrons que <span class="math inline">\((u_n)\)</span> est décroissante et que pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, on a : <span class="math inline">\(0 &lt; u_n \leq \frac{1}{n}\)</span>.</li>
@@ -324,8 +386,8 @@ window.Quarto = {
 <p>Indication :</p>
 </details>
 </section>
-<section id="exercice-6" class="level3 exercise-box">
-<h3 data-anchor-id="exercice-6">Exercice 6</h3>
+<section id="exercice-7" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-7">Exercice 7</h3>
 <p>Soit <span class="math inline">\((u_n)\)</span> une suite croissante de limite <span class="math inline">\(l\)</span>. On pose :</p>
 <p><span class="math display">\[v_n = \frac{u_1 + u_2 + \cdots + u_n}{n} = \frac{1}{n} \sum_{k=1}^{n} u_k.\]</span></p>
 <ol type="1">
