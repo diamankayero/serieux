@@ -1,34 +1,52 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Conteneur principal pour centrer le contenu */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+.content {
+  width: 100%;
+  max-width: 1024px; /* Largeur maximale pour un affichage optimal */
+  padding: 0 10px; /* Ajoute de l'espace de chaque côté du contenu */
+  box-sizing: border-box; /* Assure que le padding fait partie de la largeur */
+}
+
 p, li, blockquote, pre, code, h1, h2, h3, h4, h5, h6 {
   text-align: left;
+  word-wrap: break-word; /* Force le texte à aller à la ligne si nécessaire */
+  overflow-wrap: break-word;
 }
 
 h1 {
   color: #2c3e50;
   font-size: 1.8em;
   line-height: 1.2em;
-  width: 80%;
-  text-align: left;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.5em;
   line-height: 1.1em;
-  width: 85%;
-  text-align: left;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.2em;
   line-height: 1.1em;
-  width: 90%;
-  text-align: left;
+  margin: 0;
 }
 
 .navbar {
@@ -37,7 +55,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .exercise-box {
@@ -48,7 +68,10 @@ h3 {
   background-color: #f0f8ff;
   position: relative;
   text-align: left;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Empêche le scroll horizontal à l'intérieur de la boîte */
+  word-wrap: break-word;
 }
 
 .exercise-box h3 {
@@ -91,6 +114,8 @@ details[open] {
   transition: background-color 0.3s ease;
   text-align: left;
   font-size: 0.9em;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 img {
@@ -98,46 +123,24 @@ img {
   height: auto;
 }
 
-@media screen and (max-width: 1449px) {
-  .exercise-box {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.5em;
-    width: 95%;
-  }
-  h2 {
-    font-size: 1.3em;
-    width: 95%;
-  }
-  h3 {
-    font-size: 1.1em;
-    width: 100%;
-  }
-  
-  .exercise-box {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-  }
-
   .navbar {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.2em;
+@media screen and (max-width: 533px) {
+  .content {
+    padding: 0 5px; /* Réduit le padding pour les très petits écrans */
   }
-  h2 {
-    font-size: 1.1em;
+  
+  h1, h2, h3 {
+    font-size: 1em; /* Réduit la taille des titres pour les écrans très étroits */
   }
-  h3 {
-    font-size: 1em;
+  
+  .exercise-box {
+    padding: 10px;
+    margin: 10px 0;
   }
   
   .exercise-box::before {
