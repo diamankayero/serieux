@@ -243,6 +243,39 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
+<p>f,g : <span class="math inline">\(\mathbb{R} \to \mathbb{R}\)</span></p>
+<p>La parité de <span class="math inline">\(f * g\)</span> en fonction des parités de <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> ?</p>
+<p><span class="math inline">\(\forall x \in \mathbb R f(-x) = \alpha f(x)\)</span> et <span class="math inline">\(\forall x \in \mathbb R g(-x)=\beta g(x)\)</span></p>
+<p><span class="math display">\[ avec \quad  \alpha, \beta \in \{-1,1\}\]</span> Alors,</p>
+<p><span class="math display">\[(f * g)(-x) = \int_{-\infty}^{\infty} f(y) g(-x - y) \, dy\]</span></p>
+<p><span class="math display">\[= \int_{-\infty}^{\infty} f(y) g(-(x + y)) \, dy\]</span> <span class="math display">\[= \beta \int_{-\infty}^{\infty} f(y) g(x + y) \, dy\]</span></p>
+<p>Posons <span class="math inline">\(y = -z\)</span>, alors <span class="math inline">\(-dz = dy\)</span> et lorsque <span class="math inline">\(y \to -\infty\)</span>, <span class="math inline">\(z \to +\infty\)</span>, et lorsque <span class="math inline">\(y \to \infty\)</span>, <span class="math inline">\(z \to -\infty\)</span>. Donc</p>
+<p><span class="math display">\[(f * g)(-x) = \int_{-\infty}^{\infty} f(-z) g(x-z) \, dz\]</span></p>
+<p><span class="math display">\[(f * g)(-x) =\alpha \beta \int_{\mathbb R} f(z)g(x-z) \, dz\]</span></p>
+<p>Donc, <span class="math inline">\((f * g)(-x) =\alpha \beta (f * g)(x)\)</span>.</p>
+<p>Si <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> ont meme parité, alors <span class="math inline">\(f * g\)</span> est paire.</p>
+<p>Si <span class="math inline">\(f\)</span> et <span class="math inline">\(g\)</span> ont des parités opposées, alors <span class="math inline">\(f * g\)</span> est impaire.</p>
+<ol start="2" type="1">
+<li><span class="math inline">\(f \in L^1(\mathbb R)\)</span>, $ R.$</li>
+</ol>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(x) e^{-ix(-\xi)}\,dx \]</span></p>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(x) e^{ix\xi}\,dx \]</span> Prendre x= -y,</p>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(-y) e^{-iy\xi}\,dy \]</span></p>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R}\ f(-y)\ \overline {e^{-iy\xi}}\,dy \]</span> Car <span class="math inline">\(f(x) \in \mathbb R\)</span> donc <span class="math inline">\(f(x) = \overline{f(x)}\)</span></p>
+<p><span class="math display">\[\hat{f}(-\xi) = \overline{\frac{1}{\sqrt{2\pi}}\int_{\mathbb R} \ f(-y)\ e^{-iy\xi}\,dy} \ = \ \hat{f(\xi)} \]</span> Si <span class="math inline">\(f\)</span> est paire, (*) donne</p>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(x) e^{-ix\xi}\,dx \ = \ \hat{f(\xi})\]</span></p>
+<p>Donc <span class="math inline">\(\hat f\)</span> est paire et $ = f() $</p>
+<p>d’ou <span class="math inline">\(\hat f(\xi) \in \mathbb R .\)</span></p>
+<p>Si <span class="math inline">\(f\)</span> est paire, (*) donne</p>
+<p><span class="math display">\[\hat{f}(-\xi)  =  -\ \hat{f(\xi})\]</span></p>
+<p>Donc <span class="math inline">\(\hat f\)</span> est impaire et $ () = - &nbsp; f() $</p>
+<p>d’ou <span class="math inline">\(\hat f(\xi) \in i \mathbb R .\)</span></p>
+<ol start="3" type="1">
+<li>Si $f: R C $, <span class="math inline">\(f \in L^1(\mathbb R)\)</span>.</li>
+</ol>
+<p><span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(-y) e^{-iy\xi}\,dy\]</span> <span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R} f(x) \overline{e^{-ix\xi}}\,dx\]</span> <span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R}\ ( \overline{\overline{f(x)} e^{-ix\xi}})\,dx\]</span> <span class="math display">\[\hat{f}(-\xi) = \frac{1}{\sqrt{2\pi}}\int_{\mathbb R}\overline{ f(x)} \ e^{-ix\xi}\,dx \ = \ \overline{\hat{\overline{f}}(\xi)}\]</span> On a pour tout <span class="math inline">\(\xi \in \mathbb R\)</span>.</p>
+<p><span class="math display">\[ \hat{\overline{f}}(\xi) = \overline{\hat{f}}(\xi)\]</span> Si <span class="math inline">\(f\)</span> paire, (*) donne, $ = $</p>
+<p>Si <span class="math inline">\(f\)</span> paire, (*) donne, $ - &nbsp; = $</p>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
