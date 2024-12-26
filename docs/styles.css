@@ -101,3 +101,10 @@ details[open] {
   transition: background-color 0.3s ease;
   text-align: left;   /* Aligner le texte à gauche */
 }
+
+@media screen and (max-width: 1449px){
+  .exercise-box{
+    
+    width: 90%;
+  }
+}
