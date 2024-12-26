@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden; /* Empêche le scroll horizontal pour tout le body */
 }
 
 /* Conteneur principal pour centrer le contenu */
@@ -14,19 +15,18 @@ body {
   align-items: center;
   flex: 1;
   width: 100%;
-  overflow-x: hidden; /* Empêche le scroll horizontal */
 }
 
 .content {
   width: 100%;
   max-width: 1024px; /* Largeur maximale pour un affichage optimal */
-  padding: 0 10px; /* Ajoute de l'espace de chaque côté du contenu */
-  box-sizing: border-box; /* Assure que le padding fait partie de la largeur */
+  padding: 0 5px; /* Réduit la marge latérale */
+  box-sizing: border-box;
 }
 
 p, li, blockquote, pre, code, h1, h2, h3, h4, h5, h6 {
   text-align: left;
-  word-wrap: break-word; /* Force le texte à aller à la ligne si nécessaire */
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
@@ -56,7 +56,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 10px; /* Réduit le padding sur les côtés */
   box-sizing: border-box;
 }
 
@@ -68,10 +68,10 @@ h3 {
   background-color: #f0f8ff;
   position: relative;
   text-align: left;
-  width: 100%;
+  width: 100%; /* Utilise toute la largeur disponible */
   box-sizing: border-box;
-  overflow: hidden; /* Empêche le scroll horizontal à l'intérieur de la boîte */
-  word-wrap: break-word;
+  overflow-x: auto; /* Permet le scroll horizontal uniquement pour les formules ou contenus trop larges */
+  overflow-y: visible; /* Empêche le scroll vertical, permet le contenu de s'afficher normalement */
 }
 
 .exercise-box h3 {
@@ -114,13 +114,19 @@ details[open] {
   transition: background-color 0.3s ease;
   text-align: left;
   font-size: 0.9em;
-  overflow: hidden;
   word-wrap: break-word;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Pour les formules mathématiques ou autres contenus larges */
+.exercise-box pre, .exercise-box code {
+  white-space: pre-wrap; /* Permet aux longs mots de passer à la ligne */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,11 +137,11 @@ img {
 
 @media screen and (max-width: 533px) {
   .content {
-    padding: 0 5px; /* Réduit le padding pour les très petits écrans */
+    padding: 0 3px; /* Réduit encore la marge pour les écrans très étroits */
   }
   
   h1, h2, h3 {
-    font-size: 1em; /* Réduit la taille des titres pour les écrans très étroits */
+    font-size: 1em;
   }
   
   .exercise-box {
