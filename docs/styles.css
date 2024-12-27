@@ -60,7 +60,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 10px; /* Réduit le padding sur les côtés */
+  padding: 5px 5px; /* Réduit le padding sur les côtés */
   box-sizing: border-box;
 }
 
