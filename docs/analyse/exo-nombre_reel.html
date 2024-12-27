@@ -233,11 +233,16 @@ window.Quarto = {
 </header><main class="content" id="quarto-document-content">
 <section id="exercice-1" class="level3 exercise-box">
 <h3 data-anchor-id="exercice-1">Exercice 1</h3>
-<p>Dans toute l’exercice <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> et <span class="math inline">\(z\)</span> sont des réels.</p>
+<p>Dans tout cet exercice, <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> et <span class="math inline">\(z\)</span> sont des réels.</p>
 <ol type="1">
 <li>Démontrer les relations suivantes :</li>
 </ol>
-<p><span class="math display">\[2|xy| \leq x^2 + y^2 \quad \text{et} \quad \sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+2|xy| &amp;\leq x^2 + y^2 \\
+\sqrt{x^2 + y^2} &amp;\leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}
+\end{aligned}
+\end{equation}\]</span></p>
 <ol start="2" type="1">
 <li>Montrer que <span class="math inline">\(|x| = \max\{x, -x\}\)</span>. Le maximum de deux nombres <span class="math inline">\((x, y)\)</span> (c’est-à-dire le plus grand des deux) est noté <span class="math inline">\(\max\{x, y\}\)</span>. De même, on notera <span class="math inline">\(\min\{x, y\}\)</span> le plus petit des deux nombres <span class="math inline">\((x, y)\)</span>.</li>
 </ol>
@@ -246,23 +251,38 @@ window.Quarto = {
 <strong>Corrigé</strong>
 </summary>
 <ol type="1">
-<li>Soient <span class="math inline">\(x, y\)</span> <span class="math inline">\(\in \mathbb R\)</span> .On sait que <span class="math display">\[ 0 \leq (|x|-|y|)^2 \Leftrightarrow x^2 -2|x||y| + y^2 \geq 0 \Leftrightarrow x^2 + y^2 \geq 2|x||y|
-\]</span>.</li>
+<li>Soient <span class="math inline">\(x, y \in \mathbb R\)</span>. On sait que <span class="math display">\[\begin{equation}
+\begin{aligned}
+0 &amp;\leq (|x|-|y|)^2 \\
+\Leftrightarrow x^2 -2|x||y| + y^2 &amp;\geq 0 \\
+\Leftrightarrow x^2 + y^2 &amp;\geq 2|x||y|
+\end{aligned}
+\end{equation}\]</span> D’où le résultat.</li>
 </ol>
-<p>D’ou le résultat.</p>
-<p>Il reste à montrer que <span class="math inline">\(\sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\)</span></p>
+<p>Il reste à montrer que <span class="math display">\[\begin{equation}
+\begin{aligned}
+\sqrt{x^2 + y^2} &amp;\leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}
+\end{aligned}
+\end{equation}\]</span></p>
 <p>Soient <span class="math inline">\(x, y \in \mathbb R\)</span>.</p>
-<p>Comme <span class="math inline">\(|xy| = |x||y|\)</span> et $ 0 |x||y| x<sup>2+y</sup>2.$</p>
-<p>Alors, <span class="math display">\[ x^2+y^2 \leq x^2+y^2+ 2|x||y| \leq x^2+y^2+ x^2+y^2.\]</span></p>
-<p><span class="math display">\[ x^2+y^2 \leq (|x|+|y|)^2 \leq 2(x^2+y^2)\]</span>.</p>
-<p>d’ou, <span class="math display">\[\sqrt{x^2 + y^2} \leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}.\]</span></p>
+<p>Comme <span class="math inline">\(|xy| = |x||y|\)</span> et <span class="math inline">\(0 \leq 2|x||y| \leq x^2+y^2\)</span>, alors :</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+x^2+y^2 &amp;\leq (|x|+|y|)^2 \leq 2(x^2+y^2) \\
+\sqrt{x^2 + y^2} &amp;\leq |x| + |y| \leq \sqrt{2} \sqrt{x^2 + y^2}
+\end{aligned}
+\end{equation}\]</span></p>
 <ol start="2" type="1">
-<li>Soient <span class="math inline">\(x, y \in \mathbb R.\)</span></li>
+<li>Soient <span class="math inline">\(x, y \in \mathbb R\)</span>. Si <span class="math inline">\(max \{x,-x\}= x\)</span>, alors <span class="math inline">\(x \geq -x \Leftrightarrow 2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = x\)</span>.</li>
 </ol>
-<p>Si <span class="math inline">\(max \{x,-x\}= x\)</span> . Alors <span class="math inline">\(x \geq -x\)</span> <span class="math inline">\(\Leftrightarrow 2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = x.\)</span></p>
-<p><span class="math display">\[x \geq 0 \Rightarrow |x| =x= max\{x,-x\}\]</span></p>
-<p>Si <span class="math inline">\(max \{x,-x\}= -x\)</span> . Alors <span class="math inline">\(-x \geq x\)</span> <span class="math inline">\(\Leftrightarrow -2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = -x.\)</span></p>
-<p><span class="math display">\[-x \geq 0 \Rightarrow |x| =-x= max\{x,-x\}\]</span> D’ou <span class="math inline">\(|x| = max\{x,-x\}\)</span></p>
+<p><span class="math display">\[\begin{equation}
+x \geq 0 \Rightarrow |x| =x= max\{x,-x\}
+\end{equation}\]</span></p>
+<p>Si <span class="math inline">\(max \{x,-x\}= -x\)</span>, alors <span class="math inline">\(-x \geq x \Leftrightarrow -2x \geq 0\)</span>. Alors <span class="math inline">\(|x| = -x\)</span>.</p>
+<p><span class="math display">\[\begin{equation}
+-x \geq 0 \Rightarrow |x| =-x= max\{x,-x\}
+\end{equation}\]</span></p>
+D’où <span class="math inline">\(|x| = max\{x,-x\}\)</span>
 </details>
 </section>
 <section id="exercice-2" class="level3 exercise-box">
@@ -272,14 +292,60 @@ window.Quarto = {
 <summary>
 <strong>Corrigé</strong>
 </summary>
-<p>Déterminons, si elles existent, la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</p>
 <p><strong>Recherche de la borne supérieure :</strong></p>
-<p>Il est clair que <span class="math inline">\(E\)</span> est non vide et notons par <span class="math inline">\(e_{n,m}\)</span> les éléments de <span class="math inline">\(E\)</span>. <span class="math inline">\(\forall (n,m) \in \mathbb{N}^* \times \mathbb{N}^*\)</span>, nous avons <span class="math inline">\(n \geq 1\)</span> et <span class="math inline">\(m \geq 1\)</span>. Par conséquent, <span class="math display">\[\frac{1}{n} \leq 1 \quad \text{et} \quad \frac{1}{m} \leq 1\]</span> <span class="math display">\[\frac{1}{n} + \frac{1}{m} \leq 1 + 1 \Rightarrow e_{n,m} \leq e_{1,1}\]</span></p>
-<p>On en déduit que <span class="math inline">\(e_{1,1}\)</span> est un majorant de <span class="math inline">\(E\)</span> ; de plus comme <span class="math inline">\(e_{1,1} \in E\)</span> alors <span class="math display">\[e_{1,1} = \max(E) = \sup(E)\]</span></p>
+<p>Il est clair que <span class="math inline">\(E\)</span> est non vide et notons par <span class="math inline">\(e_{n,m}\)</span> les éléments de <span class="math inline">\(E\)</span>. <span class="math inline">\(\forall (n,m) \in \mathbb{N}^* \times \mathbb{N}^*\)</span>, nous avons <span class="math inline">\(n \geq 1\)</span> et <span class="math inline">\(m \geq 1\)</span>. Par conséquent,</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\frac{1}{n} &amp;\leq 1 \quad \text{et} \quad \frac{1}{m} \leq 1 \\
+\frac{1}{n} + \frac{1}{m} &amp;\leq 1 + 1 \Rightarrow e_{n,m} \leq 2
+\end{aligned}
+\end{equation}\]</span></p>
+<p>On en déduit que <span class="math inline">\(2\)</span> est un majorant de <span class="math inline">\(E\)</span> ; de plus comme <span class="math inline">\(e_{1,1} \in E\)</span> alors <span class="math inline">\(e_{1,1} = \max(E) = \sup(E) = 2\)</span>.</p>
 <p><strong>Recherche de la borne inférieure :</strong></p>
 <p>On a <span class="math inline">\(\forall (n,m) \in \mathbb{N}^* \times \mathbb{N}^*\)</span>, <span class="math inline">\(0 &lt; \frac{1}{n} + \frac{1}{m}\)</span>. Donc <span class="math inline">\(0\)</span> est un minorant de <span class="math inline">\(E\)</span>.</p>
-<p>Montrons que <span class="math inline">\(0 = \inf(E)\)</span>. Il suffit de montrer que <span class="math inline">\(y \in \mathbb{R}\)</span>, <span class="math inline">\(y &gt; 0\)</span>, alors il existe <span class="math inline">\(\alpha \in E\)</span> tel que <span class="math inline">\(0 &lt; \alpha &lt; y\)</span>. D’après la propriété d’Archimède, <span class="math display">\[\forall y \in \mathbb{R}^*_+, \forall x \in \mathbb{R}^*_+, \exists n \in \mathbb{N}^* : ny &gt; x\]</span></p>
-<p>En posant <span class="math inline">\(x = e_{1,1}\)</span>, on obtient l’existence d’un entier naturel non nul <span class="math inline">\(n\)</span> tel que <span class="math inline">\(ny &gt; e_{1,1}\)</span>, autrement dit, tel que <span class="math inline">\(y &gt; \frac{1}{n} + \frac{1}{n}\)</span>. Comme <span class="math inline">\(\alpha = e_{n,n} \in E\)</span>, on conclut que <span class="math inline">\(0\)</span> est bien la borne inférieure de <span class="math inline">\(E\)</span>.</p>
+<p>Montrons que <span class="math inline">\(0 = \inf(E)\)</span>. Il suffit de montrer que <span class="math inline">\(\forall y \in \mathbb{R}\)</span>, <span class="math inline">\(y &gt; 0\)</span>, alors il existe <span class="math inline">\(\alpha \in E\)</span> tel que <span class="math inline">\(0 &lt; \alpha &lt; y\)</span>. D’après la propriété d’Archimède,</p>
+<p><span class="math display">\[\begin{equation}
+\forall y \in \mathbb{R}^*_+, \forall x \in \mathbb{R}^*_+, \exists n \in \mathbb{N}^* : ny &gt; x
+\end{equation}\]</span></p>
+<p>En posant <span class="math inline">\(x = 1\)</span>, on obtient l’existence d’un entier naturel non nul <span class="math inline">\(n\)</span> tel que <span class="math inline">\(ny &gt; 1\)</span>, autrement dit, tel que <span class="math inline">\(y &gt; \frac{1}{n} + \frac{1}{n}\)</span>. Comme <span class="math inline">\(\alpha = e_{n,n} \in E\)</span>, on conclut que <span class="math inline">\(0\)</span> est bien la borne inférieure de <span class="math inline">\(E\)</span>.</p>
+</details>
+</section>
+<section id="exercice-3" class="level3 exercise-box">
+<h3 data-anchor-id="exercice-3">Exercice 3</h3>
+<p>Soit <span class="math inline">\(E\)</span> la partie de <span class="math inline">\(\mathbb{R}\)</span> définie par : <span class="math display">\[E = \left\{ u_n = \frac{n - 1}{n} \cdot \frac{n + 1}{n} ; n \in \mathbb{N}^* \right\}.\]</span></p>
+<ol type="1">
+<li><p>Montrons que <span class="math inline">\(E\)</span> est infini et borné.</p></li>
+<li><p>Déterminer, si elles existent, la borne supérieure et la borne inférieure de <span class="math inline">\(E\)</span>.</p></li>
+</ol>
+<details>
+<summary>
+<strong>Corrigé</strong>
+</summary>
+<p><strong>1. Montrons que</strong> <span class="math inline">\(E\)</span> est infini et borné :</p>
+<p>Montrons que les éléments de <span class="math inline">\(E\)</span> sont tous distincts, ce qui prouvera que <span class="math inline">\(E\)</span> est infini. Raisonnons par l’absurde en supposant deux éléments égaux pour deux entiers strictement positifs <span class="math inline">\(n_1\)</span> et <span class="math inline">\(n_2\)</span> (avec <span class="math inline">\(n_1 \neq n_2\)</span>) :</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+u_{n_1} &amp;= u_{n_2} \\
+\Leftrightarrow \frac{n_1 - 1}{n_1} \cdot \frac{n_1 + 1}{n_1} &amp;= \frac{n_2 - 1}{n_2} \cdot \frac{n_2 + 1}{n_2} \\
+\Leftrightarrow n_1^2 &amp;= n_2^2 \Rightarrow n_1 = n_2
+\end{aligned}
+\end{equation}\]</span></p>
+<p>Ce qui est absurde. Donc <span class="math inline">\(E\)</span> est infini.</p>
+<p>Montrons que <span class="math inline">\(u_n\)</span> est borné. Pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, <span class="math inline">\(\frac{n - 1}{n} \leq 1\)</span> et <span class="math inline">\(\frac{n + 1}{n} \leq 2\)</span>, donc <span class="math inline">\(u_n \leq 2\)</span>. De plus, pour tout <span class="math inline">\(n \in \mathbb{N}^*\)</span>, <span class="math inline">\(n &gt; 1\)</span> et <span class="math inline">\(\frac{n - 1}{n} &gt; 0\)</span>, donc <span class="math inline">\(u_n &gt; 0\)</span>. On en tire que <span class="math inline">\(E\)</span> est minorée par <span class="math inline">\(0\)</span> et majorée par <span class="math inline">\(2\)</span>.</p>
+<p><strong>2. Déterminer si elle existe la borne supérieure et la borne inférieure de</strong> <span class="math inline">\(E\)</span> :</p>
+<p>Sachant <span class="math inline">\(0 &lt; u_1 \in E\)</span>, <span class="math inline">\(E\)</span> admet une borne inférieure <span class="math inline">\(m\)</span> et une borne supérieure <span class="math inline">\(M\)</span> qui vérifient : <span class="math inline">\(m \geq 0\)</span> et <span class="math inline">\(M \leq 2\)</span>.</p>
+<p>Comme <span class="math inline">\(u_1 = \frac{1}{2}\)</span>, on a <span class="math inline">\(\inf(E) = \frac{1}{2}\)</span>.</p>
+<p>Montrons que <span class="math inline">\(\sup(E) = 2\)</span>. Pour cela, pour tout <span class="math inline">\(\epsilon &gt; 0\)</span>, montrons que <span class="math inline">\(2 - \epsilon\)</span> n’est pas un majorant de <span class="math inline">\(E\)</span>. Il faut trouver <span class="math inline">\(u_n \in E\)</span> tel que <span class="math inline">\(2 - \epsilon &lt; u_n\)</span>. On a</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+2 - \epsilon &amp;&lt; u_n \\
+\Leftrightarrow 2 - \epsilon &amp;&lt; \frac{n - 1}{n} \cdot \frac{n + 1}{n} \\
+\Leftrightarrow (2 - \epsilon) n^2 &amp;&lt; (n - 1)(n + 1) \\
+\Leftrightarrow (2 - \epsilon) n^2 &amp;&lt; n^2 - 1 \\
+\Leftrightarrow \epsilon n^2 &amp;&lt; 1
+\end{aligned}
+\end{equation}\]</span></p>
+Pour <span class="math inline">\(n &gt; \sqrt{\frac{1}{\epsilon}}\)</span>, <span class="math inline">\(u_n &gt; 2 - \epsilon\)</span>, donc <span class="math inline">\(2 - \epsilon\)</span> n’est pas un majorant de <span class="math inline">\(E\)</span>. Donc, on a <span class="math inline">\(\sup(E) = 2\)</span>.
 </details>
 </section>
 <section id="exercice-4" class="level3 exercise-box">
@@ -412,8 +478,16 @@ window.Quarto = {
 <p>Soit <span class="math inline">\(E(x)\)</span> la fonction partie entière définie sur <span class="math inline">\(\mathbb{R}\)</span>.</p>
 <ol type="1">
 <li><p>Montrer que la fonction partie entière est croissante sur <span class="math inline">\(\mathbb{R}\)</span>.</p></li>
-<li><p>Montrer que <span class="math inline">\(\forall x, y \in \mathbb{R}, E(x) + E(y) \leq E(x + y) \leq E(x) + E(y) + 1\)</span>.</p></li>
-<li><p>En déduire que <span class="math inline">\(\forall x \in \mathbb{R}, E(x + 1) = E(x) + 1\)</span>.</p></li>
+<li><p>Montrer que</p></li>
+</ol>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\forall x, y \in \mathbb{R}, \\
+E(x) + E(y) \leq  E(x + y) &amp;\leq  E(x) + E(y) + 1.
+\end{aligned}
+\end{equation}\]</span></p>
+<ol start="3" type="1">
+<li>En déduire que <span class="math inline">\(\forall x \in \mathbb{R}, E(x + 1) = E(x) + 1\)</span>.</li>
 </ol>
 <details>
 <summary>

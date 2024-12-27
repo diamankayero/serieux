@@ -1,3 +1,4 @@
+/* Styles globaux pour le corps du document */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden; /* Empêche le scroll horizontal pour tout le body */
+  overflow-x: hidden; /* Empêche le scroll horizontal global */
 }
 
 /* Conteneur principal pour centrer le contenu */
@@ -17,13 +18,15 @@ body {
   width: 100%;
 }
 
+/* Contenu principal */
 .content {
   width: 100%;
   max-width: 1024px; /* Largeur maximale pour un affichage optimal */
-  padding: 0 5px; /* Réduit la marge latérale */
-  box-sizing: border-box;
+  padding: 0 10px; /* Marge latérale par défaut */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
 }
 
+/* Styles pour le texte et les éléments de bloc */
 p, li, blockquote, pre, code, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   word-wrap: break-word;
@@ -49,6 +52,7 @@ h3 {
   margin: 0;
 }
 
+/* Barre de navigation */
 .navbar {
   background-color: #f4f4f4;
   color: white;
@@ -60,6 +64,7 @@ h3 {
   box-sizing: border-box;
 }
 
+/* Boîte d'exercice */
 .exercise-box {
   border: 2px solid #3498db;
   border-radius: 8px;
@@ -68,10 +73,11 @@ h3 {
   background-color: #f0f8ff;
   position: relative;
   text-align: left;
-  width: 100%; /* Utilise toute la largeur disponible */
+  width: 100%;
   box-sizing: border-box;
-  overflow-x: auto; /* Permet le scroll horizontal uniquement pour les formules ou contenus trop larges */
-  overflow-y: visible; /* Empêche le scroll vertical, permet le contenu de s'afficher normalement */
+  overflow-x: hidden; /* Empêche le scroll horizontal pour les exercices */
+  word-wrap: break-word; /* Force le contenu à aller à la ligne */
+  overflow-wrap: break-word;
 }
 
 .exercise-box h3 {
@@ -88,6 +94,7 @@ h3 {
   right: 15px;
 }
 
+/* Styles pour les détails */
 details summary {
   cursor: pointer;
   color: #F3F;
@@ -115,38 +122,50 @@ details[open] {
   text-align: left;
   font-size: 0.9em;
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Pour les formules mathématiques ou autres contenus larges */
-.exercise-box pre, .exercise-box code {
-  white-space: pre-wrap; /* Permet aux longs mots de passer à la ligne */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+/* Formules mathématiques */
+.MathJax_Display, .katex-display {
+  white-space: normal; /* Permet le retour à la ligne dans les formules */
+  word-wrap: break-word; /* Force les longues formules à aller à la ligne */
+  overflow-x: hidden; /* Empêche le scroll horizontal */
 }
 
+/* Ajustements pour les écrans plus petits */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
   }
+  
+  .MathJax_Display, .katex-display {
+    font-size: 80%;
+  }
+  
+  .exercise-box {
+    padding: 10px;
+    margin: 10px 0;
+  }
 }
 
+/* Pour les écrans très étroits */
 @media screen and (max-width: 533px) {
   .content {
-    padding: 0 3px; /* Réduit encore la marge pour les écrans très étroits */
+    padding: 0 5px; /* Réduit la marge latérale */
   }
   
   h1, h2, h3 {
     font-size: 1em;
   }
   
-  .exercise-box {
-    padding: 10px;
-    margin: 10px 0;
+  .MathJax_Display, .katex-display {
+    font-size: 70%;
   }
   
   .exercise-box::before {
