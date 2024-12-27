@@ -24,8 +24,6 @@ body {
   max-width: 1024px; /* Largeur maximale pour un affichage optimal */
   padding: 0 10px; /* Marge latérale par défaut */
   box-sizing: border-box; /* Inclut le padding dans la largeur */
-  margin: 0 auto; /* Centre le contenu */
-
 }
 
 /* Styles pour le texte et les éléments de bloc */
@@ -77,7 +75,14 @@ h3 {
   text-align: left;
   width: calc(100% - 20px); /* Réduit la largeur pour compenser la marge latérale */
   box-sizing: border-box;
-  overflow-x: hidden; /* Empêche le scroll horizontal */
+  overflow-x: auto; /* Permet le scroll horizontal pour l'exercice */
+  overflow-y: visible; /* Laisse le contenu visible sans scroll vertical */
+  -ms-overflow-style: none; /* IE et Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.exercise-box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .exercise-box h3 {
@@ -94,8 +99,13 @@ h3 {
   right: 15px;
 }
 
-/* Styles pour les détails */
-details summary {
+/* Styles pour les détails (corrigé) */
+.exercise-box details {
+  width: 100%; /* Utilise toute la largeur de l'encadrement */
+  box-sizing: border-box; /* Padding et border inclus dans la largeur */
+}
+
+.exercise-box details summary {
   cursor: pointer;
   color: #F3F;
   font-weight: bold;
@@ -104,15 +114,15 @@ details summary {
   font-size: 0.9em;
 }
 
-details[open] summary {
+.exercise-box details[open] summary {
   color: #e74c3c;
 }
 
-details summary:hover {
+.exercise-box details summary:hover {
   text-decoration: underline;
 }
 
-details[open] {
+.exercise-box details[open] {
   background-color: #F3F3F3;
   padding: 10px;
   border: 1px solid #F8F8F8;
@@ -123,6 +133,14 @@ details[open] {
   font-size: 0.9em;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  overflow-x: auto; /* Permet le scroll horizontal pour le corrigé */
+  overflow-y: hidden; /* Empêche le scroll vertical pour le corrigé */
+  -ms-overflow-style: none; /* IE et Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.exercise-box details[open]::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* Images */
@@ -133,9 +151,7 @@ img {
 
 /* Formules mathématiques */
 .MathJax_Display, .katex-display {
-  white-space: normal; /* Permet aux formules de se couper */
-  word-wrap: break-word; /* Force les longues formules à aller à la ligne */
-  overflow-x: hidden; /* Empêche le scroll horizontal */
+  white-space: nowrap; /* Empêche les formules de se couper */
 }
 
 /* Ajustements pour les écrans plus petits */
