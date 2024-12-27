@@ -24,6 +24,8 @@ body {
   max-width: 1024px; /* Largeur maximale pour un affichage optimal */
   padding: 0 10px; /* Marge latérale par défaut */
   box-sizing: border-box; /* Inclut le padding dans la largeur */
+  margin: 0 auto; /* Centre le contenu */
+
 }
 
 /* Styles pour le texte et les éléments de bloc */
@@ -60,7 +62,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 5px 5px; /* Réduit le padding sur les côtés */
+  padding: 10px 20px; /* Augmente le padding sur les côtés pour la barre de navigation */
   box-sizing: border-box;
 }
 
@@ -68,16 +70,14 @@ h3 {
 .exercise-box {
   border: 2px solid #3498db;
   border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 15px;
+  margin: 20px 10px; /* Margin-left et margin-right pour laisser de l'espace */
   background-color: #f0f8ff;
   position: relative;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 20px); /* Réduit la largeur pour compenser la marge latérale */
   box-sizing: border-box;
-  overflow-x: hidden; /* Empêche le scroll horizontal pour les exercices */
-  word-wrap: break-word; /* Force le contenu à aller à la ligne */
-  overflow-wrap: break-word;
+  overflow-x: hidden; /* Empêche le scroll horizontal */
 }
 
 .exercise-box h3 {
@@ -90,8 +90,8 @@ h3 {
   content: "";
   font-size: 1.5em;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
 }
 
 /* Styles pour les détails */
@@ -99,7 +99,7 @@ details summary {
   cursor: pointer;
   color: #F3F;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: left;
   font-size: 0.9em;
 }
@@ -114,10 +114,10 @@ details summary:hover {
 
 details[open] {
   background-color: #F3F3F3;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #F8F8F8;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
   text-align: left;
   font-size: 0.9em;
@@ -133,7 +133,7 @@ img {
 
 /* Formules mathématiques */
 .MathJax_Display, .katex-display {
-  white-space: normal; /* Permet le retour à la ligne dans les formules */
+  white-space: normal; /* Permet aux formules de se couper */
   word-wrap: break-word; /* Force les longues formules à aller à la ligne */
   overflow-x: hidden; /* Empêche le scroll horizontal */
 }
@@ -149,8 +149,8 @@ img {
   }
   
   .exercise-box {
-    padding: 5px;
-    margin: 5px 0;
+    margin: 10px 5px; /* Réduit les marges sur les petits écrans */
+    width: calc(100% - 10px);
   }
 }
 
@@ -170,7 +170,7 @@ img {
   
   .exercise-box::before {
     font-size: 1.2em;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
   }
 }
