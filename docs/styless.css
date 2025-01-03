@@ -1,0 +1,44 @@
+
+
+/* POur l'accueil de mon site */
+
+
+
+
+/* Conteneur global pour les cartes */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style des cartes individuelles */
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Interaction : élévation au survol */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titres des cartes */
+.card h3 {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Sous-titres des cartes */
+.card p {
+  font-size: 0.9em;
+  color: #666666;
+}
